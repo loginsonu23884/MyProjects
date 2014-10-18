@@ -1,0 +1,2486 @@
+<?xml version="1.0" standalone="yes"?>
+<PreTradeAnalysis>
+  <xs:schema id="PreTradeAnalysis" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="PreTradeAnalysis" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Details">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Name" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="Market" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="Bloomberg" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="ISIN" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="Currency" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="Side" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="OrderQuantity" msdata:Caption="Order Quantity" msprop:ModeCalcul="Sum" type="xs:int" minOccurs="0" />
+                <xs:element name="refPrice" msdata:Caption="Ref Price" msprop:ModeCalcul="None" type="xs:double" minOccurs="0" />
+                <xs:element name="Value" msprop:ModeCalcul="Sum" type="xs:double" minOccurs="0" />
+                <xs:element name="Weight" msprop:ModeCalcul="Sum" type="xs:double" minOccurs="0" />
+                <xs:element name="DailyVol1D" msdata:Caption="Daily Vol 1D" msprop:ModeCalcul="None" type="xs:int" minOccurs="0" />
+                <xs:element name="DLR1D" msdata:Caption="DLR 1D" msprop:ModeCalcul="SumWeighted" type="xs:double" minOccurs="0" />
+                <xs:element name="UDV60D" msdata:Caption="ADV 20D" msprop:ModeCalcul="None" type="xs:int" minOccurs="0" />
+                <xs:element name="DLR60D" msdata:Caption="DLR 60D" msprop:ModeCalcul="SumWeighted" type="xs:double" minOccurs="0" />
+                <xs:element name="PLR60D" msdata:Caption="PLR 60D" msprop:ModeCalcul="SumWeighted" type="xs:double" minOccurs="0" />
+                <xs:element name="VolumeSource" msdata:Caption="Volume Source" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="OpenV" msdata:Caption="Open V." msprop:ModeCalcul="None" type="xs:int" minOccurs="0" />
+                <xs:element name="CloseV" msdata:Caption="Close V." msprop:ModeCalcul="None" type="xs:int" minOccurs="0" />
+                <xs:element name="Per_Auction" msdata:Caption="%Auction" msprop:ModeCalcul="SumWeighted" type="xs:double" minOccurs="0" />
+                <xs:element name="Per_Principal" msdata:Caption="%Principal" msprop:ModeCalcul="SumWeighted" type="xs:double" minOccurs="0" />
+                <xs:element name="Per_MTF" msdata:Caption="%MTF" msprop:ModeCalcul="SumWeighted" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadBA" msdata:Caption="B/A Sprd (bp)" msprop:ModeCalcul="SumWeighted" type="xs:double" minOccurs="0" />
+                <xs:element name="ContMarketImpact" msdata:Caption="contrib. to MI%" msprop:ModeCalcul="None" type="xs:double" minOccurs="0" />
+                <xs:element name="ContMarketRisk" msdata:Caption="contrib. to MR%" msprop:ModeCalcul="None" type="xs:double" minOccurs="0" />
+                <xs:element name="MarketImpact" msdata:Caption="M.Impact" msprop:ModeCalcul="None" type="xs:double" minOccurs="0" />
+                <xs:element name="MarketRisk" msdata:Caption="M.Risk" msprop:ModeCalcul="None" type="xs:double" minOccurs="0" />
+                <xs:element name="MarketCap" msdata:Caption="Market.Cap" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="Sector" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="ExecCond" msdata:Caption="Exec.Condition" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="Per_Vol" msdata:Caption="%Vol" msprop:ModeCalcul="None" type="xs:double" minOccurs="0" />
+                <xs:element name="AskPeriod" msdata:Caption="Asked Trad.Period" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="ProposedPeriod" msdata:Caption="Proposed Trad.Period" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="ExpCompRatio" msdata:Caption="Exp. Comp." msprop:ModeCalcul="None" type="xs:double" minOccurs="0" />
+                <xs:element name="PLRstrategy" msdata:Caption="PLR (Strategy)" msprop:ModeCalcul="None" type="xs:double" minOccurs="0" />
+                <xs:element name="LotSize" msdata:Caption="Lot Size" msprop:ModeCalcul="None" type="xs:int" minOccurs="0" />
+                <xs:element name="OddLot" msdata:Caption="Odd Lot" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="Suspended" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="FxRate" msprop:ModeCalcul="None" type="xs:double" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Summary_Summary">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="Sell" type="xs:double" minOccurs="0" />
+                <xs:element name="Buy" type="xs:double" minOccurs="0" />
+                <xs:element name="Program" type="xs:double" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Summary_Largest_PLR">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="Symbol" type="xs:string" minOccurs="0" />
+                <xs:element name="Side" type="xs:string" minOccurs="0" />
+                <xs:element name="Quantity" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:double" minOccurs="0" />
+                <xs:element name="PLR" type="xs:double" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Summary_Largest_Value">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="Symbol" type="xs:string" minOccurs="0" />
+                <xs:element name="Side" type="xs:string" minOccurs="0" />
+                <xs:element name="Quantity" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:double" minOccurs="0" />
+                <xs:element name="PLR" type="xs:double" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Summary_Country">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="WeightProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="WeightSell" type="xs:double" minOccurs="0" />
+                <xs:element name="WeightBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueSell" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadSell" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="NetProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="Orders" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Summary_Sector">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="WeightProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="WeightSell" type="xs:double" minOccurs="0" />
+                <xs:element name="WeightBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueSell" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadSell" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="NetProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="Orders" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Summary_Region">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="WeightProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="WeightSell" type="xs:double" minOccurs="0" />
+                <xs:element name="WeightBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueSell" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadSell" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="NetProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="Orders" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Summary_Currencies">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="WeightProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="WeightSell" type="xs:double" minOccurs="0" />
+                <xs:element name="WeightBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueSell" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadSell" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="NetProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="Orders" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Summary_Liquidity_Ratio">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="WeightProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="WeightSell" type="xs:double" minOccurs="0" />
+                <xs:element name="WeightBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueSell" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadSell" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="NetProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="Orders" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Summary_Capitalisation">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="WeightProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="WeightSell" type="xs:double" minOccurs="0" />
+                <xs:element name="WeightBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueSell" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadSell" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="NetProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="Orders" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Glossary_Summary_">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Key" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Glossary_Stock_Details">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Key" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Glossary_Graphics_">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Key" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Glossary_Corporate_Actions">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Key" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="HeaderRecap">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Key" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Details>
+    <Name>FRANCE TELECOM</Name>
+    <Market>XPAR</Market>
+    <Bloomberg>FTE FP</Bloomberg>
+    <ISIN>FR0000133308</ISIN>
+    <Currency>EUR</Currency>
+    <Side>Sell</Side>
+    <OrderQuantity>5000</OrderQuantity>
+    <refPrice>7.82</refPrice>
+    <Value>39100</Value>
+    <Weight>3.9231383749589781E-05</Weight>
+    <DailyVol1D>8136723</DailyVol1D>
+    <DLR1D>0.00061449799876436742</DLR1D>
+    <UDV60D>12581680</UDV60D>
+    <DLR60D>0.00039740320847454395</DLR60D>
+    <PLR60D>0.00039740320847454395</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>96927</OpenV>
+    <CloseV>2362569</CloseV>
+    <Per_Auction>0.0797456435689792</Per_Auction>
+    <Per_Principal>0.3281973531990392</Per_Principal>
+    <Per_MTF>0.10436836289498394</Per_MTF>
+    <SpreadBA>0.050324999999999995</SpreadBA>
+    <ContMarketImpact>3.013934731082556E-08</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>0.000768245838668403</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Telecommunication Services</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>1</ExpCompRatio>
+    <PLRstrategy>0.00039740320847454395</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>1</FxRate>
+  </Details>
+  <Details>
+    <Name>MEDICLIN AG</Name>
+    <Market>XETR</Market>
+    <Bloomberg>MED GR</Bloomberg>
+    <ISIN>DE0006595101</ISIN>
+    <Currency>EUR</Currency>
+    <Side>Sell</Side>
+    <OrderQuantity>6000</OrderQuantity>
+    <refPrice>3.954</refPrice>
+    <Value>23724</Value>
+    <Weight>2.3803717342078464E-05</Weight>
+    <DailyVol1D>1000</DailyVol1D>
+    <DLR1D>6</DLR1D>
+    <UDV60D>773</UDV60D>
+    <DLR60D>7.7619663648124195</DLR60D>
+    <PLR60D>7.7619663648124195</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>0</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0</Per_Auction>
+    <Per_Principal>0.5</Per_Principal>
+    <Per_MTF>0</Per_MTF>
+    <SpreadBA>2.6919874999999998</SpreadBA>
+    <ContMarketImpact>8.704234781723111E-05</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>3.6566703664962463</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Health Care</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>0.14788597665965181</ExpCompRatio>
+    <PLRstrategy>1</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>1</FxRate>
+  </Details>
+  <Details>
+    <Name>OCTOPLUS</Name>
+    <Market>XAMS</Market>
+    <Bloomberg>OCTO NA</Bloomberg>
+    <ISIN>NL0000345718</ISIN>
+    <Currency>EUR</Currency>
+    <Side>Sell</Side>
+    <OrderQuantity>7000</OrderQuantity>
+    <refPrice>0.508</refPrice>
+    <Value>3556</Value>
+    <Weight>3.5679488647964515E-06</Weight>
+    <DailyVol1D>400</DailyVol1D>
+    <DLR1D>17.5</DLR1D>
+    <UDV60D>12780</UDV60D>
+    <DLR60D>0.54773082942097029</DLR60D>
+    <PLR60D>0.54773082942097029</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>15192</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0.59436619718309858</Per_Auction>
+    <Per_Principal>0.094366197183098591</Per_Principal>
+    <Per_MTF>0.59436619718309858</Per_MTF>
+    <SpreadBA>2.6691875</SpreadBA>
+    <ContMarketImpact>1.7153600311521414E-08</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>0.0048076923076923114</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Health Care</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>1</ExpCompRatio>
+    <PLRstrategy>0.54773082942097029</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>1</FxRate>
+  </Details>
+  <Details>
+    <Name>MUAR BAN LEE GRO</Name>
+    <Market>XKLS</Market>
+    <Bloomberg>MBL MK</Bloomberg>
+    <ISIN>MYL5152OO003</ISIN>
+    <Currency>MYR</Currency>
+    <Side>Sell</Side>
+    <OrderQuantity>8000</OrderQuantity>
+    <refPrice>1.06</refPrice>
+    <Value>2142.8959999999997</Value>
+    <Weight>2.1500965552803305E-06</Weight>
+    <DailyVol1D>1127400</DailyVol1D>
+    <DLR1D>0.007095973035302466</DLR1D>
+    <UDV60D>383480</UDV60D>
+    <DLR60D>0.020861583394179619</DLR60D>
+    <PLR60D>0.020861583394179619</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>0</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0</Per_Auction>
+    <Per_Principal>1</Per_Principal>
+    <Per_MTF>1</Per_MTF>
+    <SpreadBA>1.4556999999999998</SpreadBA>
+    <ContMarketImpact>1.023855502514444E-08</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>0.0047619047619047658</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Industrials</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>1</ExpCompRatio>
+    <PLRstrategy>0.020861583394179619</PLRstrategy>
+    <LotSize>100</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>0.2527</FxRate>
+  </Details>
+  <Details>
+    <Name>TEIXEIRA DUARTE</Name>
+    <Market>XLIS</Market>
+    <Bloomberg>TDSA PL</Bloomberg>
+    <ISIN>PTTD10AM0000</ISIN>
+    <Currency>EUR</Currency>
+    <Side>Sell</Side>
+    <OrderQuantity>9000</OrderQuantity>
+    <refPrice>0.47</refPrice>
+    <Value>4230</Value>
+    <Weight>4.2442136383827307E-06</Weight>
+    <DailyVol1D>14053</DailyVol1D>
+    <DLR1D>0.64043264783320286</DLR1D>
+    <UDV60D>55683</UDV60D>
+    <DLR60D>0.16162922256343948</DLR60D>
+    <PLR60D>0.16162922256343948</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>2522</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0.022646049961388574</Per_Auction>
+    <Per_Principal>0.47735395003861142</Per_Principal>
+    <Per_MTF>0.022646049961388574</Per_MTF>
+    <SpreadBA>3.2579750000000005</SpreadBA>
+    <ContMarketImpact>4.6132756938942509E-08</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>0.010869565217391254</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Industrials</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>1</ExpCompRatio>
+    <PLRstrategy>0.16162922256343948</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>1</FxRate>
+  </Details>
+  <Details>
+    <Name>INIT INNOVATION</Name>
+    <Market>XETR</Market>
+    <Bloomberg>IXX GR</Bloomberg>
+    <ISIN>DE0005759807</ISIN>
+    <Currency>EUR</Currency>
+    <Side>Sell</Side>
+    <OrderQuantity>10000</OrderQuantity>
+    <refPrice>23.5</refPrice>
+    <Value>235000</Value>
+    <Weight>0.00023578964657681835</Weight>
+    <DailyVol1D>3086</DailyVol1D>
+    <DLR1D>3.2404406999351911</DLR1D>
+    <UDV60D>8574</UDV60D>
+    <DLR60D>1.1663167716351761</DLR60D>
+    <PLR60D>1.1663167716351761</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>0</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0</Per_Auction>
+    <Per_Principal>0.47670410319137108</Per_Principal>
+    <Per_MTF>0.046591793617257869</Per_MTF>
+    <SpreadBA>0.71615</SpreadBA>
+    <ContMarketImpact>0.00042134641354088552</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>1.786958925711839</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Information Technology</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>6.0126227208976157</ExpCompRatio>
+    <PLRstrategy>1</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>1</FxRate>
+  </Details>
+  <Details>
+    <Name>DOCKWISE LTD</Name>
+    <Market>XAMS</Market>
+    <Bloomberg>DOCKW NA</Bloomberg>
+    <ISIN>BMG2786A2052</ISIN>
+    <Currency>EUR</Currency>
+    <Side>Sell</Side>
+    <OrderQuantity>11000</OrderQuantity>
+    <refPrice>18.11</refPrice>
+    <Value>199210</Value>
+    <Weight>0.000199879385083268</Weight>
+    <DailyVol1D>647</DailyVol1D>
+    <DLR1D>17.001545595054097</DLR1D>
+    <UDV60D>4470</UDV60D>
+    <DLR60D>2.4608501118568231</DLR60D>
+    <PLR60D>2.4608501118568231</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>107</OpenV>
+    <CloseV>437</CloseV>
+    <Per_Auction>0.12170022371364653</Per_Auction>
+    <Per_Principal>0.87829977628635347</Per_Principal>
+    <Per_MTF>1.1217002237136466</Per_MTF>
+    <SpreadBA>0.6489</SpreadBA>
+    <ContMarketImpact>0.00017820571828455474</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>0.89156627238129527</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Energy</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>0.68453292496171514</ExpCompRatio>
+    <PLRstrategy>1</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>1</FxRate>
+  </Details>
+  <Details>
+    <Name>SH2 CO LTD</Name>
+    <Market>XKOS</Market>
+    <Bloomberg>111610 KQ</Bloomberg>
+    <ISIN>KR7111610002</ISIN>
+    <Currency>KRW</Currency>
+    <Side>Sell</Side>
+    <OrderQuantity>12000</OrderQuantity>
+    <refPrice>1575</refPrice>
+    <Value>12741624</Value>
+    <Weight>0.012784438382020029</Weight>
+    <DailyVol1D>1582099</DailyVol1D>
+    <DLR1D>0.0075848603658810222</DLR1D>
+    <UDV60D>2932060</UDV60D>
+    <DLR60D>0.0040926856885602613</DLR60D>
+    <PLR60D>0.0040926856885602613</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>0</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0</Per_Auction>
+    <Per_Principal>1</Per_Principal>
+    <Per_MTF>1</Per_MTF>
+    <SpreadBA>0.51185416666666672</SpreadBA>
+    <ContMarketImpact>4.0202636421446636E-05</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>0.0031446540880503146</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Industrials</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>1</ExpCompRatio>
+    <PLRstrategy>0.0040926856885602613</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>0.67416</FxRate>
+  </Details>
+  <Details>
+    <Name>MECA VNECO INVES</Name>
+    <Market>XSTC</Market>
+    <Bloomberg>VES VN</Bloomberg>
+    <ISIN>VN000000VES4</ISIN>
+    <Currency>VND</Currency>
+    <Side>Sell</Side>
+    <OrderQuantity>13000</OrderQuantity>
+    <refPrice>900</refPrice>
+    <Value>429390.00000000006</Value>
+    <Weight>0.00043083283550476615</Weight>
+    <DailyVol1D>20</DailyVol1D>
+    <DLR1D>650</DLR1D>
+    <UDV60D>1700</UDV60D>
+    <DLR60D>7.6470588235294121</DLR60D>
+    <PLR60D>7.6470588235294121</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>0</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0</Per_Auction>
+    <Per_Principal>1</Per_Principal>
+    <Per_MTF>1</Per_MTF>
+    <SpreadBA>0</SpreadBA>
+    <ContMarketImpact>0</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>0</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Industrials</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>0.15044247787610621</ExpCompRatio>
+    <PLRstrategy>1</PLRstrategy>
+    <LotSize>10</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>HALT</Suspended>
+    <FxRate>0.0367</FxRate>
+  </Details>
+  <Details>
+    <Name>OMNIAMERICAN BAN</Name>
+    <Market>XNGS</Market>
+    <Bloomberg>OABC UQ</Bloomberg>
+    <ISIN>US68216R1077</ISIN>
+    <Currency>USD</Currency>
+    <Side>Sell</Side>
+    <OrderQuantity>14000</OrderQuantity>
+    <refPrice>24.9</refPrice>
+    <Value>266957.88</Value>
+    <Weight>0.00026785491138764546</Weight>
+    <DailyVol1D>5281</DailyVol1D>
+    <DLR1D>2.6510130657072524</DLR1D>
+    <UDV60D>7144</UDV60D>
+    <DLR60D>1.9596864501679732</DLR60D>
+    <PLR60D>1.9596864501679732</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>0</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0</Per_Auction>
+    <Per_Principal>0.24139212704848792</Per_Principal>
+    <Per_MTF>0.5172157459030241</Per_MTF>
+    <SpreadBA>1.4438125</SpreadBA>
+    <ContMarketImpact>0.00023864600164399429</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>0.89095249516862729</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Financials</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>1.0420070011668612</ExpCompRatio>
+    <PLRstrategy>1</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>0.7658</FxRate>
+  </Details>
+  <Details>
+    <Name>HAEDUK POWERWAY</Name>
+    <Market>XKOS</Market>
+    <Bloomberg>102210 KQ</Bloomberg>
+    <ISIN>KR7102210002</ISIN>
+    <Currency>KRW</Currency>
+    <Side>Sell</Side>
+    <OrderQuantity>15000</OrderQuantity>
+    <refPrice>6450</refPrice>
+    <Value>65224980</Value>
+    <Weight>0.065444148860340626</Weight>
+    <DailyVol1D>52096</DailyVol1D>
+    <DLR1D>0.28792997542997545</DLR1D>
+    <UDV60D>17556</UDV60D>
+    <DLR60D>0.85440874914559128</DLR60D>
+    <PLR60D>0.85440874914559128</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>0</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0</Per_Auction>
+    <Per_Principal>1</Per_Principal>
+    <Per_MTF>1</Per_MTF>
+    <SpreadBA>0.8235</SpreadBA>
+    <ContMarketImpact>0.0015751309120113038</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>0.02406832298136646</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Industrials</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>1</ExpCompRatio>
+    <PLRstrategy>0.85440874914559128</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>0.67416</FxRate>
+  </Details>
+  <Details>
+    <Name>KISCO CORP</Name>
+    <Market>XKRX</Market>
+    <Bloomberg>104700 KP</Bloomberg>
+    <ISIN>KR7104700000</ISIN>
+    <Currency>KRW</Currency>
+    <Side>Sell</Side>
+    <OrderQuantity>16000</OrderQuantity>
+    <refPrice>26850</refPrice>
+    <Value>289619136</Value>
+    <Weight>0.29059231369924887</Weight>
+    <DailyVol1D>2931</DailyVol1D>
+    <DLR1D>5.4588877516206074</DLR1D>
+    <UDV60D>6873</UDV60D>
+    <DLR60D>2.3279499490760949</DLR60D>
+    <PLR60D>2.3279499490760949</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>0</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0</Per_Auction>
+    <Per_Principal>1</Per_Principal>
+    <Per_MTF>1</Per_MTF>
+    <SpreadBA>0.72229166666666667</SpreadBA>
+    <ContMarketImpact>0.82550426502108465</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>2.8407642807629374</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Materials</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>0.75304042949490524</ExpCompRatio>
+    <PLRstrategy>1</PLRstrategy>
+    <LotSize>10</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>0.67416</FxRate>
+  </Details>
+  <Details>
+    <Name>OMEGA FLEX INC</Name>
+    <Market>XNMS</Market>
+    <Bloomberg>OFLX UQ</Bloomberg>
+    <ISIN>US6820951043</ISIN>
+    <Currency>USD</Currency>
+    <Side>Sell</Side>
+    <OrderQuantity>17000</OrderQuantity>
+    <refPrice>15.04</refPrice>
+    <Value>195799.744</Value>
+    <Weight>0.00019645766994719793</Weight>
+    <DailyVol1D>567</DailyVol1D>
+    <DLR1D>29.982363315696649</DLR1D>
+    <UDV60D>1014</UDV60D>
+    <DLR60D>16.765285996055226</DLR60D>
+    <PLR60D>16.765285996055226</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>0</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0</Per_Auction>
+    <Per_Principal>0.26351351351351349</Per_Principal>
+    <Per_MTF>0.47297297297297297</Per_MTF>
+    <SpreadBA>21.0362375</SpreadBA>
+    <ContMarketImpact>0.0027059638461468766</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>13.773775525659856</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Industrials</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>0.063430501688977861</ExpCompRatio>
+    <PLRstrategy>1</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>0.7658</FxRate>
+  </Details>
+  <Details>
+    <Name>ITXSECURITY CO L</Name>
+    <Market>XKOS</Market>
+    <Bloomberg>099520 KQ</Bloomberg>
+    <ISIN>KR7099520009</ISIN>
+    <Currency>KRW</Currency>
+    <Side>Sell</Side>
+    <OrderQuantity>18000</OrderQuantity>
+    <refPrice>5910</refPrice>
+    <Value>71717140.8</Value>
+    <Weight>0.071958124607369875</Weight>
+    <DailyVol1D>79926</DailyVol1D>
+    <DLR1D>0.22520831769386682</DLR1D>
+    <UDV60D>130534</UDV60D>
+    <DLR60D>0.13789510778800926</DLR60D>
+    <PLR60D>0.13789510778800926</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>0</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0</Per_Auction>
+    <Per_Principal>1</Per_Principal>
+    <Per_MTF>1</Per_MTF>
+    <SpreadBA>0.81270833333333348</SpreadBA>
+    <ContMarketImpact>6.0981461531669386E-05</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>0.000847457627118644</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Information Technology</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>1</ExpCompRatio>
+    <PLRstrategy>0.13789510778800926</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>0.67416</FxRate>
+  </Details>
+  <Details>
+    <Name>INFOVINE CO LTD</Name>
+    <Market>XKOS</Market>
+    <Bloomberg>115310 KQ</Bloomberg>
+    <ISIN>KR7115310005</ISIN>
+    <Currency>KRW</Currency>
+    <Side>Sell</Side>
+    <OrderQuantity>23000</OrderQuantity>
+    <refPrice>25000</refPrice>
+    <Value>387642000</Value>
+    <Weight>0.38894455395034477</Weight>
+    <DailyVol1D>6943</DailyVol1D>
+    <DLR1D>3.3126890393201784</DLR1D>
+    <UDV60D>10151</UDV60D>
+    <DLR60D>2.2657866220076839</DLR60D>
+    <PLR60D>2.2657866220076839</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>0</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0</Per_Auction>
+    <Per_Principal>1</Per_Principal>
+    <Per_MTF>1</Per_MTF>
+    <SpreadBA>0.5689375</SpreadBA>
+    <ContMarketImpact>0.94809004315482226</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>2.4375969107305244</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Information Technology</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>0.7900225698497938</ExpCompRatio>
+    <PLRstrategy>1</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>0.67416</FxRate>
+  </Details>
+  <Details>
+    <Name>AIRE GMBH &amp; CO K</Name>
+    <Market>XETR</Market>
+    <Bloomberg>ARE GR</Bloomberg>
+    <ISIN>DE0006344211</ISIN>
+    <Currency>EUR</Currency>
+    <Side>Sell</Side>
+    <OrderQuantity>22000</OrderQuantity>
+    <refPrice>20.131</refPrice>
+    <Value>442882</Value>
+    <Weight>0.00044437017129887008</Weight>
+    <DailyVol1D>0</DailyVol1D>
+    <DLR1D>0</DLR1D>
+    <UDV60D>32</UDV60D>
+    <DLR60D>687.5</DLR60D>
+    <PLR60D>687.5</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>0</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0</Per_Auction>
+    <Per_Principal>0.5</Per_Principal>
+    <Per_MTF>0</Per_MTF>
+    <SpreadBA>2.213</SpreadBA>
+    <ContMarketImpact>0.0064334675703989373</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>14.477721471705127</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Others</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>0.0014566642388929353</ExpCompRatio>
+    <PLRstrategy>1</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>1</FxRate>
+  </Details>
+  <Details>
+    <Name>STENTYS</Name>
+    <Market>XPAR</Market>
+    <Bloomberg>STNT FP</Bloomberg>
+    <ISIN>FR0010949404</ISIN>
+    <Currency>EUR</Currency>
+    <Side>Sell</Side>
+    <OrderQuantity>21000</OrderQuantity>
+    <refPrice>11.24</refPrice>
+    <Value>236040</Value>
+    <Weight>0.00023683314118294556</Weight>
+    <DailyVol1D>87028</DailyVol1D>
+    <DLR1D>0.24130165004366411</DLR1D>
+    <UDV60D>153136</UDV60D>
+    <DLR60D>0.13713300595549055</DLR60D>
+    <PLR60D>0.13713300595549055</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>1399</OpenV>
+    <CloseV>3779</CloseV>
+    <Per_Auction>0.016874309531801458</Per_Auction>
+    <Per_Principal>0.48217247773392818</Per_Principal>
+    <Per_MTF>0.014967884063260738</Per_MTF>
+    <SpreadBA>0.494925</SpreadBA>
+    <ContMarketImpact>4.2141128324366635E-07</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>0.0017793594306049442</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Health Care</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>1</ExpCompRatio>
+    <PLRstrategy>0.13713300595549055</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>1</FxRate>
+  </Details>
+  <Details>
+    <Name>ENUSTECH CO LTD</Name>
+    <Market>XKOS</Market>
+    <Bloomberg>109960 KQ</Bloomberg>
+    <ISIN>KR7109960005</ISIN>
+    <Currency>KRW</Currency>
+    <Side>Buy</Side>
+    <OrderQuantity>20000</OrderQuantity>
+    <refPrice>4280</refPrice>
+    <Value>57708096</Value>
+    <Weight>0.057902006640260024</Weight>
+    <DailyVol1D>1159</DailyVol1D>
+    <DLR1D>17.25625539257981</DLR1D>
+    <UDV60D>6539</UDV60D>
+    <DLR60D>3.0585716470408317</DLR60D>
+    <PLR60D>3.0585716470408317</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>0</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0</Per_Auction>
+    <Per_Principal>1</Per_Principal>
+    <Per_MTF>1</Per_MTF>
+    <SpreadBA>1.0630416666666667</SpreadBA>
+    <ContMarketImpact>0</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>0</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Information Technology</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>0.48577371666295222</ExpCompRatio>
+    <PLRstrategy>1</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>0.67416</FxRate>
+  </Details>
+  <Details>
+    <Name>SETI CO LTD</Name>
+    <Market>XKOS</Market>
+    <Bloomberg>114570 KQ</Bloomberg>
+    <ISIN>KR7114570005</ISIN>
+    <Currency>KRW</Currency>
+    <Side>Buy</Side>
+    <OrderQuantity>19000</OrderQuantity>
+    <refPrice>1885</refPrice>
+    <Value>24145040.4</Value>
+    <Weight>0.024226172521272342</Weight>
+    <DailyVol1D>109354</DailyVol1D>
+    <DLR1D>0.17374764526217607</DLR1D>
+    <UDV60D>374299</UDV60D>
+    <DLR60D>0.050761556937101091</DLR60D>
+    <PLR60D>0.050761556937101091</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>0</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0</Per_Auction>
+    <Per_Principal>1</Per_Principal>
+    <Per_MTF>1</Per_MTF>
+    <SpreadBA>0.836875</SpreadBA>
+    <ContMarketImpact>0.00049373992910201785</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>0.020380434782608696</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Information Technology</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>1</ExpCompRatio>
+    <PLRstrategy>0.050761556937101091</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>0.67416</FxRate>
+  </Details>
+  <Details>
+    <Name>VIET NAM FUMI</Name>
+    <Market>XSTC</Market>
+    <Bloomberg>VFG VN</Bloomberg>
+    <ISIN>VN000000VFG6</ISIN>
+    <Currency>VND</Currency>
+    <Side>Buy</Side>
+    <OrderQuantity>18000</OrderQuantity>
+    <refPrice>42000</refPrice>
+    <Value>27745200.000000004</Value>
+    <Weight>0.027838429371077198</Weight>
+    <DailyVol1D>510</DailyVol1D>
+    <DLR1D>35.294117647058826</DLR1D>
+    <UDV60D>2672</UDV60D>
+    <DLR60D>6.7365269461077846</DLR60D>
+    <PLR60D>6.7365269461077846</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>0</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0</Per_Auction>
+    <Per_Principal>1</Per_Principal>
+    <Per_MTF>1</Per_MTF>
+    <SpreadBA>4.9738634427388506</SpreadBA>
+    <ContMarketImpact>0.00066281974693040949</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>0.023809523809523808</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Materials</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>0.174321503131524</ExpCompRatio>
+    <PLRstrategy>1</PLRstrategy>
+    <LotSize>10</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>0.0367</FxRate>
+  </Details>
+  <Details>
+    <Name>TUNNEL PRADO-CAR</Name>
+    <Market>XPAR</Market>
+    <Bloomberg>SMTPC FP</Bloomberg>
+    <ISIN>FR0004016699</ISIN>
+    <Currency>EUR</Currency>
+    <Side>Buy</Side>
+    <OrderQuantity>17000</OrderQuantity>
+    <refPrice>27.95</refPrice>
+    <Value>475150</Value>
+    <Weight>0.00047674659817436275</Weight>
+    <DailyVol1D>1561</DailyVol1D>
+    <DLR1D>10.890454836643178</DLR1D>
+    <UDV60D>2232</UDV60D>
+    <DLR60D>7.6164874551971327</DLR60D>
+    <PLR60D>7.6164874551971327</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>453</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0.10147849462365591</Per_Auction>
+    <Per_Principal>0.39852150537634407</Per_Principal>
+    <Per_MTF>0.10147849462365591</Per_MTF>
+    <SpreadBA>0.34363750000000004</SpreadBA>
+    <ContMarketImpact>0.00099070566476427762</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>2.0780550266285114</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Industrials</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>0.15113759479956662</ExpCompRatio>
+    <PLRstrategy>1</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>1</FxRate>
+  </Details>
+  <Details>
+    <Name>GOOGLE INC-CL A</Name>
+    <Market>XETR</Market>
+    <Bloomberg>GGQ1 GR</Bloomberg>
+    <ISIN>US38259P5089</ISIN>
+    <Currency>EUR</Currency>
+    <Side>Buy</Side>
+    <OrderQuantity>16000</OrderQuantity>
+    <refPrice>605.34</refPrice>
+    <Value>9685440</Value>
+    <Weight>0.0097179849980467223</Weight>
+    <DailyVol1D>802</DailyVol1D>
+    <DLR1D>19.950124688279303</DLR1D>
+    <UDV60D>734</UDV60D>
+    <DLR60D>21.798365122615802</DLR60D>
+    <PLR60D>21.798365122615802</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>0</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0</Per_Auction>
+    <Per_Principal>1</Per_Principal>
+    <Per_MTF>1</Per_MTF>
+    <SpreadBA>0.1566625</SpreadBA>
+    <ContMarketImpact>0.061844795238696751</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>6.3639525324568122</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>NA</MarketCap>
+    <Sector>Information Technology</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>0.048080702214070486</ExpCompRatio>
+    <PLRstrategy>1</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>1</FxRate>
+  </Details>
+  <Details>
+    <Name>ENVITEC BIOGAS</Name>
+    <Market>XETR</Market>
+    <Bloomberg>ETG GR</Bloomberg>
+    <ISIN>DE000A0MVLS8</ISIN>
+    <Currency>EUR</Currency>
+    <Side>Buy</Side>
+    <OrderQuantity>15000</OrderQuantity>
+    <refPrice>7.5</refPrice>
+    <Value>112500</Value>
+    <Weight>0.00011287802229741305</Weight>
+    <DailyVol1D>20</DailyVol1D>
+    <DLR1D>750</DLR1D>
+    <UDV60D>2639</UDV60D>
+    <DLR60D>5.6839712012125805</DLR60D>
+    <PLR60D>5.6839712012125805</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>0</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0</Per_Auction>
+    <Per_Principal>0.48771021992238034</Per_Principal>
+    <Per_MTF>0.024579560155239329</Per_MTF>
+    <SpreadBA>3.1206750000000003</SpreadBA>
+    <ContMarketImpact>0.00058844411176032455</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>5.2130972866434657</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Energy</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>0.213494053879136</ExpCompRatio>
+    <PLRstrategy>1</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>1</FxRate>
+  </Details>
+  <Details>
+    <Name>THAC BA HYDROPOW</Name>
+    <Market>XSTC</Market>
+    <Bloomberg>TBC VN</Bloomberg>
+    <ISIN>VN000000TBC8</ISIN>
+    <Currency>VND</Currency>
+    <Side>Buy</Side>
+    <OrderQuantity>14000</OrderQuantity>
+    <refPrice>13800</refPrice>
+    <Value>7090440.0000000009</Value>
+    <Weight>0.0071142652837197281</Weight>
+    <DailyVol1D>33920</DailyVol1D>
+    <DLR1D>0.41273584905660377</DLR1D>
+    <UDV60D>6174</UDV60D>
+    <DLR60D>2.2675736961451247</DLR60D>
+    <PLR60D>2.2675736961451247</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>0</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0</Per_Auction>
+    <Per_Principal>1</Per_Principal>
+    <Per_MTF>1</Per_MTF>
+    <SpreadBA>2.038111424446106</SpreadBA>
+    <ContMarketImpact>0.02481140008891675</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>3.4875562126837063</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Utilities</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>0.78890876565295165</ExpCompRatio>
+    <PLRstrategy>1</PLRstrategy>
+    <LotSize>10</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>0.0367</FxRate>
+  </Details>
+  <Details>
+    <Name>THAC MO HYDROPOW</Name>
+    <Market>XSTC</Market>
+    <Bloomberg>TMP VN</Bloomberg>
+    <ISIN>VN000000TMP7</ISIN>
+    <Currency>VND</Currency>
+    <Side>Buy</Side>
+    <OrderQuantity>13000</OrderQuantity>
+    <refPrice>13500</refPrice>
+    <Value>6440850.0000000009</Value>
+    <Weight>0.0064624925325714924</Weight>
+    <DailyVol1D>2420</DailyVol1D>
+    <DLR1D>5.3719008264462813</DLR1D>
+    <UDV60D>841</UDV60D>
+    <DLR60D>15.457788347205707</DLR60D>
+    <PLR60D>15.457788347205707</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>0</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0</Per_Auction>
+    <Per_Principal>1</Per_Principal>
+    <Per_MTF>1</Per_MTF>
+    <SpreadBA>5.4144179344177248</SpreadBA>
+    <ContMarketImpact>2.3935157528042565E-05</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>0.0037037037037037038</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Utilities</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>0.069166872275680566</ExpCompRatio>
+    <PLRstrategy>1</PLRstrategy>
+    <LotSize>10</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>0.0367</FxRate>
+  </Details>
+  <Details>
+    <Name>S&amp;W CORP</Name>
+    <Market>XKOS</Market>
+    <Bloomberg>103230 KQ</Bloomberg>
+    <ISIN>KR7103230009</ISIN>
+    <Currency>KRW</Currency>
+    <Side>Buy</Side>
+    <OrderQuantity>12000</OrderQuantity>
+    <refPrice>2435</refPrice>
+    <Value>19698955.2</Value>
+    <Weight>0.019765147593789695</Weight>
+    <DailyVol1D>3416</DailyVol1D>
+    <DLR1D>3.51288056206089</DLR1D>
+    <UDV60D>12961</UDV60D>
+    <DLR60D>0.92585448653653268</DLR60D>
+    <PLR60D>0.92585448653653268</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>0</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0</Per_Auction>
+    <Per_Principal>1</Per_Principal>
+    <Per_MTF>1</Per_MTF>
+    <SpreadBA>1.5193124999999998</SpreadBA>
+    <ContMarketImpact>0.00037059651738355679</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>0.01875</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Industrials</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>1</ExpCompRatio>
+    <PLRstrategy>0.92585448653653268</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>0.67416</FxRate>
+  </Details>
+  <Details>
+    <Name>GIA LAI CANE SUG</Name>
+    <Market>XSTC</Market>
+    <Bloomberg>SEC VN</Bloomberg>
+    <ISIN>VN000000SEC4</ISIN>
+    <Currency>VND</Currency>
+    <Side>Buy</Side>
+    <OrderQuantity>11000</OrderQuantity>
+    <refPrice>20000</refPrice>
+    <Value>8074000.0000000009</Value>
+    <Weight>0.00810113024026056</Weight>
+    <DailyVol1D>520</DailyVol1D>
+    <DLR1D>21.153846153846153</DLR1D>
+    <UDV60D>534</UDV60D>
+    <DLR60D>20.599250936329589</DLR60D>
+    <PLR60D>20.599250936329589</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>0</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0</Per_Auction>
+    <Per_Principal>1</Per_Principal>
+    <Per_MTF>1</Per_MTF>
+    <SpreadBA>6.4510613282521563</SpreadBA>
+    <ContMarketImpact>6.1683732793862129E-05</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>0.0076142131979695434</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Consumer Staples</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>0.051022358111981657</ExpCompRatio>
+    <PLRstrategy>1</PLRstrategy>
+    <LotSize>10</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>0.0367</FxRate>
+  </Details>
+  <Details>
+    <Name>CHUONG DUONG BEV</Name>
+    <Market>XSTC</Market>
+    <Bloomberg>SCD VN</Bloomberg>
+    <ISIN>VN000000SCD6</ISIN>
+    <Currency>VND</Currency>
+    <Side>Buy</Side>
+    <OrderQuantity>10000</OrderQuantity>
+    <refPrice>14500</refPrice>
+    <Value>5321500.0000000009</Value>
+    <Weight>0.005339381294717188</Weight>
+    <DailyVol1D>1820</DailyVol1D>
+    <DLR1D>5.4945054945054945</DLR1D>
+    <UDV60D>3764</UDV60D>
+    <DLR60D>2.656748140276302</DLR60D>
+    <PLR60D>2.656748140276302</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>0</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0</Per_Auction>
+    <Per_Principal>1</Per_Principal>
+    <Per_MTF>1</Per_MTF>
+    <SpreadBA>6.5775106430053709</SpreadBA>
+    <ContMarketImpact>0</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>0</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Consumer Staples</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>0.603592046183451</ExpCompRatio>
+    <PLRstrategy>1</PLRstrategy>
+    <LotSize>10</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>0.0367</FxRate>
+  </Details>
+  <Details>
+    <Name>F.C. PORTO</Name>
+    <Market>XLIS</Market>
+    <Bloomberg>FCP PL</Bloomberg>
+    <ISIN>PTFCP0AM0008</ISIN>
+    <Currency>EUR</Currency>
+    <Side>Buy</Side>
+    <OrderQuantity>9000</OrderQuantity>
+    <refPrice>0.29</refPrice>
+    <Value>2610</Value>
+    <Weight>2.6187701172999828E-06</Weight>
+    <DailyVol1D>2041</DailyVol1D>
+    <DLR1D>4.4096031357177852</DLR1D>
+    <UDV60D>1404</UDV60D>
+    <DLR60D>6.4102564102564106</DLR60D>
+    <PLR60D>6.4102564102564106</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>767</OpenV>
+    <CloseV>1693</CloseV>
+    <Per_Auction>0.87606837606837606</Per_Auction>
+    <Per_Principal>0.37606837606837606</Per_Principal>
+    <Per_MTF>0.87606837606837606</Per_MTF>
+    <SpreadBA>0</SpreadBA>
+    <ContMarketImpact>9.0302417837930533E-08</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>0.034482758620689689</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Consumer Discretionary</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>0.18483412322274881</ExpCompRatio>
+    <PLRstrategy>1</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>1</FxRate>
+  </Details>
+  <Details>
+    <Name>LEBON</Name>
+    <Market>XPAR</Market>
+    <Bloomberg>LBON FP</Bloomberg>
+    <ISIN>FR0000121295</ISIN>
+    <Currency>EUR</Currency>
+    <Side>Buy</Side>
+    <OrderQuantity>8000</OrderQuantity>
+    <refPrice>96.4</refPrice>
+    <Value>771200</Value>
+    <Weight>0.00077379138485124388</Weight>
+    <DailyVol1D>241</DailyVol1D>
+    <DLR1D>33.19502074688797</DLR1D>
+    <UDV60D>292</UDV60D>
+    <DLR60D>27.397260273972602</DLR60D>
+    <PLR60D>27.397260273972602</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>47</OpenV>
+    <CloseV>137</CloseV>
+    <Per_Auction>0.31506849315068491</Per_Auction>
+    <Per_Principal>0.18493150684931506</Per_Principal>
+    <Per_MTF>0.31506849315068491</Per_MTF>
+    <SpreadBA>0</SpreadBA>
+    <ContMarketImpact>0.0023529641221924848</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>3.0408249151608557</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Financials</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>0.037882719252724441</ExpCompRatio>
+    <PLRstrategy>1</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>1</FxRate>
+  </Details>
+  <Details>
+    <Name>NORTHGATE MINERA</Name>
+    <Bloomberg>NGX CT</Bloomberg>
+    <ISIN>CA6664161024</ISIN>
+    <Currency>CAD</Currency>
+    <Side>Buy</Side>
+    <OrderQuantity>7000</OrderQuantity>
+    <refPrice>0</refPrice>
+    <Value>0</Value>
+    <Weight>0</Weight>
+    <DailyVol1D>0</DailyVol1D>
+    <DLR1D>0</DLR1D>
+    <UDV60D>0</UDV60D>
+    <DLR60D>0</DLR60D>
+    <PLR60D>0</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>0</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0</Per_Auction>
+    <Per_Principal>0</Per_Principal>
+    <Per_MTF>0</Per_MTF>
+    <SpreadBA>0</SpreadBA>
+    <ContMarketImpact>0</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>0</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>NA</MarketCap>
+    <Sector>Others</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>0</ExpCompRatio>
+    <PLRstrategy>0</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>INAC</Suspended>
+    <FxRate>0.7545</FxRate>
+  </Details>
+  <Details>
+    <Name>THERMOCOMPACT SA</Name>
+    <Market>XPAR</Market>
+    <Bloomberg>THER FP</Bloomberg>
+    <ISIN>FR0004037182</ISIN>
+    <Currency>EUR</Currency>
+    <Side>Buy</Side>
+    <OrderQuantity>6000</OrderQuantity>
+    <refPrice>21.61</refPrice>
+    <Value>129660</Value>
+    <Weight>0.00013009568329851179</Weight>
+    <DailyVol1D>0</DailyVol1D>
+    <DLR1D>0</DLR1D>
+    <UDV60D>98</UDV60D>
+    <DLR60D>61.224489795918366</DLR60D>
+    <PLR60D>61.224489795918366</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>55</OpenV>
+    <CloseV>0</CloseV>
+    <Per_Auction>0.28061224489795916</Per_Auction>
+    <Per_Principal>0.21938775510204081</Per_Principal>
+    <Per_MTF>0.28061224489795916</Per_MTF>
+    <SpreadBA>7.31240625</SpreadBA>
+    <ContMarketImpact>0.0028367160056211619</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>21.804843432907447</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Industrials</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>0.016604540833615723</ExpCompRatio>
+    <PLRstrategy>1</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>1</FxRate>
+  </Details>
+  <Details>
+    <Name>TIPIAK SA</Name>
+    <Market>XPAR</Market>
+    <Bloomberg>TIPI FP</Bloomberg>
+    <ISIN>FR0000066482</ISIN>
+    <Currency>EUR</Currency>
+    <Side>Buy</Side>
+    <OrderQuantity>5000</OrderQuantity>
+    <refPrice>45.5</refPrice>
+    <Value>227500</Value>
+    <Weight>0.00022826444509032416</Weight>
+    <DailyVol1D>191</DailyVol1D>
+    <DLR1D>26.178010471204189</DLR1D>
+    <UDV60D>422</UDV60D>
+    <DLR60D>11.848341232227488</DLR60D>
+    <PLR60D>11.848341232227488</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>72</OpenV>
+    <CloseV>111</CloseV>
+    <Per_Auction>0.21682464454976302</Per_Auction>
+    <Per_Principal>0.283175355450237</Per_Principal>
+    <Per_MTF>0.21682464454976302</Per_MTF>
+    <SpreadBA>0</SpreadBA>
+    <ContMarketImpact>0.0012452967098013099</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>5.4555001297225525</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Consumer Staples</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.01</Per_Vol>
+    <AskPeriod>VWAP</AskPeriod>
+    <ProposedPeriod>VWAP</ProposedPeriod>
+    <ExpCompRatio>0.092179991262560074</ExpCompRatio>
+    <PLRstrategy>1</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>1</FxRate>
+  </Details>
+  <Details>
+    <OrderQuantity>427000</OrderQuantity>
+    <Value>996651054.92000008</Value>
+    <Weight>0.99999999999999978</Weight>
+    <DLR1D>5.8100827915537643</DLR1D>
+    <DLR60D>2.8664920822315865</DLR60D>
+    <PLR60D>2.8664920822315865</PLR60D>
+    <Per_Auction>0.00041413790976361039</Per_Auction>
+    <Per_Principal>0.99787378487077638</Per_Principal>
+    <Per_MTF>0.99748332298125975</Per_MTF>
+    <SpreadBA>0.94628807808168547</SpreadBA>
+  </Details>
+  <Summary_Summary>
+    <Title>Percent</Title>
+    <Sell>0.83180859462045587</Sell>
+    <Buy>0.16819140537954408</Buy>
+    <Program>1</Program>
+  </Summary_Summary>
+  <Summary_Summary>
+    <Title>m EUR</Title>
+    <Sell>829.02291332</Sell>
+    <Buy>167.6281416</Buy>
+    <Program>996.65105492</Program>
+  </Summary_Summary>
+  <Summary_Summary>
+    <Title>Orders</Title>
+    <Sell>17</Sell>
+    <Buy>16</Buy>
+    <Program>33</Program>
+  </Summary_Summary>
+  <Summary_Summary>
+    <Title>Shares</Title>
+    <Sell>227000</Sell>
+    <Buy>200000</Buy>
+    <Program>427000</Program>
+  </Summary_Summary>
+  <Summary_Summary>
+    <Title>DLR 60D</Title>
+    <Sell>2.32895559020592</Sell>
+    <Buy>5.5249363290115161</Buy>
+    <Program>2.8664920822315865</Program>
+  </Summary_Summary>
+  <Summary_Summary>
+    <Title>PLR (Theory-60d)</Title>
+    <Sell>2.32895559020592</Sell>
+    <Buy>5.5249363290115161</Buy>
+    <Program>2.8664920822315865</Program>
+  </Summary_Summary>
+  <Summary_Summary>
+    <Title>PLR (Strategy-60d)</Title>
+    <Sell>0.89835821434559648</Sell>
+    <Buy>0.85455908851414109</Buy>
+    <Program>0.8909915778176084</Program>
+  </Summary_Summary>
+  <Summary_Summary>
+    <Title>Expected Completion Ratio</Title>
+    <Sell>0.81568111844491065</Sell>
+    <Buy>0.51895322976932889</Buy>
+    <Program>0.76577403783325937</Program>
+  </Summary_Summary>
+  <Summary_Summary>
+    <Title>Market Impact</Title>
+    <Sell>2.1463300952953892</Sell>
+    <Buy>0.57246199418236743</Buy>
+    <Program>1.8816190074871551</Program>
+  </Summary_Summary>
+  <Summary_Summary>
+    <Title>Market Risk</Title>
+    <Sell>0</Sell>
+    <Buy>0</Buy>
+    <Program>0</Program>
+  </Summary_Summary>
+  <Summary_Summary>
+    <Title>Avg. Bid/Ask Spread (bps)</Title>
+    <Sell>0.66855128678157716</Sell>
+    <Buy>2.3198651019754135</Buy>
+    <Program>0.94628807808168547</Program>
+  </Summary_Summary>
+  <Summary_Largest_PLR>
+    <Title>AIRE GMBH &amp; CO K</Title>
+    <Symbol>ARE GR</Symbol>
+    <Side>Sell</Side>
+    <Quantity>22000</Quantity>
+    <Value>0.442882</Value>
+    <PLR>687.5</PLR>
+  </Summary_Largest_PLR>
+  <Summary_Largest_PLR>
+    <Title>THERMOCOMPACT SA</Title>
+    <Symbol>THER FP</Symbol>
+    <Side>Buy</Side>
+    <Quantity>6000</Quantity>
+    <Value>0.12966</Value>
+    <PLR>61.224489795918366</PLR>
+  </Summary_Largest_PLR>
+  <Summary_Largest_PLR>
+    <Title>LEBON</Title>
+    <Symbol>LBON FP</Symbol>
+    <Side>Buy</Side>
+    <Quantity>8000</Quantity>
+    <Value>0.7712</Value>
+    <PLR>27.397260273972602</PLR>
+  </Summary_Largest_PLR>
+  <Summary_Largest_PLR>
+    <Title>GOOGLE INC-CL A</Title>
+    <Symbol>GGQ1 GR</Symbol>
+    <Side>Buy</Side>
+    <Quantity>16000</Quantity>
+    <Value>9.68544</Value>
+    <PLR>21.798365122615802</PLR>
+  </Summary_Largest_PLR>
+  <Summary_Largest_PLR>
+    <Title>GIA LAI CANE SUG</Title>
+    <Symbol>SEC VN</Symbol>
+    <Side>Buy</Side>
+    <Quantity>11000</Quantity>
+    <Value>8.0740000000000016</Value>
+    <PLR>20.599250936329589</PLR>
+  </Summary_Largest_PLR>
+  <Summary_Largest_Value>
+    <Title>INFOVINE CO LTD</Title>
+    <Symbol>115310 KQ</Symbol>
+    <Side>Sell</Side>
+    <Quantity>23000</Quantity>
+    <Value>387.642</Value>
+    <PLR>2.2657866220076839</PLR>
+  </Summary_Largest_Value>
+  <Summary_Largest_Value>
+    <Title>KISCO CORP</Title>
+    <Symbol>104700 KP</Symbol>
+    <Side>Sell</Side>
+    <Quantity>16000</Quantity>
+    <Value>289.619136</Value>
+    <PLR>2.3279499490760949</PLR>
+  </Summary_Largest_Value>
+  <Summary_Largest_Value>
+    <Title>ITXSECURITY CO L</Title>
+    <Symbol>099520 KQ</Symbol>
+    <Side>Sell</Side>
+    <Quantity>18000</Quantity>
+    <Value>71.7171408</Value>
+    <PLR>0.13789510778800926</PLR>
+  </Summary_Largest_Value>
+  <Summary_Largest_Value>
+    <Title>HAEDUK POWERWAY</Title>
+    <Symbol>102210 KQ</Symbol>
+    <Side>Sell</Side>
+    <Quantity>15000</Quantity>
+    <Value>65.22498</Value>
+    <PLR>0.85440874914559128</PLR>
+  </Summary_Largest_Value>
+  <Summary_Largest_Value>
+    <Title>ENUSTECH CO LTD</Title>
+    <Symbol>109960 KQ</Symbol>
+    <Side>Buy</Side>
+    <Quantity>20000</Quantity>
+    <Value>57.708096</Value>
+    <PLR>3.0585716470408317</PLR>
+  </Summary_Largest_Value>
+  <Summary_Country>
+    <Title>FRANCE</Title>
+    <WeightProgram>0.0018849626363469777</WeightProgram>
+    <WeightSell>0.00033188467481332074</WeightSell>
+    <WeightBuy>0.00956587590063696</WeightBuy>
+    <ValueProgram>1878650</ValueProgram>
+    <ValueSell>275140</ValueSell>
+    <ValueBuy>1603510</ValueBuy>
+    <SpreadProgram>0.0012343294585673683</SpreadProgram>
+    <SpreadSell>0.00014328892795529709</SpreadSell>
+    <SpreadBuy>0.0066301871624400337</SpreadBuy>
+    <NetProgram>1603510.0001432889</NetProgram>
+    <Orders>6</Orders>
+  </Summary_Country>
+  <Summary_Country>
+    <Title>GERMANY</Title>
+    <WeightProgram>0.00081684155751518</WeightProgram>
+    <WeightSell>0.00084630471453469029</WeightSell>
+    <WeightBuy>0.00067112836142066976</WeightBuy>
+    <ValueProgram>814106</ValueProgram>
+    <ValueSell>701606</ValueSell>
+    <ValueBuy>112500</ValueBuy>
+    <SpreadProgram>0.0015685868762517759</SpreadProgram>
+    <SpreadSell>0.0014622730059356908</SpreadSell>
+    <SpreadBuy>0.0020943734992764488</SpreadBuy>
+    <NetProgram>112500.00146227301</NetProgram>
+    <Orders>4</Orders>
+  </Summary_Country>
+  <Summary_Country>
+    <Title>NETHERLANDS</Title>
+    <WeightProgram>0.00020344733394806445</WeightProgram>
+    <WeightSell>0.00024458431334301733</WeightSell>
+    <WeightBuy>0</WeightBuy>
+    <ValueProgram>202766</ValueProgram>
+    <ValueSell>202766</ValueSell>
+    <ValueBuy>0</ValueBuy>
+    <SpreadProgram>0.00013922525749108651</SpreadProgram>
+    <SpreadSell>0.00016737655560605658</SpreadSell>
+    <SpreadBuy>0</SpreadBuy>
+    <NetProgram>0.00016737655560605658</NetProgram>
+    <Orders>2</Orders>
+  </Summary_Country>
+  <Summary_Country>
+    <Title>MOROCCO</Title>
+    <WeightProgram>2.1500965552803305E-06</WeightProgram>
+    <WeightSell>2.5848453228129887E-06</WeightSell>
+    <WeightBuy>0</WeightBuy>
+    <ValueProgram>2142.8959999999997</ValueProgram>
+    <ValueSell>2142.8959999999997</ValueSell>
+    <ValueBuy>0</ValueBuy>
+    <SpreadProgram>3.1298955555215766E-06</SpreadProgram>
+    <SpreadSell>3.7627593364188672E-06</SpreadSell>
+    <SpreadBuy>0</SpreadBuy>
+    <NetProgram>3.7627593364188672E-06</NetProgram>
+    <Orders>1</Orders>
+  </Summary_Country>
+  <Summary_Country>
+    <Title>PORTUGAL</Title>
+    <WeightProgram>6.8629837556827135E-06</WeightProgram>
+    <WeightSell>5.1023921438552979E-06</WeightSell>
+    <WeightBuy>1.5570177984959539E-05</WeightBuy>
+    <ValueProgram>6840</ValueProgram>
+    <ValueSell>4230</ValueSell>
+    <ValueBuy>2610</ValueBuy>
+    <SpreadProgram>1.382754192850998E-05</SpreadProgram>
+    <SpreadSell>1.6623466044876966E-05</SpreadSell>
+    <SpreadBuy>0</SpreadBuy>
+    <NetProgram>2610.0000166234659</NetProgram>
+    <Orders>2</Orders>
+  </Summary_Country>
+  <Summary_Country>
+    <Title>SLOVAKIA REPUBLIC</Title>
+    <WeightProgram>0.93161690625464622</WeightProgram>
+    <WeightSell>0.99749339555443872</WeightSell>
+    <WeightBuy>0.60581767852755342</WeightBuy>
+    <ValueProgram>928496972.4</ValueProgram>
+    <ValueSell>826944880.8</ValueSell>
+    <ValueBuy>101552091.60000001</ValueBuy>
+    <SpreadProgram>0.66195150048028206</SpreadProgram>
+    <SpreadSell>0.661324665870696</SpreadSell>
+    <SpreadBuy>0.66505157812386084</SpreadBuy>
+    <NetProgram>101552092.26132467</NetProgram>
+    <Orders>8</Orders>
+  </Summary_Country>
+  <Summary_Country>
+    <Title>VIETNAM</Title>
+    <WeightProgram>0.055286531557850932</WeightProgram>
+    <WeightSell>0.00051794708336880063</WeightSell>
+    <WeightBuy>0.32615042723828663</WeightBuy>
+    <ValueProgram>55101380.000000007</ValueProgram>
+    <ValueSell>429390.00000000006</ValueSell>
+    <ValueBuy>54671990.000000007</ValueBuy>
+    <SpreadProgram>0.27533557227389865</SpreadProgram>
+    <SpreadSell>0</SpreadSell>
+    <SpreadBuy>1.6370371105025903</SpreadBuy>
+    <NetProgram>54671990.000000007</NetProgram>
+    <Orders>6</Orders>
+  </Summary_Country>
+  <Summary_Country>
+    <Title>UNITED STATES</Title>
+    <WeightProgram>0.010182297579381565</WeightProgram>
+    <WeightSell>0.00055819642203469122</WeightSell>
+    <WeightBuy>0.057779319794117434</WeightBuy>
+    <ValueProgram>10148197.624</ValueProgram>
+    <ValueSell>462757.624</ValueSell>
+    <ValueBuy>9685440</ValueBuy>
+    <SpreadProgram>0.0060419062977102372</SpreadProgram>
+    <SpreadSell>0.0054332961960027806</SpreadSell>
+    <SpreadBuy>0.0090518526872459225</SpreadBuy>
+    <NetProgram>9685440.0054332968</NetProgram>
+    <Orders>3</Orders>
+  </Summary_Country>
+  <Summary_Country>
+    <Title>CANADA</Title>
+    <WeightProgram>0</WeightProgram>
+    <WeightSell>0</WeightSell>
+    <WeightBuy>0</WeightBuy>
+    <ValueProgram>0</ValueProgram>
+    <ValueSell>0</ValueSell>
+    <ValueBuy>0</ValueBuy>
+    <SpreadProgram>0</SpreadProgram>
+    <SpreadSell>0</SpreadSell>
+    <SpreadBuy>0</SpreadBuy>
+    <NetProgram>0</NetProgram>
+    <Orders>1</Orders>
+  </Summary_Country>
+  <Summary_Sector>
+    <Title>Telecommunication Services</Title>
+    <WeightProgram>3.9231383749589781E-05</WeightProgram>
+    <WeightSell>4.7163955750530058E-05</WeightSell>
+    <WeightBuy>0</WeightBuy>
+    <ValueProgram>39100</ValueProgram>
+    <ValueSell>39100</ValueSell>
+    <ValueBuy>0</ValueBuy>
+    <SpreadProgram>1.9743193871981053E-06</SpreadProgram>
+    <SpreadSell>2.3735260731454248E-06</SpreadSell>
+    <SpreadBuy>0</SpreadBuy>
+    <NetProgram>2.3735260731454248E-06</NetProgram>
+    <Orders>1</Orders>
+  </Summary_Sector>
+  <Summary_Sector>
+    <Title>Health Care</Title>
+    <WeightProgram>0.00026420480738982045</WeightProgram>
+    <WeightSell>0.00031762692655318606</WeightSell>
+    <WeightBuy>0</WeightBuy>
+    <ValueProgram>263320</ValueProgram>
+    <ValueSell>263320</ValueSell>
+    <ValueBuy>0</ValueBuy>
+    <SpreadProgram>0.00019081747644893166</SpreadProgram>
+    <SpreadSell>0.00022940070309804785</SpreadSell>
+    <SpreadBuy>0</SpreadBuy>
+    <NetProgram>0.00022940070309804785</NetProgram>
+    <Orders>3</Orders>
+  </Summary_Sector>
+  <Summary_Sector>
+    <Title>Industrials</Title>
+    <WeightProgram>0.099234261933268841</WeightProgram>
+    <WeightSell>0.0948081957412212</WeightSell>
+    <WeightBuy>0.12112384594974238</WeightBuy>
+    <ValueProgram>98901931.84</ValueProgram>
+    <ValueSell>78598166.64</ValueSell>
+    <ValueBuy>20303765.2</ValueBuy>
+    <SpreadProgram>0.095731288582380419</SpreadProgram>
+    <SpreadSell>0.077646122797613959</SpreadSell>
+    <SpreadBuy>0.18517341138858035</SpreadBuy>
+    <NetProgram>20303765.277646121</NetProgram>
+    <Orders>9</Orders>
+  </Summary_Sector>
+  <Summary_Sector>
+    <Title>Information Technology</Title>
+    <WeightProgram>0.55298463236387063</WeightProgram>
+    <WeightSell>0.55438050434511721</WeightSell>
+    <WeightBuy>0.54608119809878031</WeightBuy>
+    <ValueProgram>551132717.2</ValueProgram>
+    <ValueSell>459594140.8</ValueSell>
+    <ValueBuy>91538576.4</ValueBuy>
+    <SpreadProgram>0.36328393803367082</SpreadProgram>
+    <SpreadSell>0.33653772303915552</SpreadSell>
+    <SpreadBuy>0.49556020658496641</SpreadBuy>
+    <NetProgram>91538576.736537725</NetProgram>
+    <Orders>6</Orders>
+  </Summary_Sector>
+  <Summary_Sector>
+    <Title>Energy</Title>
+    <WeightProgram>0.00031275740738068104</WeightProgram>
+    <WeightSell>0.00024029492647220188</WeightSell>
+    <WeightBuy>0.00067112836142066976</WeightBuy>
+    <ValueProgram>311710</ValueProgram>
+    <ValueSell>199210</ValueSell>
+    <ValueBuy>112500</ValueBuy>
+    <SpreadProgram>0.00048195735521351212</SpreadProgram>
+    <SpreadSell>0.00015592737778781182</SpreadSell>
+    <SpreadBuy>0.0020943734992764488</SpreadBuy>
+    <NetProgram>112500.00015592738</NetProgram>
+    <Orders>2</Orders>
+  </Summary_Sector>
+  <Summary_Sector>
+    <Title>Financials</Title>
+    <WeightProgram>0.0010416462962388893</WeightProgram>
+    <WeightSell>0.00032201508029604383</WeightSell>
+    <WeightBuy>0.0046006594873566264</WeightBuy>
+    <ValueProgram>1038157.88</ValueProgram>
+    <ValueSell>266957.88</ValueSell>
+    <ValueBuy>771200</ValueBuy>
+    <SpreadProgram>0.00038673226924787485</SpreadProgram>
+    <SpreadSell>0.00046492939811993176</SpreadSell>
+    <SpreadBuy>0</SpreadBuy>
+    <NetProgram>771200.00046492938</NetProgram>
+    <Orders>2</Orders>
+  </Summary_Sector>
+  <Summary_Sector>
+    <Title>Materials</Title>
+    <WeightProgram>0.31843074307032609</WeightProgram>
+    <WeightSell>0.34934997736088869</WeightSell>
+    <WeightBuy>0.16551636100701128</WeightBuy>
+    <ValueProgram>317364336</ValueProgram>
+    <ValueSell>289619136</ValueSell>
+    <ValueBuy>27745200.000000004</ValueBuy>
+    <SpreadProgram>0.34835695273442169</SpreadProgram>
+    <SpreadSell>0.25233257739795856</SpreadSell>
+    <SpreadBuy>0.82325577718793963</SpreadBuy>
+    <NetProgram>27745200.252332579</NetProgram>
+    <Orders>2</Orders>
+  </Summary_Sector>
+  <Summary_Sector>
+    <Title>Others</Title>
+    <WeightProgram>0.00044437017129887008</WeightProgram>
+    <WeightSell>0.0005342216637009272</WeightSell>
+    <WeightBuy>0</WeightBuy>
+    <ValueProgram>442882</ValueProgram>
+    <ValueSell>442882</ValueSell>
+    <ValueBuy>0</ValueBuy>
+    <SpreadProgram>0.00098339118908439952</SpreadProgram>
+    <SpreadSell>0.001182232541770152</SpreadSell>
+    <SpreadBuy>0</SpreadBuy>
+    <NetProgram>0.001182232541770152</NetProgram>
+    <Orders>2</Orders>
+  </Summary_Sector>
+  <Summary_Sector>
+    <Title>Utilities</Title>
+    <WeightProgram>0.01357675781629122</WeightProgram>
+    <WeightSell>0</WeightSell>
+    <WeightBuy>0.080722066538736842</WeightBuy>
+    <ValueProgram>13531290.000000002</ValueProgram>
+    <ValueSell>0</ValueSell>
+    <ValueBuy>13531290.000000002</ValueBuy>
+    <SpreadProgram>0.0494903008206852</SpreadProgram>
+    <SpreadSell>0</SpreadSell>
+    <SpreadBuy>0.29424987982593054</SpreadBuy>
+    <NetProgram>13531290.000000002</NetProgram>
+    <Orders>2</Orders>
+  </Summary_Sector>
+  <Summary_Sector>
+    <Title>Consumer Staples</Title>
+    <WeightProgram>0.013668775980068073</WeightProgram>
+    <WeightSell>0</WeightSell>
+    <WeightBuy>0.081269170378966971</WeightBuy>
+    <ValueProgram>13623000.000000002</ValueProgram>
+    <ValueSell>0</ValueSell>
+    <ValueBuy>13623000.000000002</ValueBuy>
+    <SpreadProgram>0.0873807253011451</SpreadProgram>
+    <SpreadSell>0</SpreadSell>
+    <SpreadBuy>0.51953145348872021</SpreadBuy>
+    <NetProgram>13623000.000000002</NetProgram>
+    <Orders>3</Orders>
+  </Summary_Sector>
+  <Summary_Sector>
+    <Title>Consumer Discretionary</Title>
+    <WeightProgram>2.6187701172999828E-06</WeightProgram>
+    <WeightSell>0</WeightSell>
+    <WeightBuy>1.5570177984959539E-05</WeightBuy>
+    <ValueProgram>2610</ValueProgram>
+    <ValueSell>0</ValueSell>
+    <ValueBuy>2610</ValueBuy>
+    <SpreadProgram>0</SpreadProgram>
+    <SpreadSell>0</SpreadSell>
+    <SpreadBuy>0</SpreadBuy>
+    <NetProgram>2610</NetProgram>
+    <Orders>1</Orders>
+  </Summary_Sector>
+  <Summary_Region>
+    <Title>Europe</Title>
+    <WeightProgram>0.93350401898754831</WeightProgram>
+    <WeightSell>0.99782786507457488</WeightSell>
+    <WeightBuy>0.61538355442819048</WeightBuy>
+    <ValueProgram>930377765.29600012</ValueProgram>
+    <ValueSell>827222163.6960001</ValueSell>
+    <ValueBuy>103155601.60000001</ValueBuy>
+    <SpreadProgram>0.663188959834405</SpreadProgram>
+    <SpreadSell>0.66147171755798762</SpreadSell>
+    <SpreadBuy>0.67168176528630086</SpreadBuy>
+    <NetProgram>103155602.26147173</NetProgram>
+    <Orders>15</Orders>
+  </Summary_Region>
+  <Summary_Region>
+    <Title>NA</Title>
+    <WeightProgram>0.056313683433069861</WeightProgram>
+    <WeightSell>0.0016139385033903638</WeightSell>
+    <WeightBuy>0.32683712577769231</WeightBuy>
+    <ValueProgram>56125092.000000007</ValueProgram>
+    <ValueSell>1337992</ValueSell>
+    <ValueBuy>54787100.000000007</ValueBuy>
+    <SpreadProgram>0.27705721194957006</SpreadProgram>
+    <SpreadSell>0.0016462730275866244</SpreadSell>
+    <SpreadBuy>1.6391314840018667</SpreadBuy>
+    <NetProgram>54787100.00164628</NetProgram>
+    <Orders>14</Orders>
+  </Summary_Region>
+  <Summary_Region>
+    <Title>America</Title>
+    <WeightProgram>0.010182297579381565</WeightProgram>
+    <WeightSell>0.00055819642203469122</WeightSell>
+    <WeightBuy>0.057779319794117434</WeightBuy>
+    <ValueProgram>10148197.624</ValueProgram>
+    <ValueSell>462757.624</ValueSell>
+    <ValueBuy>9685440</ValueBuy>
+    <SpreadProgram>0.0060419062977102372</SpreadProgram>
+    <SpreadSell>0.0054332961960027806</SpreadSell>
+    <SpreadBuy>0.0090518526872459225</SpreadBuy>
+    <NetProgram>9685440.0054332968</NetProgram>
+    <Orders>4</Orders>
+  </Summary_Region>
+  <Summary_Currencies>
+    <Title>EUR</Title>
+    <WeightProgram>0.012630099509612627</WeightProgram>
+    <WeightSell>0.0014278760948348837</WeightSell>
+    <WeightBuy>0.06803189423416002</WeightBuy>
+    <ValueProgram>12587802</ValueProgram>
+    <ValueSell>1183742</ValueSell>
+    <ValueBuy>11404060</ValueBuy>
+    <SpreadProgram>0.0044784129589952358</SpreadProgram>
+    <SpreadSell>0.0017895619555419213</SpreadSell>
+    <SpreadBuy>0.017776413348962405</SpreadBuy>
+    <NetProgram>11404060.001789562</NetProgram>
+    <Orders>15</Orders>
+  </Summary_Currencies>
+  <Summary_Currencies>
+    <Title>MYR</Title>
+    <WeightProgram>2.1500965552803305E-06</WeightProgram>
+    <WeightSell>2.5848453228129887E-06</WeightSell>
+    <WeightBuy>0</WeightBuy>
+    <ValueProgram>2142.8959999999997</ValueProgram>
+    <ValueSell>2142.8959999999997</ValueSell>
+    <ValueBuy>0</ValueBuy>
+    <SpreadProgram>3.1298955555215766E-06</SpreadProgram>
+    <SpreadSell>3.7627593364188672E-06</SpreadSell>
+    <SpreadBuy>0</SpreadBuy>
+    <NetProgram>3.7627593364188672E-06</NetProgram>
+    <Orders>1</Orders>
+  </Summary_Currencies>
+  <Summary_Currencies>
+    <Title>KRW</Title>
+    <WeightProgram>0.93161690625464622</WeightProgram>
+    <WeightSell>0.99749339555443872</WeightSell>
+    <WeightBuy>0.60581767852755342</WeightBuy>
+    <ValueProgram>928496972.4</ValueProgram>
+    <ValueSell>826944880.8</ValueSell>
+    <ValueBuy>101552091.60000001</ValueBuy>
+    <SpreadProgram>0.66195150048028206</SpreadProgram>
+    <SpreadSell>0.661324665870696</SpreadSell>
+    <SpreadBuy>0.66505157812386084</SpreadBuy>
+    <NetProgram>101552092.26132467</NetProgram>
+    <Orders>8</Orders>
+  </Summary_Currencies>
+  <Summary_Currencies>
+    <Title>VND</Title>
+    <WeightProgram>0.055286531557850932</WeightProgram>
+    <WeightSell>0.00051794708336880063</WeightSell>
+    <WeightBuy>0.32615042723828663</WeightBuy>
+    <ValueProgram>55101380.000000007</ValueProgram>
+    <ValueSell>429390.00000000006</ValueSell>
+    <ValueBuy>54671990.000000007</ValueBuy>
+    <SpreadProgram>0.27533557227389865</SpreadProgram>
+    <SpreadSell>0</SpreadSell>
+    <SpreadBuy>1.6370371105025903</SpreadBuy>
+    <NetProgram>54671990.000000007</NetProgram>
+    <Orders>6</Orders>
+  </Summary_Currencies>
+  <Summary_Currencies>
+    <Title>USD</Title>
+    <WeightProgram>0.00046431258133484336</WeightProgram>
+    <WeightSell>0.00055819642203469122</WeightSell>
+    <WeightBuy>0</WeightBuy>
+    <ValueProgram>462757.624</ValueProgram>
+    <ValueSell>462757.624</ValueSell>
+    <ValueBuy>0</ValueBuy>
+    <SpreadProgram>0.0045194624729537423</SpreadProgram>
+    <SpreadSell>0.0054332961960027806</SpreadSell>
+    <SpreadBuy>0</SpreadBuy>
+    <NetProgram>0.0054332961960027806</NetProgram>
+    <Orders>2</Orders>
+  </Summary_Currencies>
+  <Summary_Currencies>
+    <Title>CAD</Title>
+    <WeightProgram>0</WeightProgram>
+    <WeightSell>0</WeightSell>
+    <WeightBuy>0</WeightBuy>
+    <ValueProgram>0</ValueProgram>
+    <ValueSell>0</ValueSell>
+    <ValueBuy>0</ValueBuy>
+    <SpreadProgram>0</SpreadProgram>
+    <SpreadSell>0</SpreadSell>
+    <SpreadBuy>0</SpreadBuy>
+    <NetProgram>0</NetProgram>
+    <Orders>1</Orders>
+  </Summary_Currencies>
+  <Summary_Liquidity_Ratio>
+    <Title>0%</Title>
+    <WeightProgram>0</WeightProgram>
+    <WeightSell>0</WeightSell>
+    <WeightBuy>0</WeightBuy>
+    <ValueProgram>0</ValueProgram>
+    <ValueSell>0</ValueSell>
+    <ValueBuy>0</ValueBuy>
+    <SpreadProgram>0</SpreadProgram>
+    <SpreadSell>0</SpreadSell>
+    <SpreadBuy>0</SpreadBuy>
+    <NetProgram>0</NetProgram>
+    <Orders>1</Orders>
+  </Summary_Liquidity_Ratio>
+  <Summary_Liquidity_Ratio>
+    <Title>0% - 2.5%</Title>
+    <WeightProgram>0.012784438382020029</WeightProgram>
+    <WeightSell>0.015369447328027924</WeightSell>
+    <WeightBuy>0</WeightBuy>
+    <ValueProgram>12741624</ValueProgram>
+    <ValueSell>12741624</ValueSell>
+    <ValueBuy>0</ValueBuy>
+    <SpreadProgram>0.0065437680543302106</SpreadProgram>
+    <SpreadSell>0.00786691565421496</SpreadSell>
+    <SpreadBuy>0</SpreadBuy>
+    <NetProgram>0.00786691565421496</NetProgram>
+    <Orders>1</Orders>
+  </Summary_Liquidity_Ratio>
+  <Summary_Liquidity_Ratio>
+    <Title>10% - 20%</Title>
+    <WeightProgram>0.00023683314118294556</WeightProgram>
+    <WeightSell>0.00028472071906279067</WeightSell>
+    <WeightBuy>0</WeightBuy>
+    <ValueProgram>236040</ValueProgram>
+    <ValueSell>236040</ValueSell>
+    <ValueBuy>0</ValueBuy>
+    <SpreadProgram>0.00011721464239996933</SpreadProgram>
+    <SpreadSell>0.00014091540188215166</SpreadSell>
+    <SpreadBuy>0</SpreadBuy>
+    <NetProgram>0.00014091540188215166</NetProgram>
+    <Orders>1</Orders>
+  </Summary_Liquidity_Ratio>
+  <Summary_Liquidity_Ratio>
+    <Title>5% - 10%</Title>
+    <WeightProgram>0.024226172521272342</WeightProgram>
+    <WeightSell>0</WeightSell>
+    <WeightBuy>0.14403930133411441</WeightBuy>
+    <ValueProgram>24145040.4</ValueProgram>
+    <ValueSell>0</ValueSell>
+    <ValueBuy>24145040.4</ValueBuy>
+    <SpreadProgram>0.020274278128739793</SpreadProgram>
+    <SpreadSell>0</SpreadSell>
+    <SpreadBuy>0.120542890303987</SpreadBuy>
+    <NetProgram>24145040.4</NetProgram>
+    <Orders>1</Orders>
+  </Summary_Liquidity_Ratio>
+  <Summary_Liquidity_Ratio>
+    <Title>Greather Than 50%</Title>
+    <WeightProgram>0.00022826444509032416</WeightProgram>
+    <WeightSell>0.0005342216637009272</WeightSell>
+    <WeightBuy>0.0013571706864284655</WeightBuy>
+    <ValueProgram>227500</ValueProgram>
+    <ValueSell>442882</ValueSell>
+    <ValueBuy>227500</ValueBuy>
+    <SpreadProgram>0</SpreadProgram>
+    <SpreadSell>0.001182232541770152</SpreadSell>
+    <SpreadBuy>0</SpreadBuy>
+    <NetProgram>227500.00118223255</NetProgram>
+    <Orders>1</Orders>
+  </Summary_Liquidity_Ratio>
+  <Summary_Capitalisation>
+    <Title>Mega</Title>
+    <WeightProgram>0.990282015001953</WeightProgram>
+    <WeightSell>0.99999999999999989</WeightSell>
+    <WeightBuy>0.94222068020588268</WeightBuy>
+    <ValueProgram>986965614.92000008</ValueProgram>
+    <ValueSell>829022913.32</ValueSell>
+    <ValueBuy>157942701.6</ValueBuy>
+    <SpreadProgram>0.94476563425692894</SpreadProgram>
+    <SpreadSell>0.66855128678157716</SpreadSell>
+    <SpreadBuy>2.3108132492881679</SpreadBuy>
+    <NetProgram>157942702.26855129</NetProgram>
+    <Orders>31</Orders>
+  </Summary_Capitalisation>
+  <Summary_Capitalisation>
+    <Title>NA</Title>
+    <WeightProgram>0.0097179849980467223</WeightProgram>
+    <WeightSell>0</WeightSell>
+    <WeightBuy>0.057779319794117434</WeightBuy>
+    <ValueProgram>9685440</ValueProgram>
+    <ValueSell>0</ValueSell>
+    <ValueBuy>9685440</ValueBuy>
+    <SpreadProgram>0.0015224438247564947</SpreadProgram>
+    <SpreadSell>0</SpreadSell>
+    <SpreadBuy>0.0090518526872459225</SpreadBuy>
+    <NetProgram>9685440</NetProgram>
+    <Orders>2</Orders>
+  </Summary_Capitalisation>
+  <Glossary_Summary_>
+    <Key>All the values are represented in millions</Key>
+    <Value />
+  </Glossary_Summary_>
+  <Glossary_Stock_Details>
+    <Key>Name</Key>
+    <Value>Security Name</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Market</Key>
+    <Value>Security Market</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Reuteurs</Key>
+    <Value>Reuters Code</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>BloomBerg</Key>
+    <Value>Bloomberg Code</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>ISIN</Key>
+    <Value>ISIN Code</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Currency</Key>
+    <Value>Currency of listing.Denomination of the trade currency may differ(GBP/GBX)</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Side</Key>
+    <Value>Buy or Sell</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Order Quantity</Key>
+    <Value>Order Quantity</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Ref Price</Key>
+    <Value>Ref Price (based on Last)</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Value</Key>
+    <Value>Value</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Weight</Key>
+    <Value>Weight</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Full Day Vol 1</Key>
+    <Value>Previous Day Volume</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>DLR 1D</Key>
+    <Value>Daily Liquidity Ratio from the previous day</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Period Liq. Ratio 1</Key>
+    <Value>Period Liquidity Ratio with respect to the previous day</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Full Day Vol 60*</Key>
+    <Value>Usual Daily Volume 60 days</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>DLR 60D</Key>
+    <Value>Daily Liquidity Ratio from the 60 days median</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Period Liq. Ratio 60*</Key>
+    <Value>Period liquidity ratio UDV 60 days based</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Volume Source</Key>
+    <Value>Volume Source</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Open V.*</Key>
+    <Value>Usual open volume (60 days median)</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Close V.*</Key>
+    <Value>Usual close volume (60 days median)</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>%Auction*</Key>
+    <Value>% Auction (Auction/UDV MultiMarket)</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>%Principal*</Key>
+    <Value>% Principal ((UDV Principal - Auction)/UDV MultiMarket)</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>%MTF*</Key>
+    <Value>% Multilateral Trading Facilities(MTF) ((UDV MultiMarket-UDV Principal)/UDV MultiMarket)[chi-x,turquoise,bats,nae/ not including dark volumes]</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Bid.ask Spread</Key>
+    <Value>Average of 60 days of daily weighted average spread(bp)</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Momentum</Key>
+    <Value>Give the stock's momentum over the previous 5 trading days, apportioned every 10 minutes period, expressed in bps(5 days of 8.5 hours of 6*10 minutes each);comptuted as((close DAY - close DAY-5)/(close DAY-5*8.5*6)*10000)/5</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>V. Score</Key>
+    <Value>Score(level of abnormality) of the previous day volume)</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>M.Impact%</Key>
+    <Value>Contribution of this line % to the Market Impact of the Program</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>M.Risk%</Key>
+    <Value>Contribution of this line % to the Market Risk of the Program</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>M.Impact</Key>
+    <Value>Relative amplitude of Market Impact to the overall Program</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>M.Risk*</Key>
+    <Value>Relative amplitude of Market Risk to the overall Program</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Duration</Key>
+    <Value>Duration Adjustement Proposal for this line taking into account its contribution to Market Risk and Market Impact</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Sector</Key>
+    <Value>As defined by MSCI Sector</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>ZoneIndex</Key>
+    <Value>Sector Zone Index</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Beta*</Key>
+    <Value> Beta Sector Zone (60D)</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Tracking*</Key>
+    <Value>Tracking Error</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Exec.Condition</Key>
+    <Value>As defined by the user from a list of exec condition with parameters (vwap 25% as default value)</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>%Volume</Key>
+    <Value>for TargetClose %Vol and vwap max vol algos</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Ask Trad Period</Key>
+    <Value>Asked Trading Period : User setting</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Proposed Trad Period</Key>
+    <Value>Proposed Trading Period : Calculated duration</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Remaining Quantity</Key>
+    <Value>Expected Remaining Quantity</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Exp Comp</Key>
+    <Value>Expected Completion Ratio</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>PLR(Strategy)</Key>
+    <Value>Period Liquidity Ratio from UDV 60 days [taking into account user strategy]</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Fx Rate</Key>
+    <Value>Forex rate of the trade date. As used in the conversion to Euro</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>*</Key>
+    <Value>60 days of trading</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>**</Key>
+    <Value>default value for vwap/twap max% participation is set to 25</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Graphics_>
+    <Key>All the graphics shown, are calculed from net quantities when orders are crossed</Key>
+    <Value />
+  </Glossary_Graphics_>
+  <Glossary_Graphics_>
+    <Key>Volume curve is calculed from real quantities(when expected completion ration is not 100%)  </Key>
+    <Value />
+  </Glossary_Graphics_>
+  <Glossary_Corporate_Actions>
+    <Key>Informations from Thomson Financial</Key>
+    <Value />
+  </Glossary_Corporate_Actions>
+  <Glossary_Corporate_Actions>
+    <Key>Earnings Conference Call</Key>
+    <Value />
+  </Glossary_Corporate_Actions>
+  <Glossary_Corporate_Actions>
+    <Key>Earnings Release</Key>
+    <Value />
+  </Glossary_Corporate_Actions>
+  <Glossary_Corporate_Actions>
+    <Key>Conference Call</Key>
+    <Value />
+  </Glossary_Corporate_Actions>
+  <Glossary_Corporate_Actions>
+    <Key>Conference Presentation</Key>
+    <Value />
+  </Glossary_Corporate_Actions>
+  <Glossary_Corporate_Actions>
+    <Key>Shareholders Meeting</Key>
+    <Value />
+  </Glossary_Corporate_Actions>
+  <Glossary_Corporate_Actions>
+    <Key>Analyst Conference Call</Key>
+    <Value />
+  </Glossary_Corporate_Actions>
+  <Glossary_Corporate_Actions>
+    <Key>Analyst Meeting</Key>
+    <Value />
+  </Glossary_Corporate_Actions>
+  <Glossary_Corporate_Actions>
+    <Key>Company Visit</Key>
+    <Value />
+  </Glossary_Corporate_Actions>
+  <Glossary_Corporate_Actions>
+    <Key>Pre-Earnings Guidance</Key>
+    <Value />
+  </Glossary_Corporate_Actions>
+  <Glossary_Corporate_Actions>
+    <Key>Merger and Acquisition Announcement</Key>
+    <Value />
+  </Glossary_Corporate_Actions>
+  <Glossary_Corporate_Actions>
+    <Key>Dividend</Key>
+    <Value />
+  </Glossary_Corporate_Actions>
+  <Glossary_Corporate_Actions>
+    <Key>Stock Split</Key>
+    <Value />
+  </Glossary_Corporate_Actions>
+  <HeaderRecap>
+    <Key>Client</Key>
+    <Value>Default</Value>
+  </HeaderRecap>
+  <HeaderRecap>
+    <Key>Trading Date</Key>
+    <Value>4/10/2013 6:07:44 PM</Value>
+  </HeaderRecap>
+  <HeaderRecap>
+    <Key>Orders</Key>
+    <Value>33</Value>
+  </HeaderRecap>
+  <HeaderRecap>
+    <Key>Period Profil</Key>
+    <Value>Local User Time Profil : GMT</Value>
+  </HeaderRecap>
+  <HeaderRecap>
+    <Key>Currency</Key>
+    <Value>EUR</Value>
+  </HeaderRecap>
+  <HeaderRecap>
+    <Key>Nominal Value (m EUR)</Key>
+    <Value>   996.651</Value>
+  </HeaderRecap>
+</PreTradeAnalysis>

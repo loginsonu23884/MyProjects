@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserColumns>
+  <Column UserId="1">Ass#</Column>
+  <Column UserId="1">Exec Tm Member </Column>
+  <Column UserId="1">Project Name</Column>
+  <Column UserId="1">Client Name</Column>
+  <Column UserId="2">Company Name</Column>
+  <Column UserId="2">Status</Column>
+  <Column UserId="2"> Begin Date</Column>
+  <Column UserId="2"> Skype Id</Column>
+  <Column UserId="2">E-mail Id</Column>
+  <Column UserId="35">WarningMessage</Column>
+  <Column UserId="35">OrderId</Column>
+  <Column UserId="35">IsSuccess</Column>
+  <Column UserId="35">E-mail Id</Column>
+  <Column UserId="35">Odesk Warning</Column>
+  <Column UserId="5">WarningMessage</Column>
+  <Column UserId="5">OrderId</Column>
+  <Column UserId="5">IsSuccess</Column>
+  <Column UserId="5">Odesk Warning</Column>
+  <Column UserId="34">Action</Column>
+  <Column UserId="34">Ass#</Column>
+  <Column UserId="34">Sr Number</Column>
+  <Column UserId="34">WarningMessage</Column>
+  <Column UserId="34">OrderId</Column>
+  <Column UserId="34">IsSuccess</Column>
+  <Column UserId="34">Start Date</Column>
+  <Column UserId="34">Odesk Warning</Column>
+  <Column UserId="34">E-mail Id</Column>
+  <Column UserId="34">Team Head</Column>
+  <Column UserId="34">Skype Id</Column>
+</UserColumns>

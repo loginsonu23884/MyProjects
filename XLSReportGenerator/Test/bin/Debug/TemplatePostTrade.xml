@@ -1,0 +1,559 @@
+<?xml version="1.0" standalone="yes"?>
+<PostTradeAnalysis>
+  <xs:schema id="PostTradeAnalysis" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="PostTradeAnalysis" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+      
+          <xs:element name="Summary_Summary">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="Sell" type="xs:double" minOccurs="0" />
+                <xs:element name="Buy" type="xs:double" minOccurs="0" />
+                <xs:element name="ShortSell" type="xs:string" minOccurs="0" />
+                <xs:element name="Total" type="xs:double" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Summary_Execution_Performance">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Benchmark" type="xs:string" minOccurs="0" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Sell" type="xs:double" minOccurs="0" />
+                <xs:element name="Buy" type="xs:double" minOccurs="0" />
+                <xs:element name="ShortSell" type="xs:string" minOccurs="0" />
+                <xs:element name="Total" type="xs:double" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        
+          <xs:element name="Summary_Country">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="Weight" type="xs:string" minOccurs="0" />
+                <xs:element name="ExecValue" type="xs:double" minOccurs="0" />
+                <xs:element name="Executed" type="xs:double" minOccurs="0" />
+                <xs:element name="Spread" type="xs:double" minOccurs="0" />
+                <xs:element name="Volatility" type="xs:double" minOccurs="0" />
+                <xs:element name="UDV" type="xs:double" minOccurs="0" />
+                <xs:element name="PerfLast" type="xs:double" minOccurs="0" />
+                <xs:element name="PortfolioPerfLast" type="xs:double" minOccurs="0" />
+                <xs:element name="PerfPrev" type="xs:double" minOccurs="0" />
+                <xs:element name="PortfolioPerfPrev" type="xs:double" minOccurs="0" />
+                <xs:element name="PerfVWAP" type="xs:double" minOccurs="0" />
+                <xs:element name="PortfolioPerfVWAP" type="xs:double" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+
+          <xs:element name="Summary_Sector">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="Weight" type="xs:string" minOccurs="0" />
+                <xs:element name="ExecValue" type="xs:double" minOccurs="0" />
+                <xs:element name="Executed" type="xs:double" minOccurs="0" />
+                <xs:element name="Spread" type="xs:double" minOccurs="0" />
+                <xs:element name="Volatility" type="xs:double" minOccurs="0" />
+                <xs:element name="UDV" type="xs:double" minOccurs="0" />
+                <xs:element name="PerfLast" type="xs:double" minOccurs="0" />
+                <xs:element name="PortfolioPerfLast" type="xs:double" minOccurs="0" />
+                <xs:element name="PerfPrev" type="xs:double" minOccurs="0" />
+                <xs:element name="PortfolioPerfPrev" type="xs:double" minOccurs="0" />
+                <xs:element name="PerfVWAP" type="xs:double" minOccurs="0" />
+                <xs:element name="PortfolioPerfVWAP" type="xs:double" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Summary_Region">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="Weight" type="xs:string" minOccurs="0" />
+                <xs:element name="ExecValue" type="xs:double" minOccurs="0" />
+                <xs:element name="Executed" type="xs:double" minOccurs="0" />
+                <xs:element name="Spread" type="xs:double" minOccurs="0" />
+                <xs:element name="Volatility" type="xs:double" minOccurs="0" />
+                <xs:element name="UDV" type="xs:double" minOccurs="0" />
+                <xs:element name="PerfLast" type="xs:double" minOccurs="0" />
+                <xs:element name="PortfolioPerfLast" type="xs:double" minOccurs="0" />
+                <xs:element name="PerfPrev" type="xs:double" minOccurs="0" />
+                <xs:element name="PortfolioPerfPrev" type="xs:double" minOccurs="0" />
+                <xs:element name="PerfVWAP" type="xs:double" minOccurs="0" />
+                <xs:element name="PortfolioPerfVWAP" type="xs:double" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Summary_Currencies">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="Weight" type="xs:string" minOccurs="0" />
+                <xs:element name="ExecValue" type="xs:double" minOccurs="0" />
+                <xs:element name="Executed" type="xs:double" minOccurs="0" />
+                <xs:element name="Spread" type="xs:double" minOccurs="0" />
+                <xs:element name="Volatility" type="xs:double" minOccurs="0" />
+                <xs:element name="UDV" type="xs:double" minOccurs="0" />
+                <xs:element name="PerfLast" type="xs:double" minOccurs="0" />
+                <xs:element name="PortfolioPerfLast" type="xs:double" minOccurs="0" />
+                <xs:element name="PerfPrev" type="xs:double" minOccurs="0" />
+                <xs:element name="PortfolioPerfPrev" type="xs:double" minOccurs="0" />
+                <xs:element name="PerfVWAP" type="xs:double" minOccurs="0" />
+                <xs:element name="PortfolioPerfVWAP" type="xs:double" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Summary_Liquidity_Ratio">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="Weight" type="xs:string" minOccurs="0" />
+                <xs:element name="ExecValue" type="xs:double" minOccurs="0" />
+                <xs:element name="Executed" type="xs:double" minOccurs="0" />
+                <xs:element name="Spread" type="xs:double" minOccurs="0" />
+                <xs:element name="Volatility" type="xs:double" minOccurs="0" />
+                <xs:element name="UDV" type="xs:double" minOccurs="0" />
+                <xs:element name="PerfLast" type="xs:double" minOccurs="0" />
+                <xs:element name="PortfolioPerfLast" type="xs:double" minOccurs="0" />
+                <xs:element name="PerfPrev" type="xs:double" minOccurs="0" />
+                <xs:element name="PortfolioPerfPrev" type="xs:double" minOccurs="0" />
+                <xs:element name="PerfVWAP" type="xs:double" minOccurs="0" />
+                <xs:element name="PortfolioPerfVWAP" type="xs:double" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Summary_Capitalisation">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="Weight" type="xs:string" minOccurs="0" />
+                <xs:element name="ExecValue" type="xs:double" minOccurs="0" />
+                <xs:element name="Executed" type="xs:double" minOccurs="0" />
+                <xs:element name="Spread" type="xs:double" minOccurs="0" />
+                <xs:element name="Volatility" type="xs:double" minOccurs="0" />
+                <xs:element name="UDV" type="xs:double" minOccurs="0" />
+                <xs:element name="PerfLast" type="xs:double" minOccurs="0" />
+                <xs:element name="PortfolioPerfLast" type="xs:double" minOccurs="0" />
+                <xs:element name="PerfPrev" type="xs:double" minOccurs="0" />
+                <xs:element name="PortfolioPerfPrev" type="xs:double" minOccurs="0" />
+                <xs:element name="PerfVWAP" type="xs:double" minOccurs="0" />
+                <xs:element name="PortfolioPerfVWAP" type="xs:double" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        
+          
+          <xs:element name="Glossary_Summary">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Key" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        
+
+          
+          <xs:element name="Glossary_ExecutionPerformance">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Key" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Glossary_Breakdowns">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Key" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Glossary_OrderDetails">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Key" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Glossary_Outliers">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Key" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Glossary_Graphics">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Key" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="HeaderRecap">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Key" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+
+  <Summary_Summary>
+    <Title>Percent</Title>
+    <Sell>0.2857142857142857</Sell>
+    <Buy>0.7142857142857143</Buy>
+    <ShortSell>-</ShortSell>
+    <Total>1</Total>
+  </Summary_Summary>
+  <Summary_Summary>
+    <Title>Percent</Title>
+    <Sell>0.2857142857142857</Sell>
+    <Buy>0.7142857142857143</Buy>
+    <ShortSell>-</ShortSell>
+    <Total>1</Total>
+  </Summary_Summary>
+  <Summary_Summary>
+    <Title>Percent</Title>
+    <Sell>0.2857142857142857</Sell>
+    <Buy>0.7142857142857143</Buy>
+    <ShortSell>-</ShortSell>
+    <Total>1</Total>
+  </Summary_Summary>
+  <Summary_Summary>
+    <Title>Percent</Title>
+    <Sell>0.2857142857142857</Sell>
+    <Buy>0.7142857142857143</Buy>
+    <ShortSell>-</ShortSell>
+    <Total>1</Total>
+  </Summary_Summary>
+  <Summary_Summary>
+    <Title>Percent</Title>
+    <Sell>0.2857142857142857</Sell>
+    <Buy>0.7142857142857143</Buy>
+    <ShortSell>-</ShortSell>
+    <Total>1</Total>
+  </Summary_Summary>
+  <Summary_Summary>
+    <Title>Percent</Title>
+    <Sell>0.2857142857142857</Sell>
+    <Buy>0.7142857142857143</Buy>
+    <ShortSell>-</ShortSell>
+    <Total>1</Total>
+  </Summary_Summary>
+
+  <Summary_Execution_Performance>
+    <Benchmark>FRANCE TELECOM</Benchmark>
+    <Name>FTE FP</Name>
+    <Sell>0</Sell>
+    <Buy>7.625</Buy>
+    <ShortSell>0</ShortSell>
+    <Total>0.45871559633027525</Total>
+  </Summary_Execution_Performance>
+  <Summary_Execution_Performance>
+    <Benchmark>FRANCE TELECOM</Benchmark>
+    <Name>FTE FP</Name>
+    <Sell>0</Sell>
+    <Buy>7.625</Buy>
+    <ShortSell>0</ShortSell>
+    <Total>0.45871559633027525</Total>
+  </Summary_Execution_Performance>
+ 
+  <Summary_Country>
+    <Title>Country</Title>
+    <Weight>1</Weight>
+    <ExecValue>1</ExecValue>
+    <Executed>1</Executed>
+    <Spread>1</Spread>
+    <Volatility>1</Volatility>
+    <UDV>1</UDV>
+    <PerfLast>1</PerfLast>
+    <PortfolioPerfLast>1</PortfolioPerfLast>
+    <PerfPrev>1</PerfPrev>
+    <PortfolioPerfPrev>1</PortfolioPerfPrev>
+    <PerfVWAP>1</PerfVWAP>
+    <PortfolioPerfVWAP>1</PortfolioPerfVWAP>
+  </Summary_Country>
+
+  <Summary_Country>
+    <Title>Country</Title>
+    <Weight>2</Weight>
+    <ExecValue>1</ExecValue>
+    <Executed>1</Executed>
+    <Spread>1</Spread>
+    <Volatility>1</Volatility>
+    <UDV>1</UDV>
+    <PerfLast>1</PerfLast>
+    <PortfolioPerfLast>1</PortfolioPerfLast>
+    <PerfPrev>1</PerfPrev>
+    <PortfolioPerfPrev>1</PortfolioPerfPrev>
+    <PerfVWAP>1</PerfVWAP>
+    <PortfolioPerfVWAP>1</PortfolioPerfVWAP>
+  </Summary_Country>
+
+  <Summary_Country>
+    <Title>Country</Title>
+    <Weight>3</Weight>
+    <ExecValue>1</ExecValue>
+    <Executed>1</Executed>
+    <Spread>1</Spread>
+    <Volatility>1</Volatility>
+    <UDV>1</UDV>
+    <PerfLast>1</PerfLast>
+    <PortfolioPerfLast>1</PortfolioPerfLast>
+    <PerfPrev>1</PerfPrev>
+    <PortfolioPerfPrev>1</PortfolioPerfPrev>
+    <PerfVWAP>1</PerfVWAP>
+    <PortfolioPerfVWAP>1</PortfolioPerfVWAP>
+  </Summary_Country>
+
+  <Summary_Sector>
+    <Title>Sector</Title>
+    <Weight>1</Weight>
+    <ExecValue>1</ExecValue>
+    <Executed>1</Executed>
+    <Spread>1</Spread>
+    <Volatility>1</Volatility>
+    <UDV>1</UDV>
+    <PerfLast>1</PerfLast>
+    <PortfolioPerfLast>1</PortfolioPerfLast>
+    <PerfPrev>1</PerfPrev>
+    <PortfolioPerfPrev>1</PortfolioPerfPrev>
+    <PerfVWAP>1</PerfVWAP>
+    <PortfolioPerfVWAP>1</PortfolioPerfVWAP>
+  </Summary_Sector>
+
+  <Summary_Region>
+    <Title>Region</Title>
+    <Weight>1</Weight>
+    <ExecValue>1</ExecValue>
+    <Executed>1</Executed>
+    <Spread>1</Spread>
+    <Volatility>1</Volatility>
+    <UDV>1</UDV>
+    <PerfLast>1</PerfLast>
+    <PortfolioPerfLast>1</PortfolioPerfLast>
+    <PerfPrev>1</PerfPrev>
+    <PortfolioPerfPrev>1</PortfolioPerfPrev>
+    <PerfVWAP>1</PerfVWAP>
+    <PortfolioPerfVWAP>1</PortfolioPerfVWAP>
+  </Summary_Region>
+
+  <Summary_Region>
+    <Title>Region</Title>
+    <Weight>2</Weight>
+    <ExecValue>1</ExecValue>
+    <Executed>1</Executed>
+    <Spread>1</Spread>
+    <Volatility>1</Volatility>
+    <UDV>1</UDV>
+    <PerfLast>1</PerfLast>
+    <PortfolioPerfLast>1</PortfolioPerfLast>
+    <PerfPrev>1</PerfPrev>
+    <PortfolioPerfPrev>1</PortfolioPerfPrev>
+    <PerfVWAP>1</PerfVWAP>
+    <PortfolioPerfVWAP>1</PortfolioPerfVWAP>
+  </Summary_Region>
+  <Summary_Currencies>
+    <Title>Currency</Title>
+    <Weight>1</Weight>
+    <ExecValue>1</ExecValue>
+    <Executed>1</Executed>
+    <Spread>1</Spread>
+    <Volatility>1</Volatility>
+    <UDV>1</UDV>
+    <PerfLast>1</PerfLast>
+    <PortfolioPerfLast>1</PortfolioPerfLast>
+    <PerfPrev>1</PerfPrev>
+    <PortfolioPerfPrev>1</PortfolioPerfPrev>
+    <PerfVWAP>1</PerfVWAP>
+    <PortfolioPerfVWAP>1</PortfolioPerfVWAP>
+  </Summary_Currencies>
+  <Summary_Liquidity_Ratio>
+    <Title>LiquidityRatio</Title>
+    <Weight>1</Weight>
+    <ExecValue>1</ExecValue>
+    <Executed>1</Executed>
+    <Spread>1</Spread>
+    <Volatility>1</Volatility>
+    <UDV>1</UDV>
+    <PerfLast>1</PerfLast>
+    <PortfolioPerfLast>1</PortfolioPerfLast>
+    <PerfPrev>1</PerfPrev>
+    <PortfolioPerfPrev>1</PortfolioPerfPrev>
+    <PerfVWAP>1</PerfVWAP>
+    <PortfolioPerfVWAP>1</PortfolioPerfVWAP>
+  </Summary_Liquidity_Ratio>
+  <Summary_Capitalisation>
+    <Title>Capitalisation</Title>
+    <Weight>1</Weight>
+    <ExecValue>1</ExecValue>
+    <Executed>1</Executed>
+    <Spread>1</Spread>
+    <Volatility>1</Volatility>
+    <UDV>1</UDV>
+    <PerfLast>1</PerfLast>
+    <PortfolioPerfLast>1</PortfolioPerfLast>
+    <PerfPrev>1</PerfPrev>
+    <PortfolioPerfPrev>1</PortfolioPerfPrev>
+    <PerfVWAP>1</PerfVWAP>
+    <PortfolioPerfVWAP>1</PortfolioPerfVWAP>
+  </Summary_Capitalisation>
+  <Glossary_Summary>
+    <Key>All the values are represented in millions</Key>
+    <Value />
+  </Glossary_Summary>
+  <Glossary_ExecutionPerformance>
+    <Key>Name</Key>
+    <Value>Security Name</Value>
+  </Glossary_ExecutionPerformance>
+  <Glossary_ExecutionPerformance>
+    <Key>Market</Key>
+    <Value>Security Market</Value>
+  </Glossary_ExecutionPerformance>
+  <Glossary_ExecutionPerformance>
+    <Key>Reuteurs</Key>
+    <Value>Reuters Code</Value>
+  </Glossary_ExecutionPerformance>
+  <Glossary_ExecutionPerformance>
+    <Key>BloomBerg</Key>
+    <Value>Bloomberg Code</Value>
+  </Glossary_ExecutionPerformance>
+  <Glossary_ExecutionPerformance>
+    <Key>ISIN</Key>
+    <Value>ISIN Code</Value>
+  </Glossary_ExecutionPerformance>
+  <Glossary_ExecutionPerformance>
+    <Key>Currency</Key>
+    <Value>Currency of listing.Denomination of the trade currency may differ(GBP/GBX)</Value>
+  </Glossary_ExecutionPerformance>
+  <Glossary_ExecutionPerformance>
+    <Key>Side</Key>
+    <Value>Buy or Sell</Value>
+  </Glossary_ExecutionPerformance>
+  <Glossary_ExecutionPerformance>
+    <Key>Order Quantity</Key>
+    <Value>Order Quantity</Value>
+  </Glossary_ExecutionPerformance>
+  <Glossary_ExecutionPerformance>
+    <Key>Ref Price</Key>
+    <Value>Ref Price (based on Last)</Value>
+  </Glossary_ExecutionPerformance>
+  <Glossary_ExecutionPerformance>
+    <Key>Value</Key>
+    <Value>Value</Value>
+  </Glossary_ExecutionPerformance>
+  <Glossary_ExecutionPerformance>
+    <Key>Weight</Key>
+    <Value>Weight</Value>
+  </Glossary_ExecutionPerformance>
+  <Glossary_ExecutionPerformance>
+    <Key>Full Day Vol 1</Key>
+    <Value>Previous Day Volume</Value>
+  </Glossary_ExecutionPerformance>
+  <Glossary_ExecutionPerformance>
+    <Key>DLR 1D</Key>
+    <Value>Daily Liquidity Ratio from the previous day</Value>
+  </Glossary_ExecutionPerformance>
+  <Glossary_ExecutionPerformance>
+    <Key>Period Liq. Ratio 1</Key>
+    <Value>Period Liquidity Ratio with respect to the previous day</Value>
+  </Glossary_ExecutionPerformance>
+    <Glossary_ExecutionPerformance>
+    <Key>Full Day Vol 60*</Key>
+    <Value>Usual Daily Volume 60 days</Value>
+  </Glossary_ExecutionPerformance>
+  <Glossary_ExecutionPerformance>
+    <Key>DLR 60D</Key>
+    <Value>Daily Liquidity Ratio from the 60 days median</Value>
+  </Glossary_ExecutionPerformance>
+  <Glossary_ExecutionPerformance>
+    <Key>Period Liq. Ratio 60*</Key>
+    <Value>Period liquidity ratio UDV 60 days based</Value>
+  </Glossary_ExecutionPerformance>
+  <Glossary_ExecutionPerformance>
+    <Key>Volume Source</Key>
+    <Value>Volume Source</Value>
+  </Glossary_ExecutionPerformance>
+  <Glossary_ExecutionPerformance>
+    <Key>Open V.*</Key>
+    <Value>Usual open volume (60 days median)</Value>
+  </Glossary_ExecutionPerformance>
+  <Glossary_ExecutionPerformance>
+    <Key>Close V.*</Key>
+    <Value>Usual close volume (60 days median)</Value>
+  </Glossary_ExecutionPerformance>
+  <Glossary_ExecutionPerformance>
+    <Key>%Auction*</Key>
+    <Value>% Auction (Auction/UDV MultiMarket)</Value>
+  </Glossary_ExecutionPerformance>
+  <Glossary_Breakdowns>
+    <Key>%Principal*</Key>
+    <Value>% Principal ((UDV Principal - Auction)/UDV MultiMarket)</Value>
+  </Glossary_Breakdowns>
+  <Glossary_Breakdowns>
+    <Key>%MTF*</Key>
+    <Value>% Multilateral Trading Facilities(MTF) ((UDV MultiMarket-UDV Principal)/UDV MultiMarket)[chi-x,turquoise,bats,nae/ not including dark volumes]</Value>
+  </Glossary_Breakdowns>
+ 
+
+  <Glossary_OrderDetails>
+    <Key>%Volume</Key>
+    <Value>for TargetClose %Vol and vwap max vol algos</Value>
+  </Glossary_OrderDetails>
+  <Glossary_OrderDetails>
+    <Key>Ask Trad Period</Key>
+    <Value>Asked Trading Period : User setting</Value>
+  </Glossary_OrderDetails>
+
+
+
+  <Glossary_Outliers>
+    <Key>**</Key>
+    <Value>default value for vwap/twap max% participation is set to 25</Value>
+  </Glossary_Outliers>
+  <Glossary_Graphics>
+    <Key>All the graphics shown, are calculed from net quantities when orders are crossed</Key>
+    <Value />
+  </Glossary_Graphics>
+  <Glossary_Graphics>
+    <Key>Volume curve is calculed from real quantities(when expected completion ration is not 100%)  </Key>
+    <Value />
+  </Glossary_Graphics>
+ 
+  <HeaderRecap>
+    <Key>Client</Key>
+    <Value>TestCompanyName</Value>
+  </HeaderRecap>
+  <HeaderRecap>
+    <Key>Trading Date</Key>
+    <Value>3/20/2013 6:21:16 PM</Value>
+  </HeaderRecap>
+  <HeaderRecap>
+    <Key>Orders</Key>
+    <Value>2</Value>
+  </HeaderRecap>
+  <HeaderRecap>
+    <Key>Period Profil</Key>
+    <Value>Local User Time Profil : GMT</Value>
+  </HeaderRecap>
+  <HeaderRecap>
+    <Key>Currency</Key>
+    <Value>EUR</Value>
+  </HeaderRecap>
+  <HeaderRecap>
+    <Key>Nominal Value (m EUR)</Key>
+    <Value>10.675</Value>
+  </HeaderRecap>
+</PostTradeAnalysis>

@@ -1,0 +1,298 @@
+body {
+	background:url(/BugTracker/images/main_bg.jpg) repeat-x top;
+	margin:0px;
+	padding:0px;
+	font:12px Arial, Helvetica, sans-serif;
+	color:#000;
+	
+}
+.ltmarg {
+	margin:0px 5px 0px 5px;
+}
+p {
+	margin:0px;
+	padding:0px;
+}
+img {
+	border:0px;
+}
+#head_wrap {
+	background:url(/BugTracker/images/headbg.jpg) no-repeat;
+	width:100%;
+	height:120px;
+}
+.logo_wrap {
+	width:99%;
+	height:120px;
+	
+}
+#logoLogin {
+	position:absolute;
+	background:url(/BugTracker/images/login.png) no-repeat;
+	width:385px;
+	height:126px;
+	float:left;
+	margin:0px 0px 0px 10px;
+	top:50px;
+	
+}
+
+
+#logo {
+	position:absolute;
+	background:url(/BugTracker/images/logosystematix.png) no-repeat;
+	width:260px;
+	height:100px;
+	float:left;
+	margin:0px 0px 0px 10px;
+	top:50px;
+	margin-top:-35px;
+}
+#main_wrap {
+	width:100%;
+	height:166px;
+	margin:0 auto;
+}
+#navi {
+	font-size: 14px;
+	height: 30px;
+	line-height:29px;
+	margin: 0 auto;
+	padding: 0 0px 0 0;
+	text-align: right;
+	width: 100%;
+	position:relative;
+}
+.navilink ul {
+	margin:0px;
+	padding:0px;
+}
+.navilink li {
+	margin:0px;
+	padding:3px 11px;
+	list-style:none;
+	display:inline;
+	background:url(/BugTracker/images/navibor.png) no-repeat right top;
+}
+.navilink li.last {
+	background:none;
+}
+.navilink li a {
+	color:#FFF;
+	background:
+	text-decoration:none;}
+.navilink li a:hover {
+	color:#C5252C;
+	text-decoration:none;
+}
+.player {
+	color:#C5252C;
+}
+.hello_wrap {
+	
+	height:auto;
+	float:right;
+	margin:10px 00px 0px 0px;
+	color:#CF2932;
+	font-size:14px;
+	padding:0px 14px 0px 125px;
+}
+.hello_wrap a {
+	text-decoration:none;
+	color:#CF2932;
+}
+.hello_wrap a:hover {
+	text-decoration:none;
+}
+#contain_wrap {
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	
+}
+.playgroup_wrap {
+	width:220px;
+	float:left;
+	height:175px;
+}
+.playerimg {
+	float:left;
+	margin:8px 10px 0px 10px;
+}
+.playgroup_wrap h2 {
+	margin:0px;
+	padding:0px;
+	font-weight:normal;
+	color:#3D3939;
+}
+.playgroup_wrap .allpalye_wrap {
+	width:220px;
+	height:180px;
+	border:1px solid #666;
+	margin:20px 0px 0px 0px;
+}
+.grid_wap {
+	width:760px;
+	height:auto;
+	float:left;
+	margin:43px 0px 0px 20px;
+}
+.grid {
+	float:left;
+	margin:10px 0px 0px 0px;
+}
+
+table .trbg {
+	background:url(/BugTracker/images/grid_head.png) repeat-x;
+	width:758px;
+	height:25px;
+}
+.altcolorrow1 {
+	background:#F3F3F3;
+	width:758px;
+	height:25px;
+}
+.altcolorrow1 td {
+	border-right:#ffffff 1px solid;
+}
+.altcolorrow2 {
+	background:#EFF0EF;
+	width:758px;
+	height:25px;
+}
+.altcolorrow2 td {
+	border-right:#ffffff 1px solid;
+}
+#footer {
+	width:100%;
+	height:52px;
+	background:url(/BugTracker/images/footerbg.jpg) repeat-x;
+	clear:both;
+	margin-top:30px;
+	float:left;
+	text-align:center;
+	color:#FFF;
+	line-height:52px;
+}
+.allpaleyer {
+	width:218px;
+	background:#E6F2F9;
+	height:30px;
+	line-height:30px;
+	border:1px solid #ccc;
+}
+
+/*drop down css start here*/
+
+
+#pad {height:140px;}
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssmenus.co.uk
+Copyright (c) 2009- Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+#menu {padding:0px 0px 0px 0px; margin:0; list-style:none; height:30px; font-family:arial, verdana, sans-serif; width:99%; position:relative; font-size:14px;}
+#menu li {float:left;}
+#menu li a {display:block; float:left; height:29px; line-height:30px; color:#ccc; text-decoration:none; font-size:14px;  padding:0 16px 0 16px;}
+
+
+#menu table {border-collapse:collapse; width:100%; height:30px; position:absolute; top:0; left:0;}
+
+/* Default link styling */
+
+/* Style the list OR link hover. Depends on which browser is used */
+
+#menu li a:hover {z-index:200; position:relative;color:#fff; background-color:#ccc;}
+
+#menu li.selected a {z-index:200; position:relative;color:#fff; font-weight:bold;}
+
+#menu li:hover {position:relative; z-index:200;}
+
+#menu li:hover > a {color:#fff; background:#ccc;}
+#menu li:hover > a.sub {color:#fff; background-color:#ccc;}
+
+#menu li.current a {color:#fff; background:#840;}
+
+#menu li a.sub {background:url(/BugTracker/images/down-arrow.gif) no-repeat right center; top:0;}
+
+#menu li.current a.sub {color:#fff; background:#840 url(/BugTracker/images/down-arrow.gif) no-repeat right center;;}
+
+#menu :hover ul {left:0; top:29px; width:120px; background:#444;}
+
+/* keep the 'next' level invisible by placing it off screen. */
+#menu ul, 
+#menu :hover ul ul {position:absolute; left:-9999px; top:-9999px; width:0; height:0; margin:0; padding:0; list-style:none;}
+
+#menu :hover ul :hover ul
+{left:120px; top:-1px; background:#222; white-space:nowrap; width:100px; z-index:200; height:auto;}
+
+#menu :hover ul li {margin:0; border-top:1px solid #666;}
+#menu :hover ul li a {width:150px; padding:0; text-indent:10px; background:#333; color:#ccc; height:30px; line-height:30px;}
+#menu :hover ul li a.fly {background:#333 url(/BugTracker/images/right-arrow.gif) no-repeat right center;}
+
+#menu :hover ul :hover {background-color:#616161; color:#fff;}
+#menu :hover ul :hover a.fly {background-color:#616161; color:#fff;}
+#menu :hover ul :hover a.red {background-color:#930; color:#fff;}
+#menu :hover ul :hover a.gray {background-color:#c30; color:#fff;}
+
+#menu :hover ul li.currentsub a {background:#1D1D1D; color:#fff;}
+#menu :hover ul li.currentsub a.fly {background:#1D1D1D url(/BugTracker/images/right-arrow.gif) no-repeat right center; color:#fff;}
+
+
+#menu :hover ul :hover ul li a {width:109px; padding:0; text-indent:10px; background:#3e3e3e; color:#ccc;}
+#menu :hover ul :hover ul :hover {background-color:#1D1D1D; color:#fff;}
+
+#menu :hover ul :hover ul li.currentfly a,
+#menu :hover ul :hover ul li.currentfly a:hover {background:#1D1D1D; color:#fff;}
+
+
+/*login page css*/
+.login{ width:430px;}
+.loginborder{ border:1px solid #CCCCCC; border-bottom:none; border-top:none;}
+.loginhead{ font:24px Arial, Helvetica, sans-serif; color:#C42C2F; padding-top:15px;}
+.login input[type="text"], .login input[type="password"]{ background:url(/BugTracker/images/admin-input.jpg) repeat-x; border:1px solid #CCCCCC; width:182px; height:22px; font:12px Arial, Helvetica, sans-serif !important; color:#000000; padding-left:3px; line-height:22px; margin-top:15px;}
+.loginpad{ padding:15px 0 0 143px;}
+.userpad{ padding:20px 0 0 70px;}
+.rememberBox{ padding-top:15px; *padding-top:11px;}
+.rememberBox input[type="checkbox"]{ padding:0; margin:0 4px 0 0; *margin:0; vertical-align:top; *vertical-align:middle;}
+.login input[type="submit"]{ background:url(/BugTracker/images/submitbtn.jpg) no-repeat; border:0; width:80px; height:28px; font: bold 14px Arial, Helvetica, sans-serif; color:#fff; margin-bottom:10px; cursor:pointer;}
+
+/*top menu*/
+ul.topmenu{ float:left; padding:0 !important; width:auto !important; position:relative; top:-7px;}
+ul.topmenu li a {color:#C9242B !important; }
+ul.topmenu li:hover > a.sub {color:#fff ; background:none !important;}
+ul.topmenu li ul li a{ color:#fff !important;}
+ul.topmenu li a.sub {background:url(/BugTracker/images/down-arrow-new.gif) no-repeat right center !important;}
+ul.topmenu li a.sub:hover {background:url(/BugTracker/images/down-arrow-new.gif) no-repeat right center !important;}
+ul.topmenu li:hover > a.sub {color:#fff; background:url(/BugTracker/images/down-arrow-new.gif) no-repeat right center !important;}
+span.inbox-count {
+    -moz-border-radius: 9px 9px 9px 9px;
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    background: -moz-linear-gradient(center top , #F72400 0pt, #C71E00 100%) repeat scroll 0 0 transparent;
+    border: 1px solid #B01A01;
+    bottom: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+   
+    height: 18px;
+    line-height: 14px;
+    padding: 0 4px;
+   
+    right: 73px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #901401;
+    z-index: -400;
+}
+
+
+
+
+
+
+

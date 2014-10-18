@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="BT_MasterPage.master.cs"
+    Inherits="MasterPages_BT_MasterPage" %>
+
+<%@ Register Src="~/Control/Admin.ascx" TagName="BTMenu" TagPrefix="uc2" %>
+<%@ Register Src="~/Control/QA.ascx" TagName="BTMenu" TagPrefix="uc3" %>
+<%@ Register Src="~/Control/Developer.ascx" TagName="BTMenu" TagPrefix="uc4" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script type="text/javascript" language="javascript" src="<%=oAppPath%>/Js/jquery-1.7.1.min.js"></script>
+    <link href="../Stylesheet/ui.jqgrid.css" rel="stylesheet" type="text/css" />
+    <link href="../Stylesheet/jquery-ui-1.8.7.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../Plugin/Calender/ui.all.css" type="text/css" media="screen" />
+    <link href="../Stylesheet/Site.css" rel="stylesheet" type="text/css" />
+    <%-- Grey Box Start Script--%>
+    <script type="text/javascript">
+        var GB_ROOT_DIR = "<%=oAppPath%>/Plugin/greybox/";
+    </script>
+    <script type="text/javascript" src="<%=oAppPath%>/Plugin/GreyBox/AJS.js"></script>
+    <script type="text/javascript" src="<%=oAppPath%>/Plugin/GreyBox/AJS_fx.js"></script>
+    <script type="text/javascript" src="<%=oAppPath%>/Plugin/GreyBox/gb_scripts.js"></script>
+    <link href="../Plugin/GreyBox/gb_styles.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript">
+        GB_myShow = function (caption, url, /* optional */height, width, callback_fn) {
+            var options = {
+                caption: caption,
+                height: height,
+                width: width,
+                fullscreen: false,
+                show_loading: true,
+                callback_fn: callback_fn
+            }
+            var win = new GB_Window(options);
+            return win.show(url);
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" enctype="multipart/form-data">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    Bug Tracker
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Loginpage.aspx" id="HeadLoginStatus" runat="server">Log Out</a>
+                        ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold">
+                            <asp:LoginName ID="HeadLoginName" runat="server" />
+                        </span>! [
+                        <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out"
+                            LogoutPageUrl="~/Loginpage.aspx" />
+                        ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="clear hideSkiplink">
+                <a href="#NavigationMenu_SkipLink">
+                    <img width="0" height="0" style="border-width: 0px;" src="/WebSiteDemo/WebResource.axd?d=kT4XFvsTtoacdJfAb76iCW7knuEtAtDaGCt-HFP3AnBvAEbqp9hkAYAsHR2N9xXv22hV_6IHMiRks3iwLsOrT0T2MH0FHISAIPpiCRokCR81&amp;t=634956918052397406"
+                        alt="Skip Navigation Links"></a><div id="NavigationMenu" class="menu" style="float: left;">
+                            <ul class="level1 static" tabindex="0" style="position: relative; width: auto; float: left;"
+                                role="menubar">
+                                <uc2:BTMenu ID="MenuAdmin" runat="server" Visible="false" />
+                                <uc3:BTMenu ID="MenuQA" runat="server" Visible="false" />
+                                <uc4:BTMenu ID="MenuDeveloper" runat="server" Visible="false" />
+                            </ul>
+                        </div>
+                <div style="clear: left;">
+                </div>
+                <a id="NavigationMenu_SkipLink"></a>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        Copyright ©2013 Systematix Infotech Pvt. Ltd., All Rights Reserved.
+    </div>
+    </form>
+</body>
+</html>

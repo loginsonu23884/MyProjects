@@ -1,0 +1,33 @@
+﻿
+.textArea
+       {
+          width:200px;
+       }
+.dropdownList
+       {
+         width:200px; 
+       }
+.textBox
+       {
+         width:200px;  
+       }
+ .div
+      {
+         margin-left:50px;
+      }
+ .h1
+     {
+       color: Purple;
+    margin-top: 50px;
+    text-align: right;
+    width: 802px;
+     }
+.fieldSet
+     {
+        margin-left:50%;
+      }
+.content
+      {
+         width:300px;
+      
+       }

@@ -1,0 +1,16 @@
+c:\inetpub\wwwroot\PreTradeReportGenerator\Test\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\inetpub\wwwroot\PreTradeReportGenerator\Test\bin\Debug\Test.exe
+c:\inetpub\wwwroot\PreTradeReportGenerator\Test\bin\Debug\Test.pdb
+c:\inetpub\wwwroot\PreTradeReportGenerator\Test\bin\Debug\PreTradeReportGenerator.dll
+c:\inetpub\wwwroot\PreTradeReportGenerator\Test\bin\Debug\PreTradeReportGenerator.pdb
+c:\inetpub\wwwroot\PreTradeReportGenerator\Test\obj\x86\Debug\Test.exe
+c:\inetpub\wwwroot\PreTradeReportGenerator\Test\obj\x86\Debug\Test.pdb
+C:\inetpub\wwwroot\XLSReportGenerator\Test\obj\x86\Debug\Test.exe
+C:\inetpub\wwwroot\XLSReportGenerator\Test\obj\x86\Debug\Test.pdb
+C:\inetpub\wwwroot\XLSReportGenerator\Test\bin\Debug\Test.exe
+C:\inetpub\wwwroot\XLSReportGenerator\Test\bin\Debug\Test.pdb
+C:\inetpub\wwwroot\XLSReportGenerator\Test\bin\Debug\PreTradeReportGenerator.dll
+C:\inetpub\wwwroot\XLSReportGenerator\Test\bin\Debug\PreTradeReportGenerator.pdb
+C:\inetpub\wwwroot\XLSReportGenerator\Test\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\SUNIL Agrawal\SUNIL AGRAWAL\My WWWROOT\XLSReportGenerator\Test\obj\x86\Debug\Test.exe
+E:\SUNIL Agrawal\SUNIL AGRAWAL\My WWWROOT\XLSReportGenerator\Test\obj\x86\Debug\Test.pdb

@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreTradeReportGenerator", "PreTradeReportGenerator\PreTradeReportGenerator.csproj", "{E05A858C-030A-4E92-B274-7B919BEFCC38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{A573662A-8002-4300-8C08-E0109041E17B}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebReportGeneration", "http://localhost/WebReportGeneration", "{39D7DD8A-6E58-466E-96E0-A9C745A2BAAC}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "false"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{E05A858C-030A-4E92-B274-7B919BEFCC38}|PreTradeReportGenerator.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/WebReportGeneration"
+		Debug.AspNetCompiler.PhysicalPath = "..\WebReportGeneration\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\WebReportGeneration\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/WebReportGeneration"
+		Release.AspNetCompiler.PhysicalPath = "..\WebReportGeneration\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\WebReportGeneration\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\WebReportGeneration\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E05A858C-030A-4E92-B274-7B919BEFCC38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E05A858C-030A-4E92-B274-7B919BEFCC38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E05A858C-030A-4E92-B274-7B919BEFCC38}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E05A858C-030A-4E92-B274-7B919BEFCC38}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E05A858C-030A-4E92-B274-7B919BEFCC38}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E05A858C-030A-4E92-B274-7B919BEFCC38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E05A858C-030A-4E92-B274-7B919BEFCC38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E05A858C-030A-4E92-B274-7B919BEFCC38}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E05A858C-030A-4E92-B274-7B919BEFCC38}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E05A858C-030A-4E92-B274-7B919BEFCC38}.Release|x86.ActiveCfg = Release|Any CPU
+		{A573662A-8002-4300-8C08-E0109041E17B}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{A573662A-8002-4300-8C08-E0109041E17B}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{A573662A-8002-4300-8C08-E0109041E17B}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{A573662A-8002-4300-8C08-E0109041E17B}.Debug|x86.ActiveCfg = Debug|x86
+		{A573662A-8002-4300-8C08-E0109041E17B}.Debug|x86.Build.0 = Debug|x86
+		{A573662A-8002-4300-8C08-E0109041E17B}.Release|Any CPU.ActiveCfg = Release|x86
+		{A573662A-8002-4300-8C08-E0109041E17B}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{A573662A-8002-4300-8C08-E0109041E17B}.Release|Mixed Platforms.Build.0 = Release|x86
+		{A573662A-8002-4300-8C08-E0109041E17B}.Release|x86.ActiveCfg = Release|x86
+		{A573662A-8002-4300-8C08-E0109041E17B}.Release|x86.Build.0 = Release|x86
+		{39D7DD8A-6E58-466E-96E0-A9C745A2BAAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39D7DD8A-6E58-466E-96E0-A9C745A2BAAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39D7DD8A-6E58-466E-96E0-A9C745A2BAAC}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{39D7DD8A-6E58-466E-96E0-A9C745A2BAAC}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{39D7DD8A-6E58-466E-96E0-A9C745A2BAAC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{39D7DD8A-6E58-466E-96E0-A9C745A2BAAC}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{39D7DD8A-6E58-466E-96E0-A9C745A2BAAC}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{39D7DD8A-6E58-466E-96E0-A9C745A2BAAC}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{39D7DD8A-6E58-466E-96E0-A9C745A2BAAC}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{39D7DD8A-6E58-466E-96E0-A9C745A2BAAC}.Release|x86.ActiveCfg = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

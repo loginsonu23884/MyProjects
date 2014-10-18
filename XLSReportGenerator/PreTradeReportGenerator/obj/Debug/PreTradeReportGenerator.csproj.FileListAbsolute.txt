@@ -1,0 +1,10 @@
+c:\inetpub\wwwroot\PreTradeReportGenerator\PreTradeReportGenerator\obj\Debug\ResolveAssemblyReference.cache
+c:\inetpub\wwwroot\PreTradeReportGenerator\PreTradeReportGenerator\bin\Debug\PreTradeReportGenerator.dll
+c:\inetpub\wwwroot\PreTradeReportGenerator\PreTradeReportGenerator\bin\Debug\PreTradeReportGenerator.pdb
+c:\inetpub\wwwroot\PreTradeReportGenerator\PreTradeReportGenerator\obj\Debug\PreTradeReportGenerator.dll
+c:\inetpub\wwwroot\PreTradeReportGenerator\PreTradeReportGenerator\obj\Debug\PreTradeReportGenerator.pdb
+C:\inetpub\wwwroot\XLSReportGenerator\PreTradeReportGenerator\bin\Debug\PreTradeReportGenerator.dll
+C:\inetpub\wwwroot\XLSReportGenerator\PreTradeReportGenerator\bin\Debug\PreTradeReportGenerator.pdb
+C:\inetpub\wwwroot\XLSReportGenerator\PreTradeReportGenerator\obj\Debug\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\XLSReportGenerator\PreTradeReportGenerator\obj\Debug\PreTradeReportGenerator.dll
+C:\inetpub\wwwroot\XLSReportGenerator\PreTradeReportGenerator\obj\Debug\PreTradeReportGenerator.pdb

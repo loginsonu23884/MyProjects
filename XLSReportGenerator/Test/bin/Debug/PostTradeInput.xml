@@ -1,0 +1,1340 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Glossaries="System.Collections.Generic.List`1[System.String]">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="OrderDetails" msprop:HST_CLOSE="Prev Close" msprop:VWAP="VWAP" msprop:LAST="LAST" msprop:OutliersHightlight="System.Collections.Generic.List`1[Kc.Analytics.Framework.Business.Objects.PostTrade.OutlierItemHighlighter]">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="FirstCode" msdata:Caption="Bloomberg" type="xs:string" minOccurs="0" />
+                <xs:element name="SecondCode" msdata:Caption="ISIN" type="xs:string" minOccurs="0" />
+                <xs:element name="Sector" type="xs:string" minOccurs="0" />
+                <xs:element name="Country" type="xs:string" minOccurs="0" />
+                <xs:element name="Side" type="xs:string" minOccurs="0" />
+                <xs:element name="askQty" msdata:Caption="Ask.Qty" type="xs:int" minOccurs="0" />
+                <xs:element name="execQty" msdata:Caption="Exec.Qty" type="xs:int" minOccurs="0" />
+                <xs:element name="remainQty" msdata:Caption="Rem.Qty" type="xs:int" minOccurs="0" />
+                <xs:element name="avgPrice" msdata:Caption="Trade Price" type="xs:decimal" minOccurs="0" />
+                <xs:element name="netPrice" msdata:Caption="Net Price" type="xs:decimal" minOccurs="0" />
+                <xs:element name="amountNet" msdata:Caption="Exec. Value" type="xs:long" minOccurs="0" />
+                <xs:element name="amountRes" msdata:Caption="Res. Value" type="xs:long" minOccurs="0" />
+                <xs:element name="perExecuted" msdata:Caption="% Executed" type="xs:double" minOccurs="0" />
+                <xs:element name="Date" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="startTime" msdata:Caption="Start Time" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="endTime" msdata:Caption="End Time" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="orderDuration" msdata:Caption="Duration (minute)" type="xs:int" minOccurs="0" />
+                <xs:element name="Weight" type="xs:double" minOccurs="0" />
+                <xs:element name="Spread" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Volatility" type="xs:decimal" minOccurs="0" />
+                <xs:element name="periodVolume" msdata:Caption="Period Vol." type="xs:int" minOccurs="0" />
+                <xs:element name="PLR" type="xs:double" minOccurs="0" />
+                <xs:element name="DLR" type="xs:double" minOccurs="0" />
+                <xs:element name="MarketVol" type="xs:string" minOccurs="0" />
+                <xs:element name="Currency" type="xs:string" minOccurs="0" />
+                <xs:element name="Order_id" type="xs:string" />
+                <xs:element name="Benchmark_LAST" msdata:Caption="LAST" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Perf_Bps_LAST" msdata:Caption="Perf (bps)" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Perf_Portfolio_Bps_LAST" msdata:Caption="Perf Portfolio (bps)" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Perf_Amount_LAST" msdata:Caption="Notional Cost" type="xs:long" minOccurs="0" />
+                <xs:element name="Benchmark_HST_CLOSE" msdata:Caption="Prev Close" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Perf_Bps_HST_CLOSE" msdata:Caption="Perf (bps)" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Perf_Portfolio_Bps_HST_CLOSE" msdata:Caption="Perf Portfolio (bps)" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Perf_Amount_HST_CLOSE" msdata:Caption="Notional Cost" type="xs:long" minOccurs="0" />
+                <xs:element name="Benchmark_VWAP" msdata:Caption="VWAP" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Perf_Bps_VWAP" msdata:Caption="Perf (bps)" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Perf_Portfolio_Bps_VWAP" msdata:Caption="Perf Portfolio (bps)" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Perf_Amount_VWAP" msdata:Caption="Notional Cost" type="xs:long" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="GlobalInfo">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Label" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Top_Outliers_LAST" msprop:title="LAST">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Side" type="xs:string" minOccurs="0" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="FirstCode" msdata:Caption="Bloomberg" type="xs:string" minOccurs="0" />
+                <xs:element name="Weight" type="xs:double" minOccurs="0" />
+                <xs:element name="netExecValue" msdata:Caption="Exec. value" type="xs:int" minOccurs="0" />
+                <xs:element name="perfBps" msdata:Caption="Perf(bps)" type="xs:decimal" minOccurs="0" />
+                <xs:element name="perfPfBps" msdata:Caption="Portfolio Perf(bps)" type="xs:decimal" minOccurs="0" />
+                <xs:element name="notionalCost" msdata:Caption="Notional Cost" type="xs:int" minOccurs="0" />
+                <xs:element name="PLR" type="xs:double" minOccurs="0" />
+                <xs:element name="DLR" type="xs:double" minOccurs="0" />
+                <xs:element name="periodVolume" msdata:Caption="Period Vol" type="xs:int" minOccurs="0" />
+                <xs:element name="Volatility" type="xs:double" minOccurs="0" />
+                <xs:element name="Spread" type="xs:double" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Bottom_Outliers_LAST" msprop:title="LAST">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Side" type="xs:string" minOccurs="0" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="FirstCode" msdata:Caption="Bloomberg" type="xs:string" minOccurs="0" />
+                <xs:element name="Weight" type="xs:double" minOccurs="0" />
+                <xs:element name="netExecValue" msdata:Caption="Exec. value" type="xs:int" minOccurs="0" />
+                <xs:element name="perfBps" msdata:Caption="Perf(bps)" type="xs:decimal" minOccurs="0" />
+                <xs:element name="perfPfBps" msdata:Caption="Portfolio Perf(bps)" type="xs:decimal" minOccurs="0" />
+                <xs:element name="notionalCost" msdata:Caption="Notional Cost" type="xs:int" minOccurs="0" />
+                <xs:element name="PLR" type="xs:double" minOccurs="0" />
+                <xs:element name="DLR" type="xs:double" minOccurs="0" />
+                <xs:element name="periodVolume" msdata:Caption="Period Vol" type="xs:int" minOccurs="0" />
+                <xs:element name="Volatility" type="xs:double" minOccurs="0" />
+                <xs:element name="Spread" type="xs:double" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Top_Outliers_HST_CLOSE" msprop:title="HST_CLOSE">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Side" type="xs:string" minOccurs="0" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="FirstCode" msdata:Caption="Bloomberg" type="xs:string" minOccurs="0" />
+                <xs:element name="Weight" type="xs:double" minOccurs="0" />
+                <xs:element name="netExecValue" msdata:Caption="Exec. value" type="xs:int" minOccurs="0" />
+                <xs:element name="perfBps" msdata:Caption="Perf(bps)" type="xs:decimal" minOccurs="0" />
+                <xs:element name="perfPfBps" msdata:Caption="Portfolio Perf(bps)" type="xs:decimal" minOccurs="0" />
+                <xs:element name="notionalCost" msdata:Caption="Notional Cost" type="xs:int" minOccurs="0" />
+                <xs:element name="PLR" type="xs:double" minOccurs="0" />
+                <xs:element name="DLR" type="xs:double" minOccurs="0" />
+                <xs:element name="periodVolume" msdata:Caption="Period Vol" type="xs:int" minOccurs="0" />
+                <xs:element name="Volatility" type="xs:double" minOccurs="0" />
+                <xs:element name="Spread" type="xs:double" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Bottom_Outliers_HST_CLOSE" msprop:title="HST_CLOSE">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Side" type="xs:string" minOccurs="0" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="FirstCode" msdata:Caption="Bloomberg" type="xs:string" minOccurs="0" />
+                <xs:element name="Weight" type="xs:double" minOccurs="0" />
+                <xs:element name="netExecValue" msdata:Caption="Exec. value" type="xs:int" minOccurs="0" />
+                <xs:element name="perfBps" msdata:Caption="Perf(bps)" type="xs:decimal" minOccurs="0" />
+                <xs:element name="perfPfBps" msdata:Caption="Portfolio Perf(bps)" type="xs:decimal" minOccurs="0" />
+                <xs:element name="notionalCost" msdata:Caption="Notional Cost" type="xs:int" minOccurs="0" />
+                <xs:element name="PLR" type="xs:double" minOccurs="0" />
+                <xs:element name="DLR" type="xs:double" minOccurs="0" />
+                <xs:element name="periodVolume" msdata:Caption="Period Vol" type="xs:int" minOccurs="0" />
+                <xs:element name="Volatility" type="xs:double" minOccurs="0" />
+                <xs:element name="Spread" type="xs:double" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Top_Outliers_VWAP" msprop:title="VWAP">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Side" type="xs:string" minOccurs="0" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="FirstCode" msdata:Caption="Bloomberg" type="xs:string" minOccurs="0" />
+                <xs:element name="Weight" type="xs:double" minOccurs="0" />
+                <xs:element name="netExecValue" msdata:Caption="Exec. value" type="xs:int" minOccurs="0" />
+                <xs:element name="perfBps" msdata:Caption="Perf(bps)" type="xs:decimal" minOccurs="0" />
+                <xs:element name="perfPfBps" msdata:Caption="Portfolio Perf(bps)" type="xs:decimal" minOccurs="0" />
+                <xs:element name="notionalCost" msdata:Caption="Notional Cost" type="xs:int" minOccurs="0" />
+                <xs:element name="PLR" type="xs:double" minOccurs="0" />
+                <xs:element name="DLR" type="xs:double" minOccurs="0" />
+                <xs:element name="periodVolume" msdata:Caption="Period Vol" type="xs:int" minOccurs="0" />
+                <xs:element name="Volatility" type="xs:double" minOccurs="0" />
+                <xs:element name="Spread" type="xs:double" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Bottom_Outliers_VWAP" msprop:title="VWAP">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Side" type="xs:string" minOccurs="0" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="FirstCode" msdata:Caption="Bloomberg" type="xs:string" minOccurs="0" />
+                <xs:element name="Weight" type="xs:double" minOccurs="0" />
+                <xs:element name="netExecValue" msdata:Caption="Exec. value" type="xs:int" minOccurs="0" />
+                <xs:element name="perfBps" msdata:Caption="Perf(bps)" type="xs:decimal" minOccurs="0" />
+                <xs:element name="perfPfBps" msdata:Caption="Portfolio Perf(bps)" type="xs:decimal" minOccurs="0" />
+                <xs:element name="notionalCost" msdata:Caption="Notional Cost" type="xs:int" minOccurs="0" />
+                <xs:element name="PLR" type="xs:double" minOccurs="0" />
+                <xs:element name="DLR" type="xs:double" minOccurs="0" />
+                <xs:element name="periodVolume" msdata:Caption="Period Vol" type="xs:int" minOccurs="0" />
+                <xs:element name="Volatility" type="xs:double" minOccurs="0" />
+                <xs:element name="Spread" type="xs:double" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Summary">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Buy" type="xs:string" minOccurs="0" />
+                <xs:element name="Sell" type="xs:string" minOccurs="0" />
+                <xs:element name="Short_Sell" type="xs:string" minOccurs="0" />
+                <xs:element name="Total" type="xs:string" minOccurs="0" />
+                <xs:element name="TypeOf" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Execution_Performance">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Benchmark" type="xs:string" minOccurs="0" />
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="Buy" type="xs:double" minOccurs="0" />
+                <xs:element name="Sell" type="xs:double" minOccurs="0" />
+                <xs:element name="Short_Sell" type="xs:double" minOccurs="0" />
+                <xs:element name="Total" type="xs:double" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Country">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Country" type="xs:string" minOccurs="0" />
+                <xs:element name="Weight" type="xs:double" minOccurs="0" />
+                <xs:element name="Exec._x0020_Value" type="xs:long" minOccurs="0" />
+                <xs:element name="_x0025__x0020_Executed" type="xs:double" minOccurs="0" />
+                <xs:element name="Spread" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Volatility" type="xs:decimal" minOccurs="0" />
+                <xs:element name="_x0025__x0020_ADV-20" type="xs:double" minOccurs="0" />
+                <xs:element name="Perf_Benchmark_1" msdata:Caption="Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Portfolio_Perf_1" msdata:Caption="Portfolio Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Perf_Benchmark_2" msdata:Caption="Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Portfolio_Perf_2" msdata:Caption="Portfolio Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Perf_Benchmark_3" msdata:Caption="Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Portfolio_Perf_3" msdata:Caption="Portfolio Perf" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Sector">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Sector" type="xs:string" minOccurs="0" />
+                <xs:element name="Weight" type="xs:double" minOccurs="0" />
+                <xs:element name="Exec._x0020_Value" type="xs:long" minOccurs="0" />
+                <xs:element name="_x0025__x0020_Executed" type="xs:double" minOccurs="0" />
+                <xs:element name="Spread" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Volatility" type="xs:decimal" minOccurs="0" />
+                <xs:element name="_x0025__x0020_ADV-20" type="xs:double" minOccurs="0" />
+                <xs:element name="Perf_Benchmark_1" msdata:Caption="Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Portfolio_Perf_1" msdata:Caption="Portfolio Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Perf_Benchmark_2" msdata:Caption="Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Portfolio_Perf_2" msdata:Caption="Portfolio Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Perf_Benchmark_3" msdata:Caption="Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Portfolio_Perf_3" msdata:Caption="Portfolio Perf" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Region">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Region" type="xs:string" minOccurs="0" />
+                <xs:element name="Weight" type="xs:double" minOccurs="0" />
+                <xs:element name="Exec._x0020_Value" type="xs:long" minOccurs="0" />
+                <xs:element name="_x0025__x0020_Executed" type="xs:double" minOccurs="0" />
+                <xs:element name="Spread" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Volatility" type="xs:decimal" minOccurs="0" />
+                <xs:element name="_x0025__x0020_ADV-20" type="xs:double" minOccurs="0" />
+                <xs:element name="Perf_Benchmark_1" msdata:Caption="Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Portfolio_Perf_1" msdata:Caption="Portfolio Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Perf_Benchmark_2" msdata:Caption="Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Portfolio_Perf_2" msdata:Caption="Portfolio Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Perf_Benchmark_3" msdata:Caption="Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Portfolio_Perf_3" msdata:Caption="Portfolio Perf" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Currency">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Currency" type="xs:string" minOccurs="0" />
+                <xs:element name="Weight" type="xs:double" minOccurs="0" />
+                <xs:element name="Exec._x0020_Value" type="xs:long" minOccurs="0" />
+                <xs:element name="_x0025__x0020_Executed" type="xs:double" minOccurs="0" />
+                <xs:element name="Spread" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Volatility" type="xs:decimal" minOccurs="0" />
+                <xs:element name="_x0025__x0020_ADV-20" type="xs:double" minOccurs="0" />
+                <xs:element name="Perf_Benchmark_1" msdata:Caption="Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Portfolio_Perf_1" msdata:Caption="Portfolio Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Perf_Benchmark_2" msdata:Caption="Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Portfolio_Perf_2" msdata:Caption="Portfolio Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Perf_Benchmark_3" msdata:Caption="Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Portfolio_Perf_3" msdata:Caption="Portfolio Perf" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="PLR">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Liquidity_x0020_Ratio" type="xs:string" minOccurs="0" />
+                <xs:element name="Weight" type="xs:double" minOccurs="0" />
+                <xs:element name="Exec._x0020_Value" type="xs:long" minOccurs="0" />
+                <xs:element name="_x0025__x0020_Executed" type="xs:double" minOccurs="0" />
+                <xs:element name="Spread" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Volatility" type="xs:decimal" minOccurs="0" />
+                <xs:element name="_x0025__x0020_ADV-20" type="xs:double" minOccurs="0" />
+                <xs:element name="Perf_Benchmark_1" msdata:Caption="Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Portfolio_Perf_1" msdata:Caption="Portfolio Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Perf_Benchmark_2" msdata:Caption="Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Portfolio_Perf_2" msdata:Caption="Portfolio Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Perf_Benchmark_3" msdata:Caption="Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Portfolio_Perf_3" msdata:Caption="Portfolio Perf" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Capitalisation">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Capitalisation" type="xs:string" minOccurs="0" />
+                <xs:element name="Weight" type="xs:double" minOccurs="0" />
+                <xs:element name="Exec._x0020_Value" type="xs:long" minOccurs="0" />
+                <xs:element name="_x0025__x0020_Executed" type="xs:double" minOccurs="0" />
+                <xs:element name="Spread" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Volatility" type="xs:decimal" minOccurs="0" />
+                <xs:element name="_x0025__x0020_ADV-20" type="xs:double" minOccurs="0" />
+                <xs:element name="Perf_Benchmark_1" msdata:Caption="Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Portfolio_Perf_1" msdata:Caption="Portfolio Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Perf_Benchmark_2" msdata:Caption="Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Portfolio_Perf_2" msdata:Caption="Portfolio Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Perf_Benchmark_3" msdata:Caption="Perf" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Portfolio_Perf_3" msdata:Caption="Portfolio Perf" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Glossary-Summary_x0020_">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Key" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Glossary-Summary-Execution_x0020_Performance_x0020_">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Key" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Glossary-Summary-Breakdowns_x0020_">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Key" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Glossary-Order_x0020_Details">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Key" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Glossary-Outliers_x0020_">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Key" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Glossary-Remarks">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Key" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//OrderDetails" />
+        <xs:field xpath="Order_id" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <OrderDetails>
+    <Name>EDF</Name>
+    <FirstCode>EDF FP</FirstCode>
+    <SecondCode>FR0010242511</SecondCode>
+    <Sector>Utilities</Sector>
+    <Country>PARIS</Country>
+    <Side>BUY</Side>
+    <askQty>50000</askQty>
+    <execQty>10000</execQty>
+    <remainQty>40000</remainQty>
+    <avgPrice>12</avgPrice>
+    <amountNet>120000</amountNet>
+    <amountRes>647800</amountRes>
+    <perExecuted>0.2</perExecuted>
+    <Date>2013-04-25T00:00:00+02:00</Date>
+    <startTime>2013-04-25T07:00:00+02:00</startTime>
+    <endTime>2013-04-25T15:35:00+02:00</endTime>
+    <orderDuration>515</orderDuration>
+    <Weight>0.34188034188034189</Weight>
+    <Spread>0.0802</Spread>
+    <Volatility>25.76088</Volatility>
+    <periodVolume>371818</periodVolume>
+    <PLR>0.026894878677202288</PLR>
+    <DLR>0.026894878677202288</DLR>
+    <MarketVol>Principal</MarketVol>
+    <Currency>EUR</Currency>
+    <Order_id>1963221067</Order_id>
+    <Benchmark_LAST>16.195</Benchmark_LAST>
+    <Perf_Bps_LAST>3495.83</Perf_Bps_LAST>
+    <Perf_Portfolio_Bps_LAST>1195.16</Perf_Portfolio_Bps_LAST>
+    <Perf_Amount_LAST>41950</Perf_Amount_LAST>
+    <Benchmark_HST_CLOSE>16.345</Benchmark_HST_CLOSE>
+    <Perf_Bps_HST_CLOSE>3620.83</Perf_Bps_HST_CLOSE>
+    <Perf_Portfolio_Bps_HST_CLOSE>1237.89</Perf_Portfolio_Bps_HST_CLOSE>
+    <Perf_Amount_HST_CLOSE>43450</Perf_Amount_HST_CLOSE>
+    <Benchmark_VWAP>16.2856</Benchmark_VWAP>
+    <Perf_Bps_VWAP>3571.33</Perf_Bps_VWAP>
+    <Perf_Portfolio_Bps_VWAP>1220.97</Perf_Portfolio_Bps_VWAP>
+    <Perf_Amount_VWAP>42856</Perf_Amount_VWAP>
+  </OrderDetails>
+  <OrderDetails>
+    <Name>EDF</Name>
+    <FirstCode>EDF FP</FirstCode>
+    <SecondCode>FR0010242511</SecondCode>
+    <Sector>Utilities</Sector>
+    <Country>PARIS</Country>
+    <Side>SELL</Side>
+    <askQty>50000</askQty>
+    <execQty>8000</execQty>
+    <remainQty>42000</remainQty>
+    <avgPrice>12</avgPrice>
+    <amountNet>96000</amountNet>
+    <amountRes>680190</amountRes>
+    <perExecuted>0.16</perExecuted>
+    <Date>2013-04-25T00:00:00+02:00</Date>
+    <startTime>2013-04-25T07:00:00+02:00</startTime>
+    <endTime>2013-04-25T15:35:00+02:00</endTime>
+    <orderDuration>515</orderDuration>
+    <Weight>0.27350427350427353</Weight>
+    <Spread>0.0802</Spread>
+    <Volatility>25.76088</Volatility>
+    <periodVolume>371818</periodVolume>
+    <PLR>0.021515902941761828</PLR>
+    <DLR>0.021515902941761828</DLR>
+    <MarketVol>Principal</MarketVol>
+    <Currency>EUR</Currency>
+    <Order_id>1963377318</Order_id>
+    <Benchmark_LAST>16.195</Benchmark_LAST>
+    <Perf_Bps_LAST>-3495.83</Perf_Bps_LAST>
+    <Perf_Portfolio_Bps_LAST>-956.12</Perf_Portfolio_Bps_LAST>
+    <Perf_Amount_LAST>-33560</Perf_Amount_LAST>
+    <Benchmark_HST_CLOSE>16.345</Benchmark_HST_CLOSE>
+    <Perf_Bps_HST_CLOSE>-3620.83</Perf_Bps_HST_CLOSE>
+    <Perf_Portfolio_Bps_HST_CLOSE>-990.31</Perf_Portfolio_Bps_HST_CLOSE>
+    <Perf_Amount_HST_CLOSE>-34760</Perf_Amount_HST_CLOSE>
+    <Benchmark_VWAP>16.2856</Benchmark_VWAP>
+    <Perf_Bps_VWAP>-3571.33</Perf_Bps_VWAP>
+    <Perf_Portfolio_Bps_VWAP>-976.77</Perf_Portfolio_Bps_VWAP>
+    <Perf_Amount_VWAP>-34285</Perf_Amount_VWAP>
+  </OrderDetails>
+  <OrderDetails>
+    <Name>FRANCE TELECOM</Name>
+    <FirstCode>FTE FP</FirstCode>
+    <SecondCode>FR0000133308</SecondCode>
+    <Sector>Telecommunication Services</Sector>
+    <Country>PARIS</Country>
+    <Side>BUY</Side>
+    <askQty>50000</askQty>
+    <execQty>7500</execQty>
+    <remainQty>42500</remainQty>
+    <avgPrice>18</avgPrice>
+    <amountNet>135000</amountNet>
+    <amountRes>345142</amountRes>
+    <perExecuted>0.15</perExecuted>
+    <Date>2013-04-25T00:00:00+02:00</Date>
+    <startTime>2013-04-25T07:00:00+02:00</startTime>
+    <endTime>2013-04-25T15:35:00+02:00</endTime>
+    <orderDuration>515</orderDuration>
+    <Weight>0.38461538461538464</Weight>
+    <Spread>0.0580375</Spread>
+    <Volatility>31.81701</Volatility>
+    <periodVolume>3485814</periodVolume>
+    <PLR>0.0021515777950286506</PLR>
+    <DLR>0.0021515777950286506</DLR>
+    <MarketVol>Principal</MarketVol>
+    <Currency>EUR</Currency>
+    <Order_id>1963377317</Order_id>
+    <Benchmark_LAST>8.121</Benchmark_LAST>
+    <Perf_Bps_LAST>-5488.33</Perf_Bps_LAST>
+    <Perf_Portfolio_Bps_LAST>-2110.90</Perf_Portfolio_Bps_LAST>
+    <Perf_Amount_LAST>-74092</Perf_Amount_LAST>
+    <Benchmark_HST_CLOSE>8.01</Benchmark_HST_CLOSE>
+    <Perf_Bps_HST_CLOSE>-5550</Perf_Bps_HST_CLOSE>
+    <Perf_Portfolio_Bps_HST_CLOSE>-2134.62</Perf_Portfolio_Bps_HST_CLOSE>
+    <Perf_Amount_HST_CLOSE>-74925</Perf_Amount_HST_CLOSE>
+    <Benchmark_VWAP>8.0679</Benchmark_VWAP>
+    <Perf_Bps_VWAP>-5517.83</Perf_Bps_VWAP>
+    <Perf_Portfolio_Bps_VWAP>-2122.24</Perf_Portfolio_Bps_VWAP>
+    <Perf_Amount_VWAP>-74491</Perf_Amount_VWAP>
+  </OrderDetails>
+  <OrderDetails>
+    <askQty>150000</askQty>
+    <execQty>25500</execQty>
+    <remainQty>124500</remainQty>
+    <amountNet>351000</amountNet>
+    <amountRes>1673132</amountRes>
+    <perExecuted>0.16714285714285715</perExecuted>
+    <orderDuration>514</orderDuration>
+    <Spread>0.0716759615384616</Spread>
+    <Volatility>28.0901607692308</Volatility>
+    <PLR>0.015907051641032132</PLR>
+    <DLR>0.015907051641032132</DLR>
+    <Order_id>-1</Order_id>
+    <Benchmark_LAST>13.0896153846154</Benchmark_LAST>
+    <Perf_Bps_LAST>-1871.87</Perf_Bps_LAST>
+    <Perf_Portfolio_Bps_LAST>-1871.87</Perf_Portfolio_Bps_LAST>
+    <Perf_Amount_LAST>-65702</Perf_Amount_LAST>
+    <Benchmark_HST_CLOSE>13.1392307692308</Benchmark_HST_CLOSE>
+    <Perf_Bps_HST_CLOSE>-1887.04</Perf_Bps_HST_CLOSE>
+    <Perf_Portfolio_Bps_HST_CLOSE>-1887.04</Perf_Portfolio_Bps_HST_CLOSE>
+    <Perf_Amount_HST_CLOSE>-66235</Perf_Amount_HST_CLOSE>
+    <Benchmark_VWAP>13.1249461538462</Benchmark_VWAP>
+    <Perf_Bps_VWAP>-1878.05</Perf_Bps_VWAP>
+    <Perf_Portfolio_Bps_VWAP>-1878.05</Perf_Portfolio_Bps_VWAP>
+    <Perf_Amount_VWAP>-65920</Perf_Amount_VWAP>
+  </OrderDetails>
+  <GlobalInfo>
+    <Label>Company</Label>
+    <Value>Default</Value>
+  </GlobalInfo>
+  <GlobalInfo>
+    <Label>Trading Date</Label>
+    <Value>4/25/2013</Value>
+  </GlobalInfo>
+  <GlobalInfo>
+    <Label>Orders</Label>
+    <Value>3</Value>
+  </GlobalInfo>
+  <GlobalInfo>
+    <Label>Nominal Value (mEUR)</Label>
+    <Value>  0.3510</Value>
+  </GlobalInfo>
+  <GlobalInfo>
+    <Label>Period Profil</Label>
+    <Value>LocalUser : GMT +0</Value>
+  </GlobalInfo>
+  <GlobalInfo>
+    <Label>Global Currency</Label>
+    <Value>EUR</Value>
+  </GlobalInfo>
+  <Top_Outliers_LAST>
+    <Side>BUY</Side>
+    <Name>EDF</Name>
+    <FirstCode>EDF FP</FirstCode>
+    <Weight>0.34188034188034189</Weight>
+    <netExecValue>120000</netExecValue>
+    <perfBps>3495.83</perfBps>
+    <perfPfBps>1195.15555555556</perfPfBps>
+    <notionalCost>41950</notionalCost>
+    <PLR>0.026894878677202288</PLR>
+    <DLR>0.026894878677202288</DLR>
+    <periodVolume>371818</periodVolume>
+    <Volatility>25.76088</Volatility>
+    <Spread>0.080200000000000007</Spread>
+  </Top_Outliers_LAST>
+  <Top_Outliers_LAST>
+    <Side>SELL</Side>
+    <Name>EDF</Name>
+    <FirstCode>EDF FP</FirstCode>
+    <Weight>0.27350427350427353</Weight>
+    <netExecValue>96000</netExecValue>
+    <perfBps>-3495.83</perfBps>
+    <perfPfBps>-956.124444444444</perfPfBps>
+    <notionalCost>-33560</notionalCost>
+    <PLR>0.021515902941761828</PLR>
+    <DLR>0.021515902941761828</DLR>
+    <periodVolume>371818</periodVolume>
+    <Volatility>25.76088</Volatility>
+    <Spread>0.080200000000000007</Spread>
+  </Top_Outliers_LAST>
+  <Top_Outliers_LAST>
+    <Side>BUY</Side>
+    <Name>FRANCE TELECOM</Name>
+    <FirstCode>FTE FP</FirstCode>
+    <Weight>0.38461538461538464</Weight>
+    <netExecValue>135000</netExecValue>
+    <perfBps>-5488.33</perfBps>
+    <perfPfBps>-2110.89615384615</perfPfBps>
+    <notionalCost>-74092</notionalCost>
+    <PLR>0.0021515777950286506</PLR>
+    <DLR>0.0021515777950286506</DLR>
+    <periodVolume>3485814</periodVolume>
+    <Volatility>31.81701</Volatility>
+    <Spread>0.0580375</Spread>
+  </Top_Outliers_LAST>
+  <Bottom_Outliers_LAST>
+    <Side>BUY</Side>
+    <Name>FRANCE TELECOM</Name>
+    <FirstCode>FTE FP</FirstCode>
+    <Weight>0.38461538461538464</Weight>
+    <netExecValue>135000</netExecValue>
+    <perfBps>-5488.33</perfBps>
+    <perfPfBps>-2110.89615384615</perfPfBps>
+    <notionalCost>-74092</notionalCost>
+    <PLR>0.0021515777950286506</PLR>
+    <DLR>0.0021515777950286506</DLR>
+    <periodVolume>3485814</periodVolume>
+    <Volatility>31.81701</Volatility>
+    <Spread>0.0580375</Spread>
+  </Bottom_Outliers_LAST>
+  <Bottom_Outliers_LAST>
+    <Side>SELL</Side>
+    <Name>EDF</Name>
+    <FirstCode>EDF FP</FirstCode>
+    <Weight>0.27350427350427353</Weight>
+    <netExecValue>96000</netExecValue>
+    <perfBps>-3495.83</perfBps>
+    <perfPfBps>-956.124444444444</perfPfBps>
+    <notionalCost>-33560</notionalCost>
+    <PLR>0.021515902941761828</PLR>
+    <DLR>0.021515902941761828</DLR>
+    <periodVolume>371818</periodVolume>
+    <Volatility>25.76088</Volatility>
+    <Spread>0.080200000000000007</Spread>
+  </Bottom_Outliers_LAST>
+  <Bottom_Outliers_LAST>
+    <Side>BUY</Side>
+    <Name>EDF</Name>
+    <FirstCode>EDF FP</FirstCode>
+    <Weight>0.34188034188034189</Weight>
+    <netExecValue>120000</netExecValue>
+    <perfBps>3495.83</perfBps>
+    <perfPfBps>1195.15555555556</perfPfBps>
+    <notionalCost>41950</notionalCost>
+    <PLR>0.026894878677202288</PLR>
+    <DLR>0.026894878677202288</DLR>
+    <periodVolume>371818</periodVolume>
+    <Volatility>25.76088</Volatility>
+    <Spread>0.080200000000000007</Spread>
+  </Bottom_Outliers_LAST>
+  <Top_Outliers_HST_CLOSE>
+    <Side>BUY</Side>
+    <Name>EDF</Name>
+    <FirstCode>EDF FP</FirstCode>
+    <Weight>0.34188034188034189</Weight>
+    <netExecValue>120000</netExecValue>
+    <perfBps>3620.83</perfBps>
+    <perfPfBps>1237.8905982906</perfPfBps>
+    <notionalCost>43450</notionalCost>
+    <PLR>0.026894878677202288</PLR>
+    <DLR>0.026894878677202288</DLR>
+    <periodVolume>371818</periodVolume>
+    <Volatility>25.76088</Volatility>
+    <Spread>0.080200000000000007</Spread>
+  </Top_Outliers_HST_CLOSE>
+  <Top_Outliers_HST_CLOSE>
+    <Side>SELL</Side>
+    <Name>EDF</Name>
+    <FirstCode>EDF FP</FirstCode>
+    <Weight>0.27350427350427353</Weight>
+    <netExecValue>96000</netExecValue>
+    <perfBps>-3620.83</perfBps>
+    <perfPfBps>-990.312478632479</perfPfBps>
+    <notionalCost>-34760</notionalCost>
+    <PLR>0.021515902941761828</PLR>
+    <DLR>0.021515902941761828</DLR>
+    <periodVolume>371818</periodVolume>
+    <Volatility>25.76088</Volatility>
+    <Spread>0.080200000000000007</Spread>
+  </Top_Outliers_HST_CLOSE>
+  <Top_Outliers_HST_CLOSE>
+    <Side>BUY</Side>
+    <Name>FRANCE TELECOM</Name>
+    <FirstCode>FTE FP</FirstCode>
+    <Weight>0.38461538461538464</Weight>
+    <netExecValue>135000</netExecValue>
+    <perfBps>-5550</perfBps>
+    <perfPfBps>-2134.61538461538</perfPfBps>
+    <notionalCost>-74925</notionalCost>
+    <PLR>0.0021515777950286506</PLR>
+    <DLR>0.0021515777950286506</DLR>
+    <periodVolume>3485814</periodVolume>
+    <Volatility>31.81701</Volatility>
+    <Spread>0.0580375</Spread>
+  </Top_Outliers_HST_CLOSE>
+  <Bottom_Outliers_HST_CLOSE>
+    <Side>BUY</Side>
+    <Name>FRANCE TELECOM</Name>
+    <FirstCode>FTE FP</FirstCode>
+    <Weight>0.38461538461538464</Weight>
+    <netExecValue>135000</netExecValue>
+    <perfBps>-5550</perfBps>
+    <perfPfBps>-2134.61538461538</perfPfBps>
+    <notionalCost>-74925</notionalCost>
+    <PLR>0.0021515777950286506</PLR>
+    <DLR>0.0021515777950286506</DLR>
+    <periodVolume>3485814</periodVolume>
+    <Volatility>31.81701</Volatility>
+    <Spread>0.0580375</Spread>
+  </Bottom_Outliers_HST_CLOSE>
+  <Bottom_Outliers_HST_CLOSE>
+    <Side>SELL</Side>
+    <Name>EDF</Name>
+    <FirstCode>EDF FP</FirstCode>
+    <Weight>0.27350427350427353</Weight>
+    <netExecValue>96000</netExecValue>
+    <perfBps>-3620.83</perfBps>
+    <perfPfBps>-990.312478632479</perfPfBps>
+    <notionalCost>-34760</notionalCost>
+    <PLR>0.021515902941761828</PLR>
+    <DLR>0.021515902941761828</DLR>
+    <periodVolume>371818</periodVolume>
+    <Volatility>25.76088</Volatility>
+    <Spread>0.080200000000000007</Spread>
+  </Bottom_Outliers_HST_CLOSE>
+  <Bottom_Outliers_HST_CLOSE>
+    <Side>BUY</Side>
+    <Name>EDF</Name>
+    <FirstCode>EDF FP</FirstCode>
+    <Weight>0.34188034188034189</Weight>
+    <netExecValue>120000</netExecValue>
+    <perfBps>3620.83</perfBps>
+    <perfPfBps>1237.8905982906</perfPfBps>
+    <notionalCost>43450</notionalCost>
+    <PLR>0.026894878677202288</PLR>
+    <DLR>0.026894878677202288</DLR>
+    <periodVolume>371818</periodVolume>
+    <Volatility>25.76088</Volatility>
+    <Spread>0.080200000000000007</Spread>
+  </Bottom_Outliers_HST_CLOSE>
+  <Top_Outliers_VWAP>
+    <Side>BUY</Side>
+    <Name>EDF</Name>
+    <FirstCode>EDF FP</FirstCode>
+    <Weight>0.34188034188034189</Weight>
+    <netExecValue>120000</netExecValue>
+    <perfBps>3571.33</perfBps>
+    <perfPfBps>1220.96752136752</perfPfBps>
+    <notionalCost>42856</notionalCost>
+    <PLR>0.026894878677202288</PLR>
+    <DLR>0.026894878677202288</DLR>
+    <periodVolume>371818</periodVolume>
+    <Volatility>25.76088</Volatility>
+    <Spread>0.080200000000000007</Spread>
+  </Top_Outliers_VWAP>
+  <Top_Outliers_VWAP>
+    <Side>SELL</Side>
+    <Name>EDF</Name>
+    <FirstCode>EDF FP</FirstCode>
+    <Weight>0.27350427350427353</Weight>
+    <netExecValue>96000</netExecValue>
+    <perfBps>-3571.33</perfBps>
+    <perfPfBps>-976.774017094017</perfPfBps>
+    <notionalCost>-34285</notionalCost>
+    <PLR>0.021515902941761828</PLR>
+    <DLR>0.021515902941761828</DLR>
+    <periodVolume>371818</periodVolume>
+    <Volatility>25.76088</Volatility>
+    <Spread>0.080200000000000007</Spread>
+  </Top_Outliers_VWAP>
+  <Top_Outliers_VWAP>
+    <Side>BUY</Side>
+    <Name>FRANCE TELECOM</Name>
+    <FirstCode>FTE FP</FirstCode>
+    <Weight>0.38461538461538464</Weight>
+    <netExecValue>135000</netExecValue>
+    <perfBps>-5517.83</perfBps>
+    <perfPfBps>-2122.24230769231</perfPfBps>
+    <notionalCost>-74491</notionalCost>
+    <PLR>0.0021515777950286506</PLR>
+    <DLR>0.0021515777950286506</DLR>
+    <periodVolume>3485814</periodVolume>
+    <Volatility>31.81701</Volatility>
+    <Spread>0.0580375</Spread>
+  </Top_Outliers_VWAP>
+  <Bottom_Outliers_VWAP>
+    <Side>BUY</Side>
+    <Name>FRANCE TELECOM</Name>
+    <FirstCode>FTE FP</FirstCode>
+    <Weight>0.38461538461538464</Weight>
+    <netExecValue>135000</netExecValue>
+    <perfBps>-5517.83</perfBps>
+    <perfPfBps>-2122.24230769231</perfPfBps>
+    <notionalCost>-74491</notionalCost>
+    <PLR>0.0021515777950286506</PLR>
+    <DLR>0.0021515777950286506</DLR>
+    <periodVolume>3485814</periodVolume>
+    <Volatility>31.81701</Volatility>
+    <Spread>0.0580375</Spread>
+  </Bottom_Outliers_VWAP>
+  <Bottom_Outliers_VWAP>
+    <Side>SELL</Side>
+    <Name>EDF</Name>
+    <FirstCode>EDF FP</FirstCode>
+    <Weight>0.27350427350427353</Weight>
+    <netExecValue>96000</netExecValue>
+    <perfBps>-3571.33</perfBps>
+    <perfPfBps>-976.774017094017</perfPfBps>
+    <notionalCost>-34285</notionalCost>
+    <PLR>0.021515902941761828</PLR>
+    <DLR>0.021515902941761828</DLR>
+    <periodVolume>371818</periodVolume>
+    <Volatility>25.76088</Volatility>
+    <Spread>0.080200000000000007</Spread>
+  </Bottom_Outliers_VWAP>
+  <Bottom_Outliers_VWAP>
+    <Side>BUY</Side>
+    <Name>EDF</Name>
+    <FirstCode>EDF FP</FirstCode>
+    <Weight>0.34188034188034189</Weight>
+    <netExecValue>120000</netExecValue>
+    <perfBps>3571.33</perfBps>
+    <perfPfBps>1220.96752136752</perfPfBps>
+    <notionalCost>42856</notionalCost>
+    <PLR>0.026894878677202288</PLR>
+    <DLR>0.026894878677202288</DLR>
+    <periodVolume>371818</periodVolume>
+    <Volatility>25.76088</Volatility>
+    <Spread>0.080200000000000007</Spread>
+  </Bottom_Outliers_VWAP>
+  <Summary>
+    <Name>Total Orders</Name>
+    <Buy>2</Buy>
+    <Sell>1</Sell>
+    <Short_Sell>0</Short_Sell>
+    <Total>3</Total>
+    <TypeOf>Int32</TypeOf>
+  </Summary>
+  <Summary>
+    <Name>Total Target Shares</Name>
+    <Buy>100000</Buy>
+    <Sell>50000</Sell>
+    <Short_Sell>0</Short_Sell>
+    <Total>150000</Total>
+    <TypeOf>Int32</TypeOf>
+  </Summary>
+  <Summary>
+    <Name>Total Executed Shares</Name>
+    <Buy>17500</Buy>
+    <Sell>8000</Sell>
+    <Short_Sell>0</Short_Sell>
+    <Total>25500</Total>
+    <TypeOf>Int32</TypeOf>
+  </Summary>
+  <Summary>
+    <Name>% Executed</Name>
+    <Buy>17.5%</Buy>
+    <Sell>16.0%</Sell>
+    <Short_Sell>0</Short_Sell>
+    <Total>17.0%</Total>
+    <TypeOf>Percent</TypeOf>
+  </Summary>
+  <Summary>
+    <Name>Executed Value</Name>
+    <Buy>255000</Buy>
+    <Sell>96000</Sell>
+    <Short_Sell>0</Short_Sell>
+    <Total>351000</Total>
+    <TypeOf>Int32</TypeOf>
+  </Summary>
+  <Summary>
+    <Name>Residual Value</Name>
+    <Buy>1245000</Buy>
+    <Sell>504000</Sell>
+    <Short_Sell>0</Short_Sell>
+    <Total>1749000</Total>
+    <TypeOf>Int32</TypeOf>
+  </Summary>
+  <Summary>
+    <Name>Spread (bps)</Name>
+    <Buy>0.0684669117647059</Buy>
+    <Sell>0.0802</Sell>
+    <Short_Sell>0.00</Short_Sell>
+    <Total>0.0716759615384615</Total>
+    <TypeOf>Double</TypeOf>
+  </Summary>
+  <Summary>
+    <Name>Volatility</Name>
+    <Buy>28.9670664705882</Buy>
+    <Sell>25.76088</Sell>
+    <Short_Sell>0.00</Short_Sell>
+    <Total>28.0901607692308</Total>
+    <TypeOf>Double</TypeOf>
+  </Summary>
+  <Summary>
+    <Name>% ADV20 Volume</Name>
+    <Buy>0.22%</Buy>
+    <Sell>0.30%</Sell>
+    <Short_Sell>0.00%</Short_Sell>
+    <Total>0.24%</Total>
+    <TypeOf>Percent</TypeOf>
+  </Summary>
+  <Summary>
+    <Name>DLR</Name>
+    <Buy>1.38%</Buy>
+    <Sell>2.15%</Sell>
+    <Short_Sell>0.00%</Short_Sell>
+    <Total>1.59%</Total>
+    <TypeOf>Percent</TypeOf>
+  </Summary>
+  <Summary>
+    <Name>PLR</Name>
+    <Buy>1.38%</Buy>
+    <Sell>2.15%</Sell>
+    <Short_Sell>0.00%</Short_Sell>
+    <Total>1.59%</Total>
+    <TypeOf>Percent</TypeOf>
+  </Summary>
+  <Summary>
+    <Name>Interval Time Horizon</Name>
+    <Buy>30900</Buy>
+    <Sell>30900</Sell>
+    <Short_Sell>0.00</Short_Sell>
+    <Total>30900</Total>
+    <TypeOf>DateTime</TypeOf>
+  </Summary>
+  <Execution_Performance>
+    <Benchmark>LAST</Benchmark>
+    <Name>Weighted Perf.(bps)</Name>
+    <Buy>-1260.4901960784314</Buy>
+    <Sell>-3495.8333333333335</Sell>
+    <Short_Sell>0</Short_Sell>
+    <Total>-1871.866096866097</Total>
+  </Execution_Performance>
+  <Execution_Performance>
+    <Benchmark>LAST</Benchmark>
+    <Name>Total Notional Cost</Name>
+    <Buy>-32142.5</Buy>
+    <Sell>-33560</Sell>
+    <Short_Sell>0</Short_Sell>
+    <Total>-65702.5</Total>
+  </Execution_Performance>
+  <Execution_Performance>
+    <Benchmark>HST CLOSE</Benchmark>
+    <Name>Weighted Perf.(bps)</Name>
+    <Buy>-1234.3137254901963</Buy>
+    <Sell>-3620.8333333333326</Sell>
+    <Short_Sell>0</Short_Sell>
+    <Total>-1887.0370370370372</Total>
+  </Execution_Performance>
+  <Execution_Performance>
+    <Benchmark>HST CLOSE</Benchmark>
+    <Name>Total Notional Cost</Name>
+    <Buy>-31475.000000000015</Buy>
+    <Sell>-34759.999999999993</Sell>
+    <Short_Sell>0</Short_Sell>
+    <Total>-66235</Total>
+  </Execution_Performance>
+  <Execution_Performance>
+    <Benchmark>VWAP</Benchmark>
+    <Name>Weighted Perf.(bps)</Name>
+    <Buy>-1240.5784313725494</Buy>
+    <Sell>-3571.333333333333</Sell>
+    <Short_Sell>0</Short_Sell>
+    <Total>-1878.0498575498577</Total>
+  </Execution_Performance>
+  <Execution_Performance>
+    <Benchmark>VWAP</Benchmark>
+    <Name>Total Notional Cost</Name>
+    <Buy>-31634.750000000015</Buy>
+    <Sell>-34284.799999999988</Sell>
+    <Short_Sell>0</Short_Sell>
+    <Total>-65919.55</Total>
+  </Execution_Performance>
+  <Country>
+    <Country>PARIS</Country>
+    <Weight>1</Weight>
+    <Exec._x0020_Value>351000</Exec._x0020_Value>
+    <_x0025__x0020_Executed>0.16714285714285715</_x0025__x0020_Executed>
+    <Spread>0.0716759615384615</Spread>
+    <Volatility>28.0901607692308</Volatility>
+    <_x0025__x0020_ADV-20>0.0013676183965948407</_x0025__x0020_ADV-20>
+    <Perf_Benchmark_1>-1871.8660968661</Perf_Benchmark_1>
+    <Portfolio_Perf_1>-1871.8660968661</Portfolio_Perf_1>
+    <Perf_Benchmark_2>-1887.03703703704</Perf_Benchmark_2>
+    <Portfolio_Perf_2>-1887.03703703704</Portfolio_Perf_2>
+    <Perf_Benchmark_3>-1878.04985754986</Perf_Benchmark_3>
+    <Portfolio_Perf_3>-1878.04985754986</Portfolio_Perf_3>
+  </Country>
+  <Sector>
+    <Sector>Telecommunication Services</Sector>
+    <Weight>0.38461538461538464</Weight>
+    <Exec._x0020_Value>135000</Exec._x0020_Value>
+    <_x0025__x0020_Executed>0.15</_x0025__x0020_Executed>
+    <Spread>0.0580375</Spread>
+    <Volatility>31.81701</Volatility>
+    <_x0025__x0020_ADV-20>0.00069769324009670954</_x0025__x0020_ADV-20>
+    <Perf_Benchmark_1>-5488.33333333333</Perf_Benchmark_1>
+    <Portfolio_Perf_1>-2110.89743589744</Portfolio_Perf_1>
+    <Perf_Benchmark_2>-5550</Perf_Benchmark_2>
+    <Portfolio_Perf_2>-2134.61538461538</Portfolio_Perf_2>
+    <Perf_Benchmark_3>-5517.83333333333</Perf_Benchmark_3>
+    <Portfolio_Perf_3>-2122.24358974359</Portfolio_Perf_3>
+  </Sector>
+  <Sector>
+    <Sector>Utilities</Sector>
+    <Weight>0.61538461538461542</Weight>
+    <Exec._x0020_Value>216000</Exec._x0020_Value>
+    <_x0025__x0020_Executed>0.18</_x0025__x0020_Executed>
+    <Spread>0.0802</Spread>
+    <Volatility>25.76088</Volatility>
+    <_x0025__x0020_ADV-20>0.0034201155999072767</_x0025__x0020_ADV-20>
+    <Perf_Benchmark_1>388.425925925926</Perf_Benchmark_1>
+    <Portfolio_Perf_1>239.031339031339</Portfolio_Perf_1>
+    <Perf_Benchmark_2>402.314814814815</Perf_Benchmark_2>
+    <Portfolio_Perf_2>247.578347578348</Portfolio_Perf_2>
+    <Perf_Benchmark_3>396.814814814815</Perf_Benchmark_3>
+    <Portfolio_Perf_3>244.193732193732</Portfolio_Perf_3>
+  </Sector>
+  <Region>
+    <Region>Europe</Region>
+    <Weight>1</Weight>
+    <Exec._x0020_Value>351000</Exec._x0020_Value>
+    <_x0025__x0020_Executed>0.16714285714285715</_x0025__x0020_Executed>
+    <Spread>0.0716759615384615</Spread>
+    <Volatility>28.0901607692308</Volatility>
+    <_x0025__x0020_ADV-20>0.0013676183965948407</_x0025__x0020_ADV-20>
+    <Perf_Benchmark_1>-1871.8660968661</Perf_Benchmark_1>
+    <Portfolio_Perf_1>-1871.8660968661</Portfolio_Perf_1>
+    <Perf_Benchmark_2>-1887.03703703704</Perf_Benchmark_2>
+    <Portfolio_Perf_2>-1887.03703703704</Portfolio_Perf_2>
+    <Perf_Benchmark_3>-1878.04985754986</Perf_Benchmark_3>
+    <Portfolio_Perf_3>-1878.04985754986</Portfolio_Perf_3>
+  </Region>
+  <Currency>
+    <Currency>EUR</Currency>
+    <Weight>1</Weight>
+    <Exec._x0020_Value>351000</Exec._x0020_Value>
+    <_x0025__x0020_Executed>0.16714285714285715</_x0025__x0020_Executed>
+    <Spread>0.0716759615384615</Spread>
+    <Volatility>28.0901607692308</Volatility>
+    <_x0025__x0020_ADV-20>0.0013676183965948407</_x0025__x0020_ADV-20>
+    <Perf_Benchmark_1>-1871.8660968661</Perf_Benchmark_1>
+    <Portfolio_Perf_1>-1871.8660968661</Portfolio_Perf_1>
+    <Perf_Benchmark_2>-1887.03703703704</Perf_Benchmark_2>
+    <Portfolio_Perf_2>-1887.03703703704</Portfolio_Perf_2>
+    <Perf_Benchmark_3>-1878.04985754986</Perf_Benchmark_3>
+    <Portfolio_Perf_3>-1878.04985754986</Portfolio_Perf_3>
+  </Currency>
+  <PLR>
+    <Liquidity_x0020_Ratio>0% - 2.5%</Liquidity_x0020_Ratio>
+    <Weight>0.65811965811965811</Weight>
+    <Exec._x0020_Value>231000</Exec._x0020_Value>
+    <_x0025__x0020_Executed>0.154</_x0025__x0020_Executed>
+    <Spread>0.0672478896103896</Spread>
+    <Volatility>29.3001767532468</Volatility>
+    <_x0025__x0020_ADV-20>0.0010263352288101095</_x0025__x0020_ADV-20>
+    <Perf_Benchmark_1>-4660.28138528138</Perf_Benchmark_1>
+    <Portfolio_Perf_1>-3067.02279202279</Portfolio_Perf_1>
+    <Perf_Benchmark_2>-4748.2683982684</Perf_Benchmark_2>
+    <Portfolio_Perf_2>-3124.92877492878</Portfolio_Perf_2>
+    <Perf_Benchmark_3>-4708.89826839827</Perf_Benchmark_3>
+    <Portfolio_Perf_3>-3099.01851851852</Portfolio_Perf_3>
+  </PLR>
+  <PLR>
+    <Liquidity_x0020_Ratio>2.5% - 5%</Liquidity_x0020_Ratio>
+    <Weight>0.34188034188034189</Weight>
+    <Exec._x0020_Value>120000</Exec._x0020_Value>
+    <_x0025__x0020_Executed>0.2</_x0025__x0020_Executed>
+    <Spread>0.0802</Spread>
+    <Volatility>25.76088</Volatility>
+    <_x0025__x0020_ADV-20>0.0038001284443414185</_x0025__x0020_ADV-20>
+    <Perf_Benchmark_1>3495.83333333333</Perf_Benchmark_1>
+    <Portfolio_Perf_1>1195.1566951567</Portfolio_Perf_1>
+    <Perf_Benchmark_2>3620.83333333333</Perf_Benchmark_2>
+    <Portfolio_Perf_2>1237.89173789174</Portfolio_Perf_2>
+    <Perf_Benchmark_3>3571.33333333333</Perf_Benchmark_3>
+    <Portfolio_Perf_3>1220.96866096866</Portfolio_Perf_3>
+  </PLR>
+  <Capitalisation>
+    <Capitalisation>Mega</Capitalisation>
+    <Weight>1</Weight>
+    <Exec._x0020_Value>351000</Exec._x0020_Value>
+    <_x0025__x0020_Executed>0.16714285714285715</_x0025__x0020_Executed>
+    <Spread>0.0716759615384615</Spread>
+    <Volatility>28.0901607692308</Volatility>
+    <_x0025__x0020_ADV-20>0.0013676183965948407</_x0025__x0020_ADV-20>
+    <Perf_Benchmark_1>-1871.8660968661</Perf_Benchmark_1>
+    <Portfolio_Perf_1>-1871.8660968661</Portfolio_Perf_1>
+    <Perf_Benchmark_2>-1887.03703703704</Perf_Benchmark_2>
+    <Portfolio_Perf_2>-1887.03703703704</Portfolio_Perf_2>
+    <Perf_Benchmark_3>-1878.04985754986</Perf_Benchmark_3>
+    <Portfolio_Perf_3>-1878.04985754986</Portfolio_Perf_3>
+  </Capitalisation>
+  <Glossary-Summary_x0020_>
+    <Key>*</Key>
+    <Value>All the values are in user currency and the weighted calculation based on exec quantities</Value>
+  </Glossary-Summary_x0020_>
+  <Glossary-Summary_x0020_>
+    <Key>benchmarks available</Key>
+    <Value>VWAP OPEN CLOSE LAST PREV-CLOSE ARRIVAL LBC RefPrice </Value>
+  </Glossary-Summary_x0020_>
+  <Glossary-Summary_x0020_>
+    <Key>Total Orders</Key>
+    <Value>Security Name</Value>
+  </Glossary-Summary_x0020_>
+  <Glossary-Summary_x0020_>
+    <Key>Total Target Shares</Key>
+    <Value />
+  </Glossary-Summary_x0020_>
+  <Glossary-Summary_x0020_>
+    <Key>% Executed</Key>
+    <Value>% of the total amount</Value>
+  </Glossary-Summary_x0020_>
+  <Glossary-Summary_x0020_>
+    <Key>Executed Value</Key>
+    <Value>in user currency</Value>
+  </Glossary-Summary_x0020_>
+  <Glossary-Summary_x0020_>
+    <Key>Residual Value</Key>
+    <Value>in user currency</Value>
+  </Glossary-Summary_x0020_>
+  <Glossary-Summary_x0020_>
+    <Key>Spread (bps)</Key>
+    <Value>Actual average spread over the period(bps)</Value>
+  </Glossary-Summary_x0020_>
+  <Glossary-Summary_x0020_>
+    <Key>Volatility</Key>
+    <Value>Actual volatility over the period(bps)</Value>
+  </Glossary-Summary_x0020_>
+  <Glossary-Summary_x0020_>
+    <Key>% 60 Day Median Volume</Key>
+    <Value>Daily Liquidity Ratio: Shares executed relative to the trailing 60 day median full day volume</Value>
+  </Glossary-Summary_x0020_>
+  <Glossary-Summary_x0020_>
+    <Key>DLR</Key>
+    <Value>Daily Liquidity Ratio:Shares executed relative to the Actual full day volume over the day</Value>
+  </Glossary-Summary_x0020_>
+  <Glossary-Summary_x0020_>
+    <Key>PLR</Key>
+    <Value>Period Liquidity Ratio :Shares executed relative to Actual volume traded during the period order</Value>
+  </Glossary-Summary_x0020_>
+  <Glossary-Summary_x0020_>
+    <Key>Interval Time Horizon</Key>
+    <Value>Time duration in hours</Value>
+  </Glossary-Summary_x0020_>
+  <Glossary-Summary-Execution_x0020_Performance_x0020_>
+    <Key>Weighted Perf.(bps)</Key>
+    <Value>perf are calculed with each of the selected benchmarks</Value>
+  </Glossary-Summary-Execution_x0020_Performance_x0020_>
+  <Glossary-Summary-Execution_x0020_Performance_x0020_>
+    <Key>Total Notional Cost</Key>
+    <Value>perf amount calculed with each of the selected benchmarks</Value>
+  </Glossary-Summary-Execution_x0020_Performance_x0020_>
+  <Glossary-Summary-Breakdowns_x0020_>
+    <Key>used benchmark</Key>
+    <Value>3 of the choosen benchmarks are shown and the others hidden(printing reasons)</Value>
+  </Glossary-Summary-Breakdowns_x0020_>
+  <Glossary-Summary-Breakdowns_x0020_>
+    <Key>Country</Key>
+    <Value>give country repartition</Value>
+  </Glossary-Summary-Breakdowns_x0020_>
+  <Glossary-Summary-Breakdowns_x0020_>
+    <Key>Sector</Key>
+    <Value>give country repartition from msci sectors </Value>
+  </Glossary-Summary-Breakdowns_x0020_>
+  <Glossary-Summary-Breakdowns_x0020_>
+    <Key>Region</Key>
+    <Value>from the 3 regions America Europe Asia</Value>
+  </Glossary-Summary-Breakdowns_x0020_>
+  <Glossary-Summary-Breakdowns_x0020_>
+    <Key>Currency</Key>
+    <Value>currency repartition</Value>
+  </Glossary-Summary-Breakdowns_x0020_>
+  <Glossary-Summary-Breakdowns_x0020_>
+    <Key>Liquidity</Key>
+    <Value>give the ratio exec-quantity/actuam period volume</Value>
+  </Glossary-Summary-Breakdowns_x0020_>
+  <Glossary-Summary-Breakdowns_x0020_>
+    <Key>Capitalisation</Key>
+    <Value>give the market capitalisation breakdown</Value>
+  </Glossary-Summary-Breakdowns_x0020_>
+  <Glossary-Summary-Breakdowns_x0020_>
+    <Key>Weight</Key>
+    <Value>based on executed values</Value>
+  </Glossary-Summary-Breakdowns_x0020_>
+  <Glossary-Summary-Breakdowns_x0020_>
+    <Key>Ex.Value</Key>
+    <Value>net executed value</Value>
+  </Glossary-Summary-Breakdowns_x0020_>
+  <Glossary-Summary-Breakdowns_x0020_>
+    <Key>%Execued</Key>
+    <Value>% executed value</Value>
+  </Glossary-Summary-Breakdowns_x0020_>
+  <Glossary-Summary-Breakdowns_x0020_>
+    <Key>Spread</Key>
+    <Value>Actual average spread over the period(bps)</Value>
+  </Glossary-Summary-Breakdowns_x0020_>
+  <Glossary-Summary-Breakdowns_x0020_>
+    <Key>Volatility</Key>
+    <Value>Actual volatility over the period(bps)</Value>
+  </Glossary-Summary-Breakdowns_x0020_>
+  <Glossary-Summary-Breakdowns_x0020_>
+    <Key>% 20 Day ADV</Key>
+    <Value>Daily Liquidity Ratio: Shares executed relative to the trailing 20 day avg full day volume</Value>
+  </Glossary-Summary-Breakdowns_x0020_>
+  <Glossary-Summary-Breakdowns_x0020_>
+    <Key>Perf</Key>
+    <Value>perf vs benchmark(bps)</Value>
+  </Glossary-Summary-Breakdowns_x0020_>
+  <Glossary-Summary-Breakdowns_x0020_>
+    <Key>Portfolio Perf</Key>
+    <Value>perf vs benchmark(bps) weighted </Value>
+  </Glossary-Summary-Breakdowns_x0020_>
+  <Glossary-Order_x0020_Details>
+    <Key>Name</Key>
+    <Value>Security Name</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>BloomBerg</Key>
+    <Value>Bloomberg Code</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>ISIN</Key>
+    <Value>ISIN Code</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>Country</Key>
+    <Value>country </Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>sector</Key>
+    <Value>sector</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>Ask.Quantity</Key>
+    <Value>Asked Quantity</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>Exec.Quantity</Key>
+    <Value>executed Quantity</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>Rem.Quantity</Key>
+    <Value>remaining Quantity</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>Trade Price</Key>
+    <Value>exec avg price</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>Currency</Key>
+    <Value>Currency of listing.Denomination of the trade currency may differ(GBP/GBX)</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>Side</Key>
+    <Value>Buy or Sell</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>Net Exec Value</Key>
+    <Value>Value in user currency</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>Net Res Value</Key>
+    <Value>Value in user currency</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>%Executed</Key>
+    <Value />
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>Date</Key>
+    <Value>Date</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>Start Time</Key>
+    <Value>Start Time</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>End Time</Key>
+    <Value>End Time</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>Duration</Key>
+    <Value>in minutes</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>Weight</Key>
+    <Value>Weight relative to the portfolio </Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>Historical Interval Data</Key>
+    <Value />
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>Spread</Key>
+    <Value>Spread</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>Volatility</Key>
+    <Value>Volatility</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>PLR</Key>
+    <Value>Period liquidity ratio ADV 20 days based</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>Trade Interval Data</Key>
+    <Value />
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>Spread</Key>
+    <Value>Spread over the period</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>Volatility</Key>
+    <Value>Volatility over the period</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>PLR</Key>
+    <Value>Period Liquidity ratio over order period duration</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>DLR</Key>
+    <Value>Daily Liquidity Ratio from daily vol</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>MarketVol</Key>
+    <Value>Market Volume From: Consolidated/Principal Market</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>Currency</Key>
+    <Value>order currency</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>Benchmark</Key>
+    <Value>Benchmark</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>Perf(bps)</Key>
+    <Value>Perf(bps)</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>Portfolio Perf(bps)</Key>
+    <Value>Portfolio Perf(bps)</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>Notional Cost </Key>
+    <Value>Notional Cost </Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Order_x0020_Details>
+    <Key>Total</Key>
+    <Value>is calculated for relevants columns</Value>
+  </Glossary-Order_x0020_Details>
+  <Glossary-Outliers_x0020_>
+    <Key>Top-Bottom 5 performers</Key>
+    <Value> For all the choosen benchmarks,shows the Top-Bottom 5 performers(Porfolio Perf)</Value>
+  </Glossary-Outliers_x0020_>
+  <Glossary-Remarks>
+    <Key />
+    <Value>based on bloomberg historical/RT fields</Value>
+  </Glossary-Remarks>
+</NewDataSet>

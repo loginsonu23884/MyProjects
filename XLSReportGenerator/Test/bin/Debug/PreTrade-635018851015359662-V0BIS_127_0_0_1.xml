@@ -1,0 +1,793 @@
+<?xml version="1.0" standalone="yes"?>
+<PreTradeAnalysis>
+  <xs:schema id="PreTradeAnalysis" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="PreTradeAnalysis" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Details">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Name" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="Market" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="Bloomberg" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="ISIN" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="Currency" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="Side" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="OrderQuantity" msdata:Caption="Order Quantity" msprop:ModeCalcul="Sum" type="xs:int" minOccurs="0" />
+                <xs:element name="refPrice" msdata:Caption="Ref Price" msprop:ModeCalcul="None" type="xs:double" minOccurs="0" />
+                <xs:element name="Value" msprop:ModeCalcul="Sum" type="xs:double" minOccurs="0" />
+                <xs:element name="Weight" msprop:ModeCalcul="Sum" type="xs:double" minOccurs="0" />
+                <xs:element name="DailyVol1D" msdata:Caption="Daily Vol 1D" msprop:ModeCalcul="None" type="xs:int" minOccurs="0" />
+                <xs:element name="DLR1D" msdata:Caption="DLR 1D" msprop:ModeCalcul="SumWeighted" type="xs:double" minOccurs="0" />
+                <xs:element name="UDV60D" msdata:Caption="ADV 20D" msprop:ModeCalcul="None" type="xs:int" minOccurs="0" />
+                <xs:element name="DLR60D" msdata:Caption="DLR 60D" msprop:ModeCalcul="SumWeighted" type="xs:double" minOccurs="0" />
+                <xs:element name="PLR60D" msdata:Caption="PLR 60D" msprop:ModeCalcul="SumWeighted" type="xs:double" minOccurs="0" />
+                <xs:element name="VolumeSource" msdata:Caption="Volume Source" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="OpenV" msdata:Caption="Open V." msprop:ModeCalcul="None" type="xs:int" minOccurs="0" />
+                <xs:element name="CloseV" msdata:Caption="Close V." msprop:ModeCalcul="None" type="xs:int" minOccurs="0" />
+                <xs:element name="Per_Auction" msdata:Caption="%Auction" msprop:ModeCalcul="SumWeighted" type="xs:double" minOccurs="0" />
+                <xs:element name="Per_Principal" msdata:Caption="%Principal" msprop:ModeCalcul="SumWeighted" type="xs:double" minOccurs="0" />
+                <xs:element name="Per_MTF" msdata:Caption="%MTF" msprop:ModeCalcul="SumWeighted" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadBA" msdata:Caption="B/A Sprd (bp)" msprop:ModeCalcul="SumWeighted" type="xs:double" minOccurs="0" />
+                <xs:element name="ContMarketImpact" msdata:Caption="contrib. to MI%" msprop:ModeCalcul="None" type="xs:double" minOccurs="0" />
+                <xs:element name="ContMarketRisk" msdata:Caption="contrib. to MR%" msprop:ModeCalcul="None" type="xs:double" minOccurs="0" />
+                <xs:element name="MarketImpact" msdata:Caption="M.Impact" msprop:ModeCalcul="None" type="xs:double" minOccurs="0" />
+                <xs:element name="MarketRisk" msdata:Caption="M.Risk" msprop:ModeCalcul="None" type="xs:double" minOccurs="0" />
+                <xs:element name="MarketCap" msdata:Caption="Market.Cap" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="Sector" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="ExecCond" msdata:Caption="Exec.Condition" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="Per_Vol" msdata:Caption="%Vol" msprop:ModeCalcul="None" type="xs:double" minOccurs="0" />
+                <xs:element name="AskPeriod" msdata:Caption="Asked Trad.Period" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="ProposedPeriod" msdata:Caption="Proposed Trad.Period" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="ExpCompRatio" msdata:Caption="Exp. Comp." msprop:ModeCalcul="None" type="xs:double" minOccurs="0" />
+                <xs:element name="PLRstrategy" msdata:Caption="PLR (Strategy)" msprop:ModeCalcul="None" type="xs:double" minOccurs="0" />
+                <xs:element name="LotSize" msdata:Caption="Lot Size" msprop:ModeCalcul="None" type="xs:int" minOccurs="0" />
+                <xs:element name="OddLot" msdata:Caption="Odd Lot" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="Suspended" msprop:ModeCalcul="None" type="xs:string" minOccurs="0" />
+                <xs:element name="FxRate" msprop:ModeCalcul="None" type="xs:double" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Summary_Summary">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="Sell" type="xs:double" minOccurs="0" />
+                <xs:element name="Buy" type="xs:double" minOccurs="0" />
+                <xs:element name="Program" type="xs:double" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Summary_Largest_PLR">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="Symbol" type="xs:string" minOccurs="0" />
+                <xs:element name="Side" type="xs:string" minOccurs="0" />
+                <xs:element name="Quantity" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:double" minOccurs="0" />
+                <xs:element name="PLR" type="xs:double" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Summary_Largest_Value">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="Symbol" type="xs:string" minOccurs="0" />
+                <xs:element name="Side" type="xs:string" minOccurs="0" />
+                <xs:element name="Quantity" type="xs:int" minOccurs="0" />
+                <xs:element name="Value" type="xs:double" minOccurs="0" />
+                <xs:element name="PLR" type="xs:double" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Summary_Country">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="WeightProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="WeightSell" type="xs:double" minOccurs="0" />
+                <xs:element name="WeightBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueSell" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadSell" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="NetProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="Orders" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Summary_Sector">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="WeightProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="WeightSell" type="xs:double" minOccurs="0" />
+                <xs:element name="WeightBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueSell" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadSell" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="NetProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="Orders" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Summary_Region">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="WeightProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="WeightSell" type="xs:double" minOccurs="0" />
+                <xs:element name="WeightBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueSell" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadSell" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="NetProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="Orders" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Summary_Currencies">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="WeightProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="WeightSell" type="xs:double" minOccurs="0" />
+                <xs:element name="WeightBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueSell" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadSell" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="NetProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="Orders" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Summary_Liquidity_Ratio">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="WeightProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="WeightSell" type="xs:double" minOccurs="0" />
+                <xs:element name="WeightBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueSell" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadSell" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="NetProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="Orders" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Summary_Capitalisation">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="WeightProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="WeightSell" type="xs:double" minOccurs="0" />
+                <xs:element name="WeightBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueSell" type="xs:double" minOccurs="0" />
+                <xs:element name="ValueBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadSell" type="xs:double" minOccurs="0" />
+                <xs:element name="SpreadBuy" type="xs:double" minOccurs="0" />
+                <xs:element name="NetProgram" type="xs:double" minOccurs="0" />
+                <xs:element name="Orders" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Glossary_Summary_">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Key" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Glossary_Stock_Details">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Key" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Glossary_Graphics_">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Key" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Glossary_Corporate_Actions">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Key" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="HeaderRecap">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Key" type="xs:string" minOccurs="0" />
+                <xs:element name="Value" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Details>
+    <Name>FRANCE TELECOM</Name>
+    <Market>XPAR</Market>
+    <Bloomberg>FTE FP</Bloomberg>
+    <ISIN>FR0000133308</ISIN>
+    <Currency>EUR</Currency>
+    <Side>Sell</Side>
+    <OrderQuantity>5000</OrderQuantity>
+    <refPrice>7.585</refPrice>
+    <Value>37925</Value>
+    <Weight>0.32658772874058128</Weight>
+    <DailyVol1D>11228631</DailyVol1D>
+    <DLR1D>0.0004452902584473566</DLR1D>
+    <UDV60D>10738930</UDV60D>
+    <DLR60D>0.00046559573439811975</DLR60D>
+    <PLR60D>0.00046559573439811975</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>165562</OpenV>
+    <CloseV>2140322</CloseV>
+    <Per_Auction>0.086847841029571562</Per_Auction>
+    <Per_Principal>0.31761868264104537</Per_Principal>
+    <Per_MTF>0.10421911162919455</Per_MTF>
+    <SpreadBA>0.056925</SpreadBA>
+    <ContMarketImpact>0.00010767101699214503</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>0.00032968482131081982</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Telecommunication Services</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.25</Per_Vol>
+    <AskPeriod>VWAP 25%</AskPeriod>
+    <ProposedPeriod>VWAP 25%</ProposedPeriod>
+    <ExpCompRatio>1</ExpCompRatio>
+    <PLRstrategy>0.00046559573439811975</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>1</FxRate>
+  </Details>
+  <Details>
+    <Name>EDF</Name>
+    <Market>XPAR</Market>
+    <Bloomberg>EDF FP</Bloomberg>
+    <ISIN>FR0010242511</ISIN>
+    <Currency>EUR</Currency>
+    <Side>Buy</Side>
+    <OrderQuantity>5000</OrderQuantity>
+    <refPrice>15.64</refPrice>
+    <Value>78200</Value>
+    <Weight>0.67341227125941872</Weight>
+    <DailyVol1D>2682033</DailyVol1D>
+    <DLR1D>0.0018642574494795552</DLR1D>
+    <UDV60D>2438800</UDV60D>
+    <DLR60D>0.0020501886173527966</DLR60D>
+    <PLR60D>0.0020501886173527966</PLR60D>
+    <VolumeSource>Primary</VolumeSource>
+    <OpenV>23705</OpenV>
+    <CloseV>463343</CloseV>
+    <Per_Auction>0.08171806455661329</Per_Auction>
+    <Per_Principal>0.32746956344035721</Per_Principal>
+    <Per_MTF>0.099906679449445659</Per_MTF>
+    <SpreadBA>0.0737</SpreadBA>
+    <ContMarketImpact>0.00032313448716860096</ContMarketImpact>
+    <ContMarketRisk>0</ContMarketRisk>
+    <MarketImpact>0.00047984644913623772</MarketImpact>
+    <MarketRisk>0</MarketRisk>
+    <MarketCap>Mega</MarketCap>
+    <Sector>Utilities</Sector>
+    <ExecCond>VWAP</ExecCond>
+    <Per_Vol>0.25</Per_Vol>
+    <AskPeriod>VWAP 25%</AskPeriod>
+    <ProposedPeriod>VWAP 25%</ProposedPeriod>
+    <ExpCompRatio>1</ExpCompRatio>
+    <PLRstrategy>0.0020501886173527966</PLRstrategy>
+    <LotSize>1</LotSize>
+    <OddLot>N</OddLot>
+    <Suspended>ACTV</Suspended>
+    <FxRate>1</FxRate>
+  </Details>
+  <Details>
+    <OrderQuantity>10000</OrderQuantity>
+    <Value>116125</Value>
+    <Weight>1</Weight>
+    <DLR1D>0.0014008401774029469</DLR1D>
+    <DLR60D>0.001532680026730139</DLR60D>
+    <PLR60D>0.001532680026730139</PLR60D>
+    <Per_Auction>0.083393386603863612</Per_Auction>
+    <Per_Principal>0.32425238665401579</Per_Principal>
+    <Per_MTF>0.10131506688037764</Per_MTF>
+    <SpreadBA>0.068221490850376751</SpreadBA>
+  </Details>
+  <Summary_Summary>
+    <Title>Percent</Title>
+    <Sell>0.32658772874058128</Sell>
+    <Buy>0.67341227125941872</Buy>
+    <Program>1</Program>
+  </Summary_Summary>
+  <Summary_Summary>
+    <Title>m EUR</Title>
+    <Sell>0.037925</Sell>
+    <Buy>0.0782</Buy>
+    <Program>0.116125</Program>
+  </Summary_Summary>
+  <Summary_Summary>
+    <Title>Orders</Title>
+    <Sell>1</Sell>
+    <Buy>1</Buy>
+    <Program>2</Program>
+  </Summary_Summary>
+  <Summary_Summary>
+    <Title>Shares</Title>
+    <Sell>5000</Sell>
+    <Buy>5000</Buy>
+    <Program>10000</Program>
+  </Summary_Summary>
+  <Summary_Summary>
+    <Title>DLR 60D</Title>
+    <Sell>0.00046559573439811975</Sell>
+    <Buy>0.0020501886173527966</Buy>
+    <Program>0.001532680026730139</Program>
+  </Summary_Summary>
+  <Summary_Summary>
+    <Title>PLR (Theory-60d)</Title>
+    <Sell>0.00046559573439811975</Sell>
+    <Buy>0.0020501886173527966</Buy>
+    <Program>0.001532680026730139</Program>
+  </Summary_Summary>
+  <Summary_Summary>
+    <Title>PLR (Strategy-60d)</Title>
+    <Sell>0.00046559573439811975</Sell>
+    <Buy>0.0020501886173527966</Buy>
+    <Program>0.001532680026730139</Program>
+  </Summary_Summary>
+  <Summary_Summary>
+    <Title>Expected Completion Ratio</Title>
+    <Sell>1</Sell>
+    <Buy>1</Buy>
+    <Program>1</Program>
+  </Summary_Summary>
+  <Summary_Summary>
+    <Title>Market Impact</Title>
+    <Sell>0.00032968482131081982</Sell>
+    <Buy>0.00047984644913623772</Buy>
+    <Program>0.000430805504160746</Program>
+  </Summary_Summary>
+  <Summary_Summary>
+    <Title>Market Risk</Title>
+    <Sell>0</Sell>
+    <Buy>0</Buy>
+    <Program>0</Program>
+  </Summary_Summary>
+  <Summary_Summary>
+    <Title>Avg. Bid/Ask Spread (bps)</Title>
+    <Sell>0.056925</Sell>
+    <Buy>0.0737</Buy>
+    <Program>0.068221490850376751</Program>
+  </Summary_Summary>
+  <Summary_Largest_PLR>
+    <Title>EDF</Title>
+    <Symbol>EDF FP</Symbol>
+    <Side>Buy</Side>
+    <Quantity>5000</Quantity>
+    <Value>0.0782</Value>
+    <PLR>0.0020501886173527966</PLR>
+  </Summary_Largest_PLR>
+  <Summary_Largest_PLR>
+    <Title>FRANCE TELECOM</Title>
+    <Symbol>FTE FP</Symbol>
+    <Side>Sell</Side>
+    <Quantity>5000</Quantity>
+    <Value>0.037925</Value>
+    <PLR>0.00046559573439811975</PLR>
+  </Summary_Largest_PLR>
+  <Summary_Largest_Value>
+    <Title>EDF</Title>
+    <Symbol>EDF FP</Symbol>
+    <Side>Buy</Side>
+    <Quantity>5000</Quantity>
+    <Value>0.0782</Value>
+    <PLR>0.0020501886173527966</PLR>
+  </Summary_Largest_Value>
+  <Summary_Largest_Value>
+    <Title>FRANCE TELECOM</Title>
+    <Symbol>FTE FP</Symbol>
+    <Side>Sell</Side>
+    <Quantity>5000</Quantity>
+    <Value>0.037925</Value>
+    <PLR>0.00046559573439811975</PLR>
+  </Summary_Largest_Value>
+  <Summary_Country>
+    <Title>FRANCE</Title>
+    <WeightProgram>1</WeightProgram>
+    <WeightSell>1</WeightSell>
+    <WeightBuy>1</WeightBuy>
+    <ValueProgram>116125</ValueProgram>
+    <ValueSell>37925</ValueSell>
+    <ValueBuy>78200</ValueBuy>
+    <SpreadProgram>0.068221490850376751</SpreadProgram>
+    <SpreadSell>0.056925</SpreadSell>
+    <SpreadBuy>0.0737</SpreadBuy>
+    <NetProgram>78200.056925</NetProgram>
+    <Orders>2</Orders>
+  </Summary_Country>
+  <Summary_Sector>
+    <Title>Telecommunication Services</Title>
+    <WeightProgram>0.32658772874058128</WeightProgram>
+    <WeightSell>1</WeightSell>
+    <WeightBuy>0</WeightBuy>
+    <ValueProgram>37925</ValueProgram>
+    <ValueSell>37925</ValueSell>
+    <ValueBuy>0</ValueBuy>
+    <SpreadProgram>0.018591006458557591</SpreadProgram>
+    <SpreadSell>0.056925</SpreadSell>
+    <SpreadBuy>0</SpreadBuy>
+    <NetProgram>0.056925</NetProgram>
+    <Orders>1</Orders>
+  </Summary_Sector>
+  <Summary_Sector>
+    <Title>Utilities</Title>
+    <WeightProgram>0.67341227125941872</WeightProgram>
+    <WeightSell>0</WeightSell>
+    <WeightBuy>1</WeightBuy>
+    <ValueProgram>78200</ValueProgram>
+    <ValueSell>0</ValueSell>
+    <ValueBuy>78200</ValueBuy>
+    <SpreadProgram>0.049630484391819163</SpreadProgram>
+    <SpreadSell>0</SpreadSell>
+    <SpreadBuy>0.0737</SpreadBuy>
+    <NetProgram>78200</NetProgram>
+    <Orders>1</Orders>
+  </Summary_Sector>
+  <Summary_Region>
+    <Title>Europe</Title>
+    <WeightProgram>1</WeightProgram>
+    <WeightSell>1</WeightSell>
+    <WeightBuy>1</WeightBuy>
+    <ValueProgram>116125</ValueProgram>
+    <ValueSell>37925</ValueSell>
+    <ValueBuy>78200</ValueBuy>
+    <SpreadProgram>0.068221490850376751</SpreadProgram>
+    <SpreadSell>0.056925</SpreadSell>
+    <SpreadBuy>0.0737</SpreadBuy>
+    <NetProgram>78200.056925</NetProgram>
+    <Orders>2</Orders>
+  </Summary_Region>
+  <Summary_Currencies>
+    <Title>EUR</Title>
+    <WeightProgram>1</WeightProgram>
+    <WeightSell>1</WeightSell>
+    <WeightBuy>1</WeightBuy>
+    <ValueProgram>116125</ValueProgram>
+    <ValueSell>37925</ValueSell>
+    <ValueBuy>78200</ValueBuy>
+    <SpreadProgram>0.068221490850376751</SpreadProgram>
+    <SpreadSell>0.056925</SpreadSell>
+    <SpreadBuy>0.0737</SpreadBuy>
+    <NetProgram>78200.056925</NetProgram>
+    <Orders>2</Orders>
+  </Summary_Currencies>
+  <Summary_Liquidity_Ratio>
+    <Title>0% - 2.5%</Title>
+    <WeightProgram>0.67341227125941872</WeightProgram>
+    <WeightSell>1</WeightSell>
+    <WeightBuy>1</WeightBuy>
+    <ValueProgram>78200</ValueProgram>
+    <ValueSell>37925</ValueSell>
+    <ValueBuy>78200</ValueBuy>
+    <SpreadProgram>0.049630484391819163</SpreadProgram>
+    <SpreadSell>0.056925</SpreadSell>
+    <SpreadBuy>0.0737</SpreadBuy>
+    <NetProgram>78200.056925</NetProgram>
+    <Orders>1</Orders>
+  </Summary_Liquidity_Ratio>
+  <Summary_Capitalisation>
+    <Title>Mega</Title>
+    <WeightProgram>1</WeightProgram>
+    <WeightSell>1</WeightSell>
+    <WeightBuy>1</WeightBuy>
+    <ValueProgram>116125</ValueProgram>
+    <ValueSell>37925</ValueSell>
+    <ValueBuy>78200</ValueBuy>
+    <SpreadProgram>0.068221490850376751</SpreadProgram>
+    <SpreadSell>0.056925</SpreadSell>
+    <SpreadBuy>0.0737</SpreadBuy>
+    <NetProgram>78200.056925</NetProgram>
+    <Orders>2</Orders>
+  </Summary_Capitalisation>
+  <Glossary_Summary_>
+    <Key>All the values are represented in millions</Key>
+    <Value />
+  </Glossary_Summary_>
+  <Glossary_Stock_Details>
+    <Key>Name</Key>
+    <Value>Security Name</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Market</Key>
+    <Value>Security Market</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Reuteurs</Key>
+    <Value>Reuters Code</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>BloomBerg</Key>
+    <Value>Bloomberg Code</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>ISIN</Key>
+    <Value>ISIN Code</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Currency</Key>
+    <Value>Currency of listing.Denomination of the trade currency may differ(GBP/GBX)</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Side</Key>
+    <Value>Buy or Sell</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Order Quantity</Key>
+    <Value>Order Quantity</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Ref Price</Key>
+    <Value>Ref Price (based on Last)</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Value</Key>
+    <Value>Value</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Weight</Key>
+    <Value>Weight</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Full Day Vol 1</Key>
+    <Value>Previous Day Volume</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>DLR 1D</Key>
+    <Value>Daily Liquidity Ratio from the previous day</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Period Liq. Ratio 1</Key>
+    <Value>Period Liquidity Ratio with respect to the previous day</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Full Day Vol 60*</Key>
+    <Value>Usual Daily Volume 60 days</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>DLR 60D</Key>
+    <Value>Daily Liquidity Ratio from the 60 days median</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Period Liq. Ratio 60*</Key>
+    <Value>Period liquidity ratio UDV 60 days based</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Volume Source</Key>
+    <Value>Volume Source</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Open V.*</Key>
+    <Value>Usual open volume (60 days median)</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Close V.*</Key>
+    <Value>Usual close volume (60 days median)</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>%Auction*</Key>
+    <Value>% Auction (Auction/UDV MultiMarket)</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>%Principal*</Key>
+    <Value>% Principal ((UDV Principal - Auction)/UDV MultiMarket)</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>%MTF*</Key>
+    <Value>% Multilateral Trading Facilities(MTF) ((UDV MultiMarket-UDV Principal)/UDV MultiMarket)[chi-x,turquoise,bats,nae/ not including dark volumes]</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Bid.ask Spread</Key>
+    <Value>Average of 60 days of daily weighted average spread(bp)</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Momentum</Key>
+    <Value>Give the stock's momentum over the previous 5 trading days, apportioned every 10 minutes period, expressed in bps(5 days of 8.5 hours of 6*10 minutes each);comptuted as((close DAY - close DAY-5)/(close DAY-5*8.5*6)*10000)/5</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>V. Score</Key>
+    <Value>Score(level of abnormality) of the previous day volume)</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>M.Impact%</Key>
+    <Value>Contribution of this line % to the Market Impact of the Program</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>M.Risk%</Key>
+    <Value>Contribution of this line % to the Market Risk of the Program</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>M.Impact</Key>
+    <Value>Relative amplitude of Market Impact to the overall Program</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>M.Risk*</Key>
+    <Value>Relative amplitude of Market Risk to the overall Program</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Duration</Key>
+    <Value>Duration Adjustement Proposal for this line taking into account its contribution to Market Risk and Market Impact</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Sector</Key>
+    <Value>As defined by MSCI Sector</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>ZoneIndex</Key>
+    <Value>Sector Zone Index</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Beta*</Key>
+    <Value> Beta Sector Zone (60D)</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Tracking*</Key>
+    <Value>Tracking Error</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Exec.Condition</Key>
+    <Value>As defined by the user from a list of exec condition with parameters (vwap 25% as default value)</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>%Volume</Key>
+    <Value>for TargetClose %Vol and vwap max vol algos</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Ask Trad Period</Key>
+    <Value>Asked Trading Period : User setting</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Proposed Trad Period</Key>
+    <Value>Proposed Trading Period : Calculated duration</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Remaining Quantity</Key>
+    <Value>Expected Remaining Quantity</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Exp Comp</Key>
+    <Value>Expected Completion Ratio</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>PLR(Strategy)</Key>
+    <Value>Period Liquidity Ratio from UDV 60 days [taking into account user strategy]</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>Fx Rate</Key>
+    <Value>Forex rate of the trade date. As used in the conversion to Euro</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>*</Key>
+    <Value>60 days of trading</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Stock_Details>
+    <Key>**</Key>
+    <Value>default value for vwap/twap max% participation is set to 25</Value>
+  </Glossary_Stock_Details>
+  <Glossary_Graphics_>
+    <Key>All the graphics shown, are calculed from net quantities when orders are crossed</Key>
+    <Value />
+  </Glossary_Graphics_>
+  <Glossary_Graphics_>
+    <Key>Volume curve is calculed from real quantities(when expected completion ration is not 100%)  </Key>
+    <Value />
+  </Glossary_Graphics_>
+  <Glossary_Corporate_Actions>
+    <Key>Informations from Thomson Financial</Key>
+    <Value />
+  </Glossary_Corporate_Actions>
+  <Glossary_Corporate_Actions>
+    <Key>Earnings Conference Call</Key>
+    <Value />
+  </Glossary_Corporate_Actions>
+  <Glossary_Corporate_Actions>
+    <Key>Earnings Release</Key>
+    <Value />
+  </Glossary_Corporate_Actions>
+  <Glossary_Corporate_Actions>
+    <Key>Conference Call</Key>
+    <Value />
+  </Glossary_Corporate_Actions>
+  <Glossary_Corporate_Actions>
+    <Key>Conference Presentation</Key>
+    <Value />
+  </Glossary_Corporate_Actions>
+  <Glossary_Corporate_Actions>
+    <Key>Shareholders Meeting</Key>
+    <Value />
+  </Glossary_Corporate_Actions>
+  <Glossary_Corporate_Actions>
+    <Key>Analyst Conference Call</Key>
+    <Value />
+  </Glossary_Corporate_Actions>
+  <Glossary_Corporate_Actions>
+    <Key>Analyst Meeting</Key>
+    <Value />
+  </Glossary_Corporate_Actions>
+  <Glossary_Corporate_Actions>
+    <Key>Company Visit</Key>
+    <Value />
+  </Glossary_Corporate_Actions>
+  <Glossary_Corporate_Actions>
+    <Key>Pre-Earnings Guidance</Key>
+    <Value />
+  </Glossary_Corporate_Actions>
+  <Glossary_Corporate_Actions>
+    <Key>Merger and Acquisition Announcement</Key>
+    <Value />
+  </Glossary_Corporate_Actions>
+  <Glossary_Corporate_Actions>
+    <Key>Dividend</Key>
+    <Value />
+  </Glossary_Corporate_Actions>
+  <Glossary_Corporate_Actions>
+    <Key>Stock Split</Key>
+    <Value />
+  </Glossary_Corporate_Actions>
+  <HeaderRecap>
+    <Key>Client</Key>
+    <Value>Default</Value>
+  </HeaderRecap>
+  <HeaderRecap>
+    <Key>Trading Date</Key>
+    <Value>4/18/2013 12:31:41 PM</Value>
+  </HeaderRecap>
+  <HeaderRecap>
+    <Key>Orders</Key>
+    <Value>2</Value>
+  </HeaderRecap>
+  <HeaderRecap>
+    <Key>Period Profil</Key>
+    <Value>Local User Time Profil : GMT</Value>
+  </HeaderRecap>
+  <HeaderRecap>
+    <Key>Currency</Key>
+    <Value>EUR</Value>
+  </HeaderRecap>
+  <HeaderRecap>
+    <Key>Nominal Value (m EUR)</Key>
+    <Value>   0.116</Value>
+  </HeaderRecap>
+</PreTradeAnalysis>

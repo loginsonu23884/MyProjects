@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="LoginMaster.master.cs" Inherits="MasterPages_LoginMaster" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <script type="text/javascript" language="javascript" src="<%=oAppPath%>/Js/jquery-1.7.1.min.js"></script>
+   <link href="../Stylesheet/Site.css" rel="stylesheet" type="text/css" />
+    <link href="../Stylesheet/ui.jqgrid.css" rel="stylesheet" type="text/css" />
+    <link href="../Stylesheet/jquery-ui-1.8.7.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../Plugin/Calender/ui.all.css" type="text/css" media="screen" />
+   <%-- Grey Box Start Script--%>
+     <script type="text/javascript">
+         var GB_ROOT_DIR = "<%=oAppPath%>/Plugin/greybox/";
+    </script>
+    <script type="text/javascript" src="<%=oAppPath%>/Plugin/GreyBox/AJS.js"></script>
+    <script type="text/javascript" src="<%=oAppPath%>/Plugin/GreyBox/AJS_fx.js"></script>
+    <script type="text/javascript" src="<%=oAppPath%>/Plugin/GreyBox/gb_scripts.js"></script>
+    <link href="../Plugin/GreyBox/gb_styles.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript">
+        GB_myShow = function (caption, url, /* optional */height, width, callback_fn) {
+            var options = {
+                caption: caption,
+                height: height,
+                width: width,
+                fullscreen: false,
+                show_loading: true,
+                callback_fn: callback_fn
+            }
+            var win = new GB_Window(options);
+            return win.show(url);
+        }
+      </script>
+    <%-- Grey Box End Script--%>
+  <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body style="text-align:center">
+    <form id="form1" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                   Bug Tracker
+                </h1>
+            </div>
+            <div class="loginDisplay">
+               
+            </div>
+            <div class="clear hideSkiplink">
+              
+            </div>
+        </div>
+        <div class="main">
+           <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+        </asp:ContentPlaceHolder>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+         Copyright ©2013 Systematix Infotech Pvt. Ltd., All Rights Reserved.
+    </div>
+    </form>
+</body>
+</html>
